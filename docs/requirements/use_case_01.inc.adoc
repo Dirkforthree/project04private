@@ -2,59 +2,71 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 <use-case name>
+== Use-Case: UC01 Hochladen verschiedener Medien (Powerpoint, Videos)
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
+Dieser Use Case ermöglicht es dem Präsentator verschiedene Medien, darunter PowerPoint-Präsentationen und 4K-Videos, in die Software hochzuladen.
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+==== Präsentator
+Präsentator: Die Person, die verschiedene Medien (4K-Videos, Powerpoint) hochlädt.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+. Benutzer hat Medien in gerechte Formate zum Hochladen zur Verfügung
+. Benutzer verfügt über genügen Speicherlatz für Anlegung neuer Datenmenge 
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn Präsentator das System öffnet
+. Das System zeigt einen Hochladedialog im "Edit"-Modus an
+. Präsentator wählt gewünschte Medien aus (4K-Videos, Powerpoint) und bestätigt die Auswahlt
+. Bei erfolgreicher Überprüfung werden die Medien in die Software hochgeladen und stehen für die Präsentation zu Verfügung
+. Das System bestätigt den erfolgreichen Upload
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Fehlerhafte Datei/ nicht unterstützendes Format
+Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fehlerhafte/ nicht unterstützende Formate hochladen möchte, dann
+. Dialogfeld von "fehlerhafte Datei" oder "unterstützt das Format nicht" wird angezeigt
+. Der Use Case wird im Schritt "Präsentator wählt gewünschte Medien aus" fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+==== Öffnen des Systems
+. Nutzer öffnet auf seinen Computer das System
+. System fährt hoch
+. System zeigt Dialogfenster, welches "Edit"-Modus und "Spectate"-Modus vorgibt
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Präsentator lädt Video hoch
+. im erstn Dialogfenster wählt der Präsentator zwischen den Auswahlen "Edit"-Modus und "Spectate"-Modus das erste aus
+. neues Dialogfenster erscheint
+. im neuen Dialogfenster wählt Präsentator die "Hochladen"-Funktion aus
+.  Präsentator wählt entweder ein Video aus
+. System überprüft das Medium und lädt die Datei auf das System hoch
+. System bestätigt den erfolgreichen Upload
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+==== Medienverfügbarkeit
+. Die hochgeladenen Medien sind im System verfügbar und können im Präsentationen eingebunden werden
+
+==== Zustand für die eingebundenen Medien
+. Das System befindet sich im Zustand "Bereit für die Präsentation"
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== <Besondere Anforderung 1>
+==== Unterstützung gängiger Formate von Powerpoint und Videos
+==== Benutzeroerfläche sollte benutzerfreundlich und selbsterklärend sein
+==== Uploadvorgang sollte sicher und effizient erfolgen
