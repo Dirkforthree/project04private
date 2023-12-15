@@ -2,44 +2,59 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02 <use-case name>
+== Use-Case: UC02 Interagieren der Präsentation
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
+Dieser Use Case beschreibt die Interaktion mit der Präsentationssoftware, sowohl vom Präsentator aus. Es umfasst das Hochladen, Abspielen und Interagieren mit verschiedenen Medien während einer Präsentation.
 
 === Kurzbeschreibung der Akteure
-
-==== <Akteur 1 Name>
+==== Präsentator
+Die Person, die die Präsentation erstellt und vorführt
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+- Die Präsentation ist erfolgreich erstellt und hochgeladen.
+- Das System ist im "Spectate"-Modus zugänglich.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn der Präsentator das System öffnet
+. Das System fragt im "Spectate"-Modus, welche Präsentation präsentiert werden soll, wobei der Präsentator eine vorhandene Präsentation auswählt
+. Ein weiterer Dialogfesnter fragt, ob es im "Endlosschleife"-Funktion oder die "Kapitel"-Funktion aufgeführt werden soll
+. *"Endlosschleife"-Funktion wird ausgewählt*
+.. Die Präsentation wird ausgeführt
+.. Der Präsentator kann nach Bedarf die Präsentation anhalten, Zusatzinformationen einblenden oder zu bestimmtel Kapitel wechseln
+.. Die Präsentation wird bis zum Schluss ausgeführt oder de Präsentator schließt die Präsentation
+.. Der Use Case ist abgeschlossen.
+. *"Kapitel"-Funktion wird ausgewählt*
+.. Die Präsentation wird ausgeführt, startet im Hauptbildschrim der Präsentation mit den untergegliederten Kapitel
+.. Der Präsentator wählt ein bestimmten Kapitel aus
+.. Der Präsentator kann nach Bedarf die Präsentation anhalten, Zusatzinformationen einblenden oder zu bestimmten Kapitel wechseln
+.. Das Kapitel wird zum Schluss ausgeführt und man landet wieder zum Hauptbildschirm der Präsentation
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== keine vorhandene Präsentation
+Wenn der Präsentator im Schritt 2 des Standardablauf keine vorhandene Präsentation hat, dann
+. zeigt es keine wählbare Präsentation an
+. Der Use Case wird im Schritt 1 fortgesetzt.
+
+==== Präsentation ist fehlerhaft
+Wenn der Präsentator im Schritt 2 des Standardablauf eine fehlerhafte Präsentation auswählt, dann
+. zeigt das System in einem neuen Dialogfenster ein Fehlermeldung an
+. Der Use Cas wird im Schritt 2 fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+==== Öffnen des Systems
+. Nutzer öffnet auf seinen Computer das System
+. System fährt hoch
+. System zeigt Dialogfenster, welches "Edit"-Modus und "Spectate"-Modus vorgibt
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
@@ -49,12 +64,24 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 . …
 . <Szenario 1, Schritt n>
 
+- *Szenario 1:* Der Präsentator zeigt ein Video und fügt währenddessen spontan Zusatzinformationen hinzu.
+- *Szenario 2:* Ein Zuhörer stellt eine Frage, der Präsentator pausiert die Präsentation, gibt eine Antwort und setzt die Präsentation fort.
+
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+- Die Präsentation wurde erfolgreich durchgeführt.
+- Das System befindet sich im Zustand vor dem Start der Präsentation.
+
 
 ==== <Nachbedingung 1>
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+- Das System muss eine intuitive Benutzeroberfläche für Präsentatoren und Zuhörer bieten.
+- Die Software sollte barrierefrei sein und die Bedürfnisse von seh- oder hörbeeinträchtigten Personen berücksichtigen.
+- Die Präsentationssoftware muss offline funktionieren und keine Internetkosten auf Messen verursachen.
+- Die Anwendung sollte auf der .NET 8 Plattform entwickelt werden.
+
 
 ==== <Besondere Anforderung 1>
+
