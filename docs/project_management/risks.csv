@@ -1,4 +1,8 @@
 ﻿ID;Datum;Name;Beschreibung;Typ;IMP;PRB;MAG;Owner;Gegenmaßnahme
-1;01.12.2019;Teammitglied fällt aus;Mitglied des Teams kann (dauerhaft oder zeitweise) nicht mehr am Projekt teilnehmen; z.B. wegen Krankheit oder Studiengangswechsel;4;20%;0,8;Max Müller;Backup-Rollen nutzen und Know-How zwischen diesen Personen kontinuierlich teilen
-2;-;-;-;-;-;-;-;-;-
-3;-;-;-;-;-;-;-;-;-
+1;11.12.2023;Teammitglied fällt aus;Mitglied des Teams kann (dauerhaft oder zeitweise) nicht mehr am Projekt teilnehmen;Zeitlich;3;40%;1,2;Projektleiter;Backup-Rollen nutzen und Know-How zwischen diesen Personen kontinuierlich teilen
+2;07.12.2023;Hohe Fehleranfälligkeit;System kann schlecht mit unerwarteten Ereignissen oder Eingaben umgehen;Technisch;1;80%;0,8;Entwickler;System vollständig testen
+3;07.12.2023;Code unübersichtlich;Code unstrukturiert und für andere schlecht verständlich;Technisch;3;50%;1,5;Entwickler, Architekt;Code gut strukturieren und dokumentieren
+4;07.12.2023;Schlechte Erweiterbarkeit;System kann nur schwierig erweitert oder gewartet werden z.B. durch Abhängigkeiten zwischen Klassen;Technisch;3;60%;1,8;Architekt;Softwaremodule unabhängig voneinander bauen
+5;11.12.2023;Vendor-Lock-In;Abhängigkeit von einer API oder einem System, welches sich verändert oder verschwindet;Technisch;4;20%;0,8;Alle;Softwaremodule unabhängig voneinander bauen
+6;11.12.2023;Formulierung der Requirements;Wichtige Requirements wurden vergessen oder falsch verstanden;Geschäftlich;5;30%;1,5;Analyst;Requirements mit Stakeholdern besprechen, frühes Feedback einholen, Entwickler in Technischen Requirements einbeziehen
+7;11.12.2023;Ungeplante Komplexität;In der Entwicklung auftretende ungeplante Komplexität;Technisch;2;50%;1;Entwickler;Gute und detailierte Analyse der zu nutzenden Software und Unterteilung von potenziellen Problemen
