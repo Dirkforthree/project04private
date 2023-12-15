@@ -1,14 +1,11 @@
 = Vision: {project-name}
-Quoc Tinh La <quoctinh.la@stud.htw-dresden.de>; bla Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Quoc Tinh La <quoctinh.la@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
-test 27.11.2023
 
 == Einführung
 Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Systems {project-system-name} zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das System {project-system-name} diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
-
-
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
@@ -22,7 +19,6 @@ Siehe <<#glossary, Glossar>>.
 
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
-
 
 == Positionierung
 
@@ -80,7 +76,6 @@ Beispiel Produkt:
 | Unser Produkt | zeigt nur die für den Nutzer relevanten Informationen komfortabel auf dem Smartphone an.
 |===
 ////
-
 
 == Stakeholder Beschreibungen
 
@@ -158,7 +153,6 @@ Diese Angaben bieten einen Überblick über die Arbeitsumgebung des Nutzers und 
 
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
-
 == Produkt-/Lösungsüberblick
 
 === Bedarfe und Hauptfunktionen
@@ -171,7 +165,6 @@ Diese Angaben bieten einen Überblick über die Arbeitsumgebung des Nutzers und 
 | "Edit"-Modus | hoch | Zusatzinformationen erstellen und bearbeiten, Kapitel erstellen | xx 
 | "Spectate"-Modus | mittel | Endschleifmodues/ Kapitelmodus, Zusatzinformationen betrachten, Kapitel wecheseln, Präsentation anhalten/ starten | xx 
 |===
-
 
 == Zusätzliche Produktanforderungen
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
