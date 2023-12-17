@@ -1,5 +1,5 @@
 = Projektplan: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Luca Jork lucathomas.jork@stud.htw-dresden.de; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -11,6 +11,17 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
+|===
+|              | *Mail*                                             | *Rolle*                   |
+| *Valine Richter* | valine.richter@stud.htw-dresden.de                | Analyse                   |
+| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de     | Implementeirung           |
+| *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de               | Projektleiter             |
+| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de             | Archtiekt/Implementirerung|
+| *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de             | Implementierung           |
+| *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de     | Analyse                   |
+| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de                   | Analyse/Test              |
+|===
+
 
 
 == Praktiken und Bewertung
@@ -32,14 +43,14 @@ include::../_includes/default-attributes.inc.adoc[]
 |
 * Mitigate Risk1
 * Develop Use Case 3, Scenario 2
-| Date from/Date to
+| 06.11.2023/19.11.2023
 | 15
 
 | I2
 |
 * Mitigate Risk 2
 * Develop Use Case 1, Scenario 2
-| Date from/Date to
+| 20.11.2023/3.12.2023
 | 16
 |===
 
