@@ -59,7 +59,7 @@ siehe  *https://github.com/orgs/seproject04/projects/1/views/4[ Überblick  - It
 [%header, cols="1,3"]
 |===
 | Assessment Ziel | gesamte iteration
-| Assessment Datum | ...
+| Assessment Datum | 19.12.2023
 | Teilnehmer | Team
 | Projektstatus	| grün
 |===
