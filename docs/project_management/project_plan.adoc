@@ -1,4 +1,4 @@
-= Projektplan: {project-name}
+= System-Wide Requirements: {project-name}
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -6,47 +6,57 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-//Briefly describe the content of the project plan.
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema> spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+
+* Systemweite funktionale Anforderungen (F),
+* Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
+* zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
+
+NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
 
 
-== Projektorganisation
-//Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
+== Systemweite funktionale Anforderungen
+//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
 
-== Praktiken und Bewertung
-//Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+== Qualitätsanforderungen für das Gesamtsystem
+//Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
+
+=== Benutzbarkeit (Usability)
+//Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+
+=== Zuverlässigkeit (Reliability)
+// Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+
+=== Effizienz (Performance)
+// Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+
+=== Wartbarkeit (Supportability)
+// Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
 
-== Meilensteine und Ziele
-//Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
+== Zusätzliche Anforderungen
 
-[%header, cols="1,3a,2,1"]
-|===
-| Iteration
-| Primary objectives +
-(risks and use case scenarios)
-| Scheduled start or milestone
-| Target velocity
+=== Technische Einschränkungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+* Ressourcenbegrenzungen
+* zu nutzende Komponenten / Bibliotheken / Frameworks
+* Vorgaben für die Programmiersprache
+* zu unterstützende Plattformen / Betriebssysteme
+* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
 
-| I1
-|
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
-| Date from/Date to
-| 15
+=== Interface Anforderungen
+// Describe both the user interface and interfaces with external systems.
 
-| I2
-|
-* Mitigate Risk 2
-* Develop Use Case 1, Scenario 2
-| Date from/Date to
-| 16
-|===
+=== Geschäftsregeln
+// Besides technical requirements, also consider the particular business domain in which the system needs to fit.
 
+=== Organisatorische Randbedingungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+* Anforderungen an Betrieb, Management und Wartung der Anwendung
+* zu beachtende Standards, Normen und Regeln
 
-== Deployment
-//Outline the strategy for deploying the software (and its updates) into the production environment.
-
-
-== Erkenntnisse (Lessons learned)
-//List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+=== Rechtliche Anforderungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+* Lizensierung der Anwendung
+* Datenschutz
