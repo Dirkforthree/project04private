@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02 Interagieren der Präsentation
+== Use-Case: UC02 Präsentieren der Präsentation
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>

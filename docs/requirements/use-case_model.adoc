@@ -12,8 +12,8 @@ Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure in
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: Hochladen verschiedener Medien (Präsentator)
-* *UC02*: Interagieren der Präsentation (Präsentator)
+* *UC01*: Laden eines Mediums in das System (Präsentator)
+* *UC02*: Präsentieren der Präsentation (Präsentator)
 * *UC03*: Medien unterteilen in Kapiteln (Präsentator)
 * *UC04*: Einblenden von Zusatzinformationen (Präsentator)
 * *UC05*: 
