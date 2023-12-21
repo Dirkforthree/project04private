@@ -2,37 +2,36 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 Hochladen verschiedener Medien (Powerpoint, Videos)
+== Use-Case: UC01 laden eines Mediums in das System (Powerpoint, Videos)
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieser Use Case ermöglicht es dem Präsentator verschiedene Medien, darunter PowerPoint-Präsentationen und 4K-Videos, in die Software hochzuladen.
+Dieser Use Case ermöglicht es dem Präsentator ein Medium, darunter PowerPoint-Präsentationen und Videos, in die Software zu laden.
 
 === Kurzbeschreibung der Akteure
 
 ==== Präsentator
-Präsentator: Die Person, die verschiedene Medien (4K-Videos, Powerpoint) hochlädt.
+Die Person, die verschiedene Medien (Powerpoint-Präsentationen, Videos) in das System lädt
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-. Benutzer hat Medien in gerechte Formate zum Hochladen zur Verfügung
-. Benutzer verfügt über genügen Speicherlatz für Anlegung neuer Datenmenge 
+. Benutzer hat Medien in gerechte Formate zur Verfügung
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn Präsentator das System öffnet
-. Das System zeigt einen Hochladedialog im "Edit"-Modus an
-. Präsentator wählt gewünschte Medien aus (4K-Videos, Powerpoint) und bestätigt die Auswahlt
-. Bei erfolgreicher Überprüfung werden die Medien in die Software hochgeladen und stehen für die Präsentation zu Verfügung
-. Das System bestätigt den erfolgreichen Upload
+. Das System zeigt einen Dialog zur Auswahl von einen Medium im "Edit"-Modus an
+. Präsentator wählt gewünschtes Medium aus (Powerpoint-Präsentationen, Videos) und bestätigt die Auswahl
+. Bei erfolgreicher Überprüfung wird das Medium in die Software geladen und steht für die Präsentation zu Verfügung
+. Das System bestätigt die erfolgreiche Auswahl
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== Fehlerhafte Datei/ nicht unterstützendes Format
-Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fehlerhafte/ nicht unterstützende Formate hochladen möchte, dann
+Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fehlerhafte/ nicht unterstützende Formate auswählen möchte, dann
 . Dialogfeld von "fehlerhafte Datei" oder "unterstützt das Format nicht" wird angezeigt
 . Der Use Case wird im Schritt "Präsentator wählt gewünschte Medien aus" fortgesetzt.
 
@@ -40,7 +39,7 @@ Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fe
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
 ==== Öffnen des Systems
-. Nutzer öffnet auf seinen Computer das System
+. Nutzer öffnet auf seinem Computer das System
 . System fährt hoch
 . System zeigt Dialogfenster, welches "Edit"-Modus und "Spectate"-Modus vorgibt
 
@@ -48,10 +47,10 @@ Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fe
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
 ==== Präsentator lädt Video hoch
-. im erstn Dialogfenster wählt der Präsentator zwischen den Auswahlen "Edit"-Modus und "Spectate"-Modus das erste aus
+. im ersten Dialogfenster wählt der Präsentator zwischen den Auswahlen "Edit"-Modus und "Spectate"-Modus das erste aus
 . neues Dialogfenster erscheint
-. im neuen Dialogfenster wählt Präsentator die "Hochladen"-Funktion aus
-.  Präsentator wählt entweder ein Video aus
+. im neuen Dialogfenster wählt Präsentator die "Auswahl"-Funktion aus
+. Präsentator wählt entweder eine Powerpoint-Präsentation oder ein Video aus
 . System überprüft das Medium und lädt die Datei auf das System hoch
 . System bestätigt den erfolgreichen Upload
 
@@ -59,7 +58,7 @@ Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fe
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 ==== Medienverfügbarkeit
-. Die hochgeladenen Medien sind im System verfügbar und können im Präsentationen eingebunden werden
+. Die schon ausgewählten Medien sind im System verfügbar und können im Präsentationen eingebunden werden
 
 ==== Zustand für die eingebundenen Medien
 . Das System befindet sich im Zustand "Bereit für die Präsentation"
@@ -69,4 +68,4 @@ Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fe
 
 ==== Unterstützung gängiger Formate von Powerpoint und Videos
 ==== Benutzeroerfläche sollte benutzerfreundlich und selbsterklärend sein
-==== Uploadvorgang sollte sicher und effizient erfolgen
+==== Auswahl des Mediums sollte sicher und effizient erfolgen
