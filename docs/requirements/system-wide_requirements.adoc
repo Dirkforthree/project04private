@@ -16,13 +16,17 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 
 == Systemweite funktionale Anforderungen
-Dateiload und -verwaltung:
- Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4) zu laden und zu verwalten.
+:sectnums!:
+=== ANF-01: Dateiload und -verwaltung
+Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Detein und deren Kapitelunterteilung dauerhaft gespeichert werden. Hierzu müssen sich die Pfade und Kapitelunterteilungen ändern lassen.
 
-Interaktive Präsentation: Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw.
+=== ANF-02: Interaktive Präsentation
+Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw.
 
-Offline-Nutzung: Die Anwendung sollte auch ohne Internetverbindung funktionieren, da Messen möglicherweise eine unzuverlässige Netzwerkverbindung haben können.
+=== ANF-03: Offline-Nutzung
+Die Anwendung sollte auch ohne Internetverbindung funktionieren, da Messen möglicherweise eine unzuverlässige Netzwerkverbindung haben können.
 
+:sectnums:
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
@@ -30,21 +34,35 @@ Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usabil
 
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
-Intuitive Benutzeroberfläche: Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die es den Benutzern ermöglicht, Präsentationen und Videos einfach zu laden, zu organisieren und zu präsentieren.
+:sectnums!:
+==== ANF-04: Intuitive Benutzeroberfläche
+:sectnums!:
+Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die es den Benutzern ermöglicht, Präsentationen und Videos einfach zu laden, zu organisieren und zu präsentieren.
 
+:sectnums:
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
-Stabilität: Die Anwendung sollte stabil laufen und nicht anfällig für Abstürze oder unerwartetes Verhalten sein, insbesondere während Live-Präsentationen auf Messen.
 
+:sectnums!:
+==== ANF-05: Stabilität
+Die Anwendung sollte stabil laufen und nicht anfällig für Abstürze oder unerwartetes Verhalten sein, insbesondere während Live-Präsentationen auf Messen.
+
+:sectnums:
 === Effizienz (Performance)
+:sectnums!:
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
-Schnelle Ladezeiten: Die Anwendung sollte schnell Präsentationen und Videos laden, um eine reibungslose Interaktion während der Präsentation sicherzustellen.
+==== ANF-06: Schnelle Ladezeiten
+Die Anwendung sollte schnell Präsentationen und Videos laden, um eine reibungslose Interaktion während der Präsentation sicherzustellen.
 
+:sectnums:
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
-Update- und Wartungsfähigkeit: Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durchgeführt werden können, um etwaige Fehler oder Verbesserungen zu implementieren.
+:sectnums!:
+==== ANF-07: Update- und Wartungsfähigkeit
+Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durchgeführt werden können, um etwaige Fehler oder Verbesserungen zu implementieren.
 
 
+:sectnums:
 == Zusätzliche Anforderungen
 
 === Technische Einschränkungen
@@ -65,8 +83,8 @@ Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforde
 
 === Organisatorische Randbedingungen
 Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
-
-Normen und Standards: Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
+// FIXME: Nummern Zuweisen
+**ANF-X1:** Normen und Standards: Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
 
 === Rechtliche Anforderungen
 Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
