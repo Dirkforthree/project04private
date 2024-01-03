@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace Effektive_Präsentation.ViewModel
 {
-    public partial class MainWindowViewModel : ObservableRecipient, IFileDragDropTarget
+    public partial class MainWindowViewModel : ObservableRecipient, IFilesDropped
     {
 
         [ObservableProperty]
@@ -24,42 +24,16 @@ namespace Effektive_Präsentation.ViewModel
             this.chapters = new Model.Chapters();
         }
 
-        public void OnFileDrop(string[] filepaths)
-        {
-            Debug.WriteLine(filepaths[0]);
-        }
-
-        //public ICommand SetDatabasePath { get; set; }
-        //public ICommand AddChapter { get; set; }
-        //public ICommand RemoveChapter { get; set; }
-        //public ICommand EditChapter { get; set; }
-        //public ICommand SaveChapter { get; set; }
-
-        //private void ChaptersSaveChapter()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //private void ChaptersEditChapter()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //private void ChaptersRemoveChapter()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //private void ChaptersAddChapter()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
         [RelayCommand]
         public void ChaptersSetDefaultChapter(string path)
         {
             // TODO: Make sure path is correct
             Chapters.DefaultChapter = path;
+        }
+
+        public void OnFilesDropped(string[] files)
+        {
+            ChaptersSetDefaultChapter(files[0]);
         }
     }
 }
