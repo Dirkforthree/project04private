@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:utility="clr-namespace:Effektive_Präsentation.Extension"
         xmlns:local="clr-namespace:Effektive_Präsentation.View"
         xmlns:localVM="clr-namespace:Effektive_Präsentation.ViewModel"
         mc:Ignorable="d"
@@ -11,8 +12,9 @@
         <localVM:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
-        <StackPanel Name="ImagePanel" Drop="ImagePanel_Drop" AllowDrop="true">
+        <StackPanel Name="ImagePanel" >
             <TextBlock Text="Drop Here" TextAlignment="Center"/>
+            <ScrollViewer AllowDrop="True" Background="Transparent" utility:FileDragDropHelper.IsFileDragDropEnabled="True" utility:FileDragDropHelper.FileDragDropTarget="{Binding}"/>
             <TextBlock x:Name="defaultChapterPathText" Text="{Binding Chapters.DefaultChapter}"/>
         </StackPanel>
     </Grid>

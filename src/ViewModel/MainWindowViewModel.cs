@@ -8,10 +8,12 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
 using Effektive_Präsentation.Model;
+using Effektive_Präsentation.Extension;
+using System.Diagnostics;
 
 namespace Effektive_Präsentation.ViewModel
 {
-    public partial class MainWindowViewModel : ObservableRecipient
+    public partial class MainWindowViewModel : ObservableRecipient, IFileDragDropTarget
     {
 
         [ObservableProperty]
@@ -20,6 +22,11 @@ namespace Effektive_Präsentation.ViewModel
         public MainWindowViewModel()
         {
             this.chapters = new Model.Chapters();
+        }
+
+        public void OnFileDrop(string[] filepaths)
+        {
+            Debug.WriteLine(filepaths[0]);
         }
 
         //public ICommand SetDatabasePath { get; set; }
