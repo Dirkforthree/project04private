@@ -7,3 +7,6 @@
 src/obj/
 src/bin/
 src/.vs/
+.vs/
+obj/
+bin/
