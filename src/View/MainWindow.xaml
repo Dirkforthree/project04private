@@ -11,9 +11,9 @@
         <localVM:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
-        <StackPanel Name="ImagePanel" Drop="ImagePanel_Drop" AllowDrop="true">
-            <TextBlock Text="Drop Here" TextAlignment="Center"/>
-            <TextBlock x:Name="defaultChapterPathText" Text="{Binding Chapters.DefaultChapter}"/>
+        <StackPanel>
+            <Button x:Name="OpenFile" Click="dropArea_Click" Drop="ImagePanel_Drop" AllowDrop="true" Background="#FFFFFF" BorderThickness="0">Drop Here</Button>
+            <TextBlock x:Name="dropAreaText" Text="{Binding Chapters.DefaultChapter}"/>
         </StackPanel>
     </Grid>
 </Window>
