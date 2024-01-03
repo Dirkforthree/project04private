@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CommunityToolkit.Mvvm;
+using Effektive_Präsentation.Model;
+using Effektive_Präsentation.ViewModel;
 
 namespace Effektive_Präsentation.View
 {

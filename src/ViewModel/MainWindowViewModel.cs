@@ -56,8 +56,9 @@ namespace Effektive_Präsentation.ViewModel
         //}
 
         [RelayCommand]
-        private void ChaptersSetDefaultChapter(string path)
+        public void ChaptersSetDefaultChapter(string path)
         {
+            // TODO: Make sure path is correct
             Chapters.DefaultChapter = path;
         }
     }
