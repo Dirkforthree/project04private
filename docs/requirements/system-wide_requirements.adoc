@@ -65,28 +65,31 @@ Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durc
 :sectnums:
 == Zusätzliche Anforderungen
 
-=== Technische Einschränkungen
+=== ANF-08: Technische Einschränkungen
 Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den meisten gängigen Geräten und unter den üblichen Systemlasten reibungslos läuft.
 
 Verwendung von .NET 8 und C#: Alle Softwarekomponenten, Bibliotheken und Frameworks sollten mit .NET 8 kompatibel sein und in der Programmiersprache C# entwickelt werden.
 
 Plattformunterstützung: Die Anwndung soll zunächst nur mit dem Betriebssystem (Windows ) kompatibel sein.
 
-=== Interface Anforderungen
+=== ANF-08: Interface Anforderungen
 Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Plattformen zu gewährleisten.
 
 Externe Schnittstellen: Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
 
-=== Geschäftsregeln
+=== ANF-08: Geschäftsregeln
 Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
 
 
-=== Organisatorische Randbedingungen
+=== ANF-09: Organisatorische Randbedingungen
 Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
-// FIXME: Nummern Zuweisen
-**ANF-X1:** Normen und Standards: Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
 
-=== Rechtliche Anforderungen
+**ANF-10:** Normen und Standards: Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
+
+=== ANF-11: Rechtliche Anforderungen
 Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
 
 Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
+
+=== ANF-12: Localisaiton 
+Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern
