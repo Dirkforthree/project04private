@@ -65,6 +65,7 @@ Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durc
 :sectnums:
 == Zusätzliche Anforderungen
 
+:sectnums!:
 === ANF-08: Technische Einschränkungen
 Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den meisten gängigen Geräten und unter den üblichen Systemlasten reibungslos läuft.
 
@@ -77,19 +78,23 @@ Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen
 
 Externe Schnittstellen: Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
 
-=== ANF-08: Geschäftsregeln
+=== ANF-09: Geschäftsregeln
 Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
 
 
-=== ANF-09: Organisatorische Randbedingungen
+=== ANF-10: Organisatorische Randbedingungen
 Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
 
-**ANF-10:** Normen und Standards: Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
+=== ANF-11: Normen und Standards:
+Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
 
-=== ANF-11: Rechtliche Anforderungen
+=== ANF-12: Rechtliche Anforderungen
 Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
 
 Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
 
-=== ANF-12: Localisaiton 
+
+=== ANF-13: Localisaiton 
 Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern
+
+:sectnums:
