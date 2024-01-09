@@ -85,28 +85,14 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| *Martin Freiberger*
-//[Benennung des Stakeholder-Typs.]
-| Martin Freiberger ist Mitarbeiter in der "ZEISS Digital Innovation GmbH", die als externer Stakeholder die Interessen und Bedürfnisse des Unternehmens in Bezug auf die Entwicklung der Präsentationssoftware repräsentiert. Als Project Owner könnte er eine entscheidende Rolle bei strategischen Entscheidungen und der Ausrichtung des Projekts spielen.
-//[Kurze Beschreibung des Stakeholders.]
-| *Sicherstellung der Unternehmensziele:* Martin Freiberger dürfte ein besonderes Interesse daran haben, dass die entwickelte Software die übergeordneten Ziele und strategischen Ausrichtungen der "ZEISS Digital Innovation GmbH" unterstützt.
-*Überwachung des Projektfortschritts:* Der Stakeholder könnte daran interessiert sein, den Fortschritt des Projekts zu überwachen, um sicherzustellen, dass Zeitpläne eingehalten werden und das Produkt rechtzeitig zur Verfügung steht.
+| Auftraggeber | Das *Projekt Team der ZDI* von "ZEISS Digital Innovation GmbH", welches Martin Freiberger als Projektleiter, Bianca Müller als Domain Stakeholder im Bereich Community Relations, Franziska Petrovsky als Domain Stakeholder im Bereich Marketing und Manufacturing Solutions, Matthias Müller als Domain Stakeholder im Bereich Marketing Manager, Manufacturing Solutions und Hendrik Lösch als Technical Stakeholder als Management Consultant and Architect hat. | Sicherstellung der Unternehmensziele, Überwachung des Projektfortschritts, Fachwissenübergabe in Bereichen: Community Relations, Marketing and Manufacturing Solutions, Management Consulting and Architecture
 
-|Bianca Müller
-|Domain Stakeholder
-|Als Domain Stakeholder in Community Relations vertritt Bianca die Interessen der Community Relations und bringt Fachwissen in die Entwicklung des Systems ein.
+| Student | Im Studententeam werden die Rollen: Analyst, Architekt, Entwickler, Projekt Manager, Tester auf die Mitglieder je nach Erfahrungsbereich verteilt | *Analyst*: Der Analyst vertritt die Anliegen der Kunden und Endbenutzer, indem sie Rückmeldungen von Beteiligten sammelt, um das zu lösende Problem zu verstehen, und indem sie Anforderungen erfasst und Prioritäten setzt.
+*Architekt*: Der Architekt ist verantwortlich für die Definition der Softwarearchitektur, zu der auch die wesentlichen technischen Entscheidungen gehören, die das Gesamtdesign und die Umsetzung des Systems einschränken.
+*Entwickler*: Der Entwickler ist verantwortlich für die Entwicklung eines Teils des Systems, einschließlich der Gestaltung, um es in die Architektur zu integrieren, möglicherweise der Prototypenerstellung der Benutzeroberfläche, und dann der Umsetzung, der Unit-Tests und der Integration der Komponenten, die Teil der Lösung sind.
+*Projekt Manager*: Der Projektmanager leitet die Planung des Projekts, koordiniert die Interaktionen mit den Stakeholdern und sorgt dafür, dass das Projektteam auf die Erfüllung der Projektziele fokussiert bleibt.
+*Tester*: Der Tester ist verantwortlich für die Kernaktivitäten des Testaufwands. Diese Aktivitäten umfassen die Identifizierung, Definition, Implementierung und Durchführung der erforderlichen Tests, sowie das Protokollieren der Ergebnisse des Tests und die Analyse der Ergebnisse.
 
-|Franziska Petrovsky
-|Domain Stakeholder
-|Als Domain Stakeholder im Marketing und Manufacturing Solutions bringt Franziska fachliche Perspektiven aus Marketing und Produktionslösungen ein.
-
-|Matthias Müller
-|Domain Stakeholder
-|Als Domain Stakeholder und Marketing Manager in Manufacturing Solutions trägt Matthias zu Verbindung von Marketing- und Fertigungsperspektiven bei.
-
-|Hendrik Lösch
-|Domain Stakeholder
-|Als Technical Stakeholder in Management Consulting and Architecture bringt Hendrik technische Exertise und Architekturwissen in das Projekt ein.
 //[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 |===
 
