@@ -6,7 +6,7 @@ ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieser Use Case ermöglicht es dem Präsentator ein Medium, darunter PowerPoint-Präsentationen und Videos, in die Software zu laden.
+Dieser Use Case ermöglicht es dem Präsentator ein Medium, darunter PowerPoint-Präsentationen und Videos, in das System zu laden.
 
 === Kurzbeschreibung der Akteure
 
@@ -24,7 +24,7 @@ Die Person, die verschiedene Medien (Powerpoint-Präsentationen, Videos) in das 
 . Der Use Case beginnt, wenn Präsentator das System öffnet
 . Das System zeigt einen Dialog zur Auswahl von einen Medium im "Edit"-Modus an
 . Präsentator wählt gewünschtes Medium aus (Powerpoint-Präsentationen, Videos) und bestätigt die Auswahl
-. Bei erfolgreicher Überprüfung wird das Medium in die Software geladen und steht für die Präsentation zu Verfügung
+. Bei erfolgreicher Überprüfung wird das Medium in das System geladen und steht für die Präsentation zu Verfügung
 . Das System bestätigt die erfolgreiche Auswahl
 
 === Alternative Abläufe
@@ -66,6 +66,11 @@ Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fe
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== Unterstützung gängiger Formate von Powerpoint und Videos
-==== Benutzeroerfläche sollte benutzerfreundlich und selbsterklärend sein
-==== Auswahl des Mediums sollte sicher und effizient erfolgen
+==== gängiger Formate
+. System arbeitet mit gängigen Formaten, wie Powerpoint oder Videos
+
+==== Intuitive Benutzeroberfläche
+. System soll eine intuitive Benutzeroberfläche für Präsentator und Zuhöher bieten
+
+==== Sicherheit und Effizienz
+. System soll beim laden der Medien sicher und effizient arbeiten
