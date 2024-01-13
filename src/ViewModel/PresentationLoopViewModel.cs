@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Effektive_Präsentation.ViewModel
+namespace Effektive_Praesentationen.ViewModel
 {
-    class PresentationLoopViewModel
+    internal class PresentationLoopViewModel
     {
     }
 }

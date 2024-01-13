@@ -4,10 +4,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Effektive_Präsentation.Model;
+using Effektive_Praesentationen.Model;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Effektive_Präsentation.Model
+namespace Effektive_Praesentationen.Model
 {
     public partial class Chapters : ObservableObject
     {

@@ -7,11 +7,11 @@ using Microsoft.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
-using Effektive_Präsentation.Model;
-using Effektive_Präsentation.Extension;
+using Effektive_Praesentationen.Model;
+using Effektive_Praesentationen.Extension;
 using System.Diagnostics;
 
-namespace Effektive_Präsentation.ViewModel
+namespace Effektive_Praesentationen.ViewModel
 {
     public partial class MainWindowViewModel : ObservableRecipient, IFilesDropped
     {

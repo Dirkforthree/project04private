@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Effektive_Präsentation.View
+namespace Effektive_Praesentationen.View
 {
     /// <summary>
     /// Interaktionslogik für PresentationLoopView.xaml

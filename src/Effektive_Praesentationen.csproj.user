@@ -12,6 +12,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\PresentationLoopView.xaml">
       <SubType>Designer</SubType>
     </Page>

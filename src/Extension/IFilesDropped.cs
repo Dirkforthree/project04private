@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Effektive_Präsentation.Extension
+namespace Effektive_Praesentationen.Extension
 {
     /// <summary>
     /// IFilesDropped interface
