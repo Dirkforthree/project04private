@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace Effektive_Präsentation.ViewModel
 {
-    public partial class MainWindowViewModel : ObservableRecipient, IFilesDropped
+    public partial class MainWindowViewModel : ObservableRecipient, IFilesDropped, IOpenFileDialog
     {
 
         [ObservableProperty]
@@ -32,6 +32,11 @@ namespace Effektive_Präsentation.ViewModel
         }
 
         public void OnFilesDropped(string[] files)
+        {
+            ChaptersSetDefaultChapter(files[0]);
+        }
+
+        public void OnFileSelected(string[] files)
         {
             ChaptersSetDefaultChapter(files[0]);
         }

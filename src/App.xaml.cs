@@ -2,14 +2,14 @@
 using System.Data;
 using System.Windows;
 
-namespace Effektive_Präsentation.View
+namespace Effektive_Präsentation
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
     {
-        
+
     }
 
 }

@@ -14,7 +14,10 @@
     <Grid>
         <StackPanel Name="ImagePanel" >
             <Button Background="Transparent" extension:DropFilesBehaviorExtension.IsEnabled="True">Drop Here</Button>
+            <Button Background="Transparent" extension:OpenFileDialogBehaviorExtension.IsEnabled="True">Open File Picker</Button>
             <TextBlock x:Name="defaultChapterPathText" Text="{Binding Chapters.DefaultChapter}"/>
+
         </StackPanel>
+
     </Grid>
 </Window>
