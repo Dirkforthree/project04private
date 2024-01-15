@@ -18,7 +18,7 @@ namespace Effektive_Praesentationen.View
     /// <summary>
     /// Interaktionslogik für PresentationLoopView.xaml
     /// </summary>
-    public partial class PresentationLoopView : Page
+    public partial class PresentationLoopView : UserControl
     {
         public PresentationLoopView()
         {

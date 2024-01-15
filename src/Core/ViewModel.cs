@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Effektive_Praesentationen.ViewModel
+namespace Effektive_Praesentationen.Core
 {
-    public class PresentationLoopViewModel: Core.ViewModel
+    public class ViewModel : ObservableRecipient
     {
     }
 }

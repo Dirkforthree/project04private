@@ -9,19 +9,32 @@ using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
 using Effektive_Praesentationen.Model;
 using Effektive_Praesentationen.Extension;
+using Effektive_Praesentationen.Core;
 using System.Diagnostics;
+using Effektive_Praesentationen.Service;
 
 namespace Effektive_Praesentationen.ViewModel
 {
-    public partial class MainWindowViewModel : ObservableRecipient, IFilesDropped
+    public partial class MainWindowViewModel : Core.ViewModel, IFilesDropped
     {
 
         [ObservableProperty]
         private Model.Chapters chapters;
 
-        public MainWindowViewModel()
+        [ObservableProperty]
+        private INavigationService _navigation;
+
+       
+        public MainWindowViewModel(INavigationService navService)
         {
+            Navigation = navService;
             this.chapters = new Model.Chapters();
+        }
+
+        [RelayCommand]
+        public void NavigateToPresentationLoop()
+        {
+            Navigation.NavigateTo<PresentationLoopViewModel>();
         }
 
         [RelayCommand]
