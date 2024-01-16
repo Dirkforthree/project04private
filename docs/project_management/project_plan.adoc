@@ -6,7 +6,12 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-//Briefly describe the content of the project plan.
+
+Das Ziel dieses Projekts ist die Entwicklung einer Software, die das Arbeiten mit PowerPoint-Präsentationen und Videos auf Firmenmessen revolutioniert und intelligentere Interaktionen ermöglicht. Der Bedarf für eine solche Software entstand aus der Erkenntnis, dass es derzeit keine Lösungen gibt, die speziell auf die Anforderungen von Präsentationen und Vorführungen in professionellen Messen und Meetings zugeschnitten sind.
+
+Mit der Nutzung von .NET 8 und den neuesten technologischen Entwicklungen zielt unser Projekt darauf ab, eine intuitive und effiziente Lösung zu schaffen. Die Software wird speziell für Personen konzipiert, die Firmen auf Messen repräsentieren, sowie für den Einsatz in Meetings, wo eine tiefere Interaktion mit PowerPoint-Präsentationen gefordert ist.
+
+Das Endprodukt wird eine funktionsfähige und vorzeigbare Software sein, die den Alltag der Nutzer vereinfacht und die Präsentationserfahrung auf ein neues Niveau hebt.
 
 
 == Projektorganisation
@@ -14,18 +19,30 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 |              | *Mail*                                             | *Rolle*                   |
 | *Valine Richter* | valine.richter@stud.htw-dresden.de                | Analyse/Test                   |
-| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de     | Implementeirung           |
+| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de     | Implementierung           |
 | *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de               | Projektleiter             |
-| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de             | Archtiekt/Implementirerung|
+| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de             | Archtiekt/Implementierung|
 | *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de             | Implementierung           |
 | *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de     | Analyse/Test                  |
-| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de                   | Analyse/Test              |
+| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de                   | Analyse              |
 |===
 
 
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+
+Unser Projekt folgt den Prinzipien der agilen Softwareentwicklung, wobei der Schwerpunkt auf kontinuierlicher Integration und enger Zusammenarbeit im Team liegt. Die spezifischen Praktiken und Bewertungsmethoden umfassen:
+
+* **Agile Softwareentwicklung:** Anpassungsfähige Planung, evolutionäre Entwicklung, frühzeitige Auslieferung und kontinuierliche Verbesserung mit dem Fokus auf Flexibilität und Kundennutzen.
+
+* **Kontinuierliche Integration:** Regelmäßiges Zusammenführen von Arbeitskopien in einen gemeinsamen Hauptzweig, um frühzeitig Fehler zu erkennen und die Softwarequalität zu verbessern. Dies wird durch die Nutzung von GitHub Actions unterstützt.
+
+* **Nutzung von GitHub:** Verwendung von GitHub für die Verwaltung von Issues, Projektdokumentation, Versionskontrolle und als zentrale Plattform für die Zusammenarbeit.
+
+* **Fortschrittsverfolgung über Meilensteine:** Die Überwachung des Projektfortschritts erfolgt durch die Festlegung und Bewertung von Meilensteinen. Jeder Meilenstein repräsentiert ein wichtiges Ziel oder einen Abschnitt des Projekts und hilft, den Fortschritt klar und messbar zu machen.
+
+Diese Praktiken ermöglichen es dem Team, effizient und reaktionsschnell auf Änderungen zu reagieren und die Qualität des Endprodukts sicherzustellen.
 
 
 == Meilensteine und Ziele
@@ -55,8 +72,16 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 
 
+
 == Deployment
-//Outline the strategy for deploying the software (and its updates) into the production environment.
+Die Software, basierend auf WPF und .NET 8 mit C#, wird am Ende des Projektes in einer einzigen Release-Version bereitgestellt. Das genaue Datum für diesen Release steht noch nicht fest. Der Bereitstellungsprozess umfasst:
+
+* **Endgültige Integration:** Abschluss aller Entwicklungs- und Testarbeiten, einschließlich der Durchführung von Unit Tests und der Validierung mittels GitHub Actions.
+* **Bereitstellungsplanung:** Festlegung eines genauen Zeitplans für den Release, einschließlich aller notwendigen Schritte zur Veröffentlichung der Software.
+* **Qualitätssicherung:** Vor dem finalen Release wird die Software durch intensive Unit Tests und Continuous Integration mittels GitHub Actions überprüft, um sicherzustellen, dass alle Funktionen wie erwartet arbeiten.
+* **Veröffentlichung:** Nach erfolgreicher Qualitätssicherung und finaler Überprüfung wird die Software für die Endnutzer freigegeben.
+
+Es wird empfohlen, einen detaillierten Rollback-Plan zu entwickeln, um bei eventuellen Problemen nach der Veröffentlichung schnell reagieren zu können. 
 
 
 == Erkenntnisse (Lessons learned)
