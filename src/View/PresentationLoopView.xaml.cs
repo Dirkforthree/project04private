@@ -12,17 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Effektive_Praesentationen.Interface;
+using Effektive_Praesentationen.Model;
 
 namespace Effektive_Praesentationen.View
 {
     /// <summary>
     /// Interaktionslogik für PresentationLoopView.xaml
     /// </summary>
-    public partial class PresentationLoopView : UserControl
+    public partial class PresentationLoopView : UserControl, IMediaPlayer
     {
         public PresentationLoopView()
         {
             InitializeComponent();
+
+        }
+
+        public bool AutoPlay()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Play()
+        {
+            this.MediaPlayer.Play();
         }
     }
 }

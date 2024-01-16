@@ -12,6 +12,7 @@ using Effektive_Praesentationen.Extension;
 using Effektive_Praesentationen.Core;
 using System.Diagnostics;
 using Effektive_Praesentationen.Service;
+using System.Windows.Navigation;
 
 namespace Effektive_Praesentationen.ViewModel
 {
@@ -35,6 +36,7 @@ namespace Effektive_Praesentationen.ViewModel
         public void NavigateToPresentationLoop()
         {
             Navigation.NavigateTo<PresentationLoopViewModel>();
+
         }
 
         [RelayCommand]
@@ -44,9 +46,29 @@ namespace Effektive_Praesentationen.ViewModel
             Chapters.DefaultChapter = path;
         }
 
+        [RelayCommand]
+        public void PathNavigateToPresentationLoop(string path)
+        {
+            Navigation.PathNavigateTo<PresentationLoopViewModel>(path);
+
+            if (Navigation.CurrentViewModel is PresentationLoopViewModel presentationLoopViewModel)
+            {
+                presentationLoopViewModel.FilePath = path;
+            }
+        }
+
+        [RelayCommand]
+        public void NavigateToPresentationLoopComposite(string path)
+        {
+            NavigateToPresentationLoop();
+            PathNavigateToPresentationLoop(path);
+        }
+
         public void OnFilesDropped(string[] files)
         {
             ChaptersSetDefaultChapter(files[0]);
+
+            PathNavigateToPresentationLoop(files[0]);
         }
     }
 }

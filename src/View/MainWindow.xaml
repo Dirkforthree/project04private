@@ -15,7 +15,7 @@
         <StackPanel Name="ImagePanel" >
             <Button Background="Transparent" extension:DropFilesBehaviorExtension.IsEnabled="True">Drop Here</Button>
             <TextBlock x:Name="defaultChapterPathText" Text="{Binding Chapters.DefaultChapter}"/>
-            <Button Content="Present" Command="{Binding NavigateToPresentationLoopCommand}"></Button>
+            <Button Content="Present" Command="{Binding NavigateToPresentationLoopCompositeCommand}"></Button>
 
         </StackPanel>
         <ContentControl Content="{Binding Navigation.CurrentViewModel}">

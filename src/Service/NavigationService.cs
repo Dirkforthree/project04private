@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Effektive_Praesentationen.Core;
+using Effektive_Praesentationen.Interface;
 
 namespace Effektive_Praesentationen.Service
 {
@@ -12,6 +13,7 @@ namespace Effektive_Praesentationen.Service
     {
         Core.ViewModel CurrentViewModel { get; }
         void NavigateTo<T>() where T : Core.ViewModel;
+        void PathNavigateTo<T>(string filePath) where T : Core.ViewModel;
     }
     
     public partial class NavigationService : ObservableRecipient, INavigationService
@@ -30,6 +32,18 @@ namespace Effektive_Praesentationen.Service
         public void NavigateTo<TViewModel>() where TViewModel : Core.ViewModel
         {
             Core.ViewModel viewModel = _viewModelFactory.Invoke(typeof(TViewModel));
+            CurrentViewModel = viewModel;
+        }
+
+        public void PathNavigateTo<TViewModel>(string filePath) where TViewModel : Core.ViewModel
+        {
+            Core.ViewModel viewModel = _viewModelFactory.Invoke(typeof(TViewModel));
+
+            if (viewModel is IFileNavigableViewModel fileNavigableViewModel)
+            {
+                fileNavigableViewModel.SetFilePath(filePath);
+            }
+
             CurrentViewModel = viewModel;
         }
     }
