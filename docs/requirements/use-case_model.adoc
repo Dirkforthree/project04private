@@ -16,15 +16,6 @@ Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure in
 * *UC02*: Präsentieren der Präsentation (Präsentator)
 * *UC03*: Medien unterteilen in Kapiteln (Präsentator)
 * *UC04*: Einblenden von Zusatzinformationen (Präsentator)
-* *UC05*: 
-* *UC06*: 
-* *UC07*: 
-* *UC08*: 
-* *UC09*: 
-* *UC10*: 
-* *UC11*: 
-* *UC12*: 
-* *UC13*: 
 
 == Use Case Diagramm
 // ...
