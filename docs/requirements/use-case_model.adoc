@@ -1,17 +1,19 @@
 = Use-Case Model: {project-name}
 Quoc Tinh La <quoctinh.la@stud.htw-dresden.de>
+
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Allgemeine Informationen
+
 Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure innerhalb der "ZEISS Digital Innovation GmbH". Präsentatoren sollen effektive Präsentationen erstellen, steuern und gegebenenfalls auf Fragen von Zuhörern aktiv auf Inhalte zugreifen können.  Diese Akteure spiegeln sich in verschiedenen Use Cases wider, die von der Erstellung bis zur Vorführung von Präsentationen reichen.
 // ...
 
-
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
+
 * *UC01*: Laden eines Mediums in das System (Präsentator)
 * *UC02*: Präsentieren der Präsentation (Präsentator)
 * *UC03*: Medien unterteilen in Kapiteln (Präsentator)
