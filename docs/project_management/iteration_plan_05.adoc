@@ -4,19 +4,15 @@ Jork Luca lucathomas.jork@stud.htw-dresden.de
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
-
-
-
 == Meilensteine
-//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
 
 [%header, cols="3,1"]
 |===
 | Protoype fertigstellen für präsentation  | 23.1 + 26.1
 
-| Beginn der Iteration | KW 1
+| Beginn der Iteration | 5.1.24
 
-| Ende der Iteration | KW 3
+| Ende der Iteration | 16.1.24
 |===
 
 
@@ -24,27 +20,16 @@ include::../_includes/default-attributes.inc.adoc[]
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
 * protoypen fertigstellen
-* docs fehlerfrei 
-* auf main committen
-* Auftraggeber Meeting 
+* dokumente fertigstellen und in main branch pullen 
+* regelmäßiges Meeting mit dem Auftraggeber durchführen 
 
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
 
-siehe  *https://github.com/orgs/seproject04/projects/1/views/4[ Überblick  - Iteration 5]*
+siehe  *https://github.com/users/Dirkforthree/projects/7/views/3[ Überblick  - Iteration 5]*
 
-
-== Probleme (optional)
-//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
-
-[%header, cols="2,1,3"]
-|===
-| Problem | Status | Notizen
-
- 
-|===
 
 
 == Bewertungskriterien
@@ -65,19 +50,24 @@ siehe  *https://github.com/orgs/seproject04/projects/1/views/4[ Überblick  - It
 | Projektstatus	| grün
 |===
 
-* Beurteilung im Vergleich zu den Zielen
-//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-* aufgaben wurden erledigt, implementierung macht super job  
+*Beurteilung im Vergleich zu den Zielen*
 
-* Geplante vs. erledigte Aufgaben
-//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-* aufgaben gut verteilt, ziele wurden super eingehalten 
+- protoyp bedarf mehr zeit als im vorhinein angedacht aufgrund komplexität 
+- auftraggeber meeting erfolgreich durchgeführt 
+- dokumente fertiggestellt
 
-* Beurteilung im Vergleich zu den Bewertungskriterien
-//Document whether you met the evaluation criteria as specified in the Iteration Plan.
-//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-* Bewertungskritereien konnten innerhalb des Teams erfüllt werden 
 
-* Andere Belange und Abweichungen
-//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+*Geplante vs. erledigte Aufgaben*
+
+- dokumente ordnen und zusammenführen zieht sich länger als gedacht 
+--> rechtschreibung, ordnung etc. 
+
+*Beurteilung im Vergleich zu den Bewertungskriterien*
+
+Die Bewertungskriterien wurden erfüllt. 
+
+Auftraggebermeeting findet alle zwei Wochen statt.
+
+Die Planung der kommenden Iteration findet in Absprache mit dem Auftraggeber statt. 
+
 
