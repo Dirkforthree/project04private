@@ -18,13 +18,14 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 == Systemweite funktionale Anforderungen
 :sectnums!:
 === ANF-01: Dateiload und -verwaltung
-Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Detein und deren Kapitelunterteilung dauerhaft gespeichert werden. Hierzu müssen sich die Pfade und Kapitelunterteilungen ändern lassen.
+Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4, AVI) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Dateien und deren Kapitelunterteilung dauerhaft gespeichert werden. Es sollten mindestens 2 Präsentationen gleichzeitig verwaltet werden können.
 
 === ANF-02: Interaktive Präsentation
-Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw.
+Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw., mit einer Reaktionszeit von maximal 2 Sekunden für Folienwechsel und 1 Sekunde für Start/Pause von Videos.
+
 
 === ANF-03: Offline-Nutzung
-Die Anwendung sollte auch ohne Internetverbindung funktionieren, da Messen möglicherweise eine unzuverlässige Netzwerkverbindung haben können.
+Die Anwendung sollte auch ohne Internetverbindung funktionieren, wobei 100% der Präsentationsfunktionen offline verfügbar sein müssen.
 
 :sectnums:
 == Qualitätsanforderungen für das Gesamtsystem
@@ -37,7 +38,8 @@ Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usabil
 :sectnums!:
 ==== ANF-04: Intuitive Benutzeroberfläche
 :sectnums!:
-Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die es den Benutzern ermöglicht, Präsentationen und Videos einfach zu laden, zu organisieren und zu präsentieren.
+Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die durch Usability-Tests mit mindestens 30 Benutzern bestätigt wird, wobei 90% der Tester die Benutzeroberfläche als "intuitiv" oder "leicht zu verwenden" bewerten sollten.
+
 
 :sectnums:
 === Zuverlässigkeit (Reliability)
@@ -45,14 +47,15 @@ Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die es den Benu
 
 :sectnums!:
 ==== ANF-05: Stabilität
-Die Anwendung sollte stabil laufen und nicht anfällig für Abstürze oder unerwartetes Verhalten sein, insbesondere während Live-Präsentationen auf Messen.
+Die Anwendung sollte eine Verfügbarkeitsrate von 99,9% aufweisen und in Usability-Tests nicht mehr als einmal pro 100 Stunden Nutzung abstürzen.
 
 :sectnums:
 === Effizienz (Performance)
 :sectnums!:
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 ==== ANF-06: Schnelle Ladezeiten
-Die Anwendung sollte schnell Präsentationen und Videos laden, um eine reibungslose Interaktion während der Präsentation sicherzustellen.
+Die Anwendung sollte Präsentationen und Videos innerhalb von maximal 5 Sekunden laden.
+
 
 :sectnums:
 === Wartbarkeit (Supportability)
