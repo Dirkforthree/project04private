@@ -147,9 +147,9 @@ Diese Angaben bieten einen Überblick über die Arbeitsumgebung des Nutzers und 
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Medienintegration | hoch | Integration von Powerpoint, 4K-Videos, Word-Dokument, PDFs | xx
-| "Edit"-Modus | hoch | Zusatzinformationen erstellen und bearbeiten, Kapitel erstellen | xx 
-| "Spectate"-Modus | mittel | Endschleifmodues/ Kapitelmodus, Zusatzinformationen betrachten, Kapitel wecheseln, Präsentation anhalten/ starten | xx 
+| Medienintegration | hoch | Integration von Powerpoint, 4K-Videos, Word-Dokument, PDFs | in Planung
+| "Edit"-Modus | hoch | Zusatzinformationen erstellen und bearbeiten, Kapitel erstellen | in Planung
+| "Spectate"-Modus | mittel | Endschleifmodues/ Kapitelmodus, Zusatzinformationen betrachten, Kapitel wecheseln, Präsentation anhalten/ starten | in Planung
 |===
 
 == Zusätzliche Produktanforderungen
@@ -166,22 +166,21 @@ Hinweise:
 |===
 | Anforderung | Priorität | Geplantes Release
 | *Wesentliche Standards, Hardware oder andere Plattformanforderungen:* |  | 
-| aktuell gängigste .NET Version als Hauptentwicklungsplattform | xx | xx
-| unterstützt gängige Medienformate (wie Powerpoint, 4K Videos, Word, PDF) | xx | xx
-| einfache Installierbarkeit | xx | xx
-| keine Lizensierung | xx | xx 
+| aktuell gängigste .NET Version als Hauptentwicklungsplattform | mittel | 17.11.2023
+| unterstützt gängige Medienformate (wie Powerpoint, 4K Videos, Word, PDF) | hoch | in Planung
+| einfache Installierbarkeit | mittel | in Planung
+| keine Lizensierung | mittel | 09.01.2024 
 | *Leistungsanforderungen:* |  |  
-| schnelle und effiziente Ladezeit | xx | xx 
-| schnelle Reaktionszeit auf Benutzerinteraktion | xx | xx 
-| auf unterschiedlichen Hardwarekonfigurationen skalierbar sein | xx | xx 
+| schnelle und effiziente Ladezeit | mittel | in Planung 
+| schnelle Reaktionszeit auf Benutzerinteraktion | mittel | in Planung 
+| auf unterschiedlichen Hardwarekonfigurationen skalierbar sein | hoch | 23.01.2024 
 | *Umgebungsanforderungen:* |  |  
-| Offline Nutzung | xx | xx 
+| Offline Nutzung | niedrig | 09.01.2024 
 | *Qualitätsanforderung:* |  | 
-| hohe Leistung für eine reibungslose Präsentationserlebnis | xx | xx 
-| sollte robust und bei Fehlern stabil sein | xx | xx 
-| Benutzeroberfläche sollte benutzerfreundlich und intuitiv sein | xx | xx 
+| hohe Leistung für eine reibungslose Präsentationserlebnis | mittel | in Planung 
+| sollte robust und bei Fehlern stabil sein | mittel | in Planung 
+| Benutzeroberfläche sollte benutzerfreundlich und intuitiv sein | hoch | in Planung 
 | *Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten:* |  |  
-| Nutzung von aktuell gängigste .NET Version als Hauptentwicklungslatform | xx | xx 
-| Desktop-Umgebung und keine spezielle Hardware erforderlich | xx | xx 
+| Desktop-Umgebung und keine spezielle Hardware erforderlich | mittel | in Planung 
 
 |===
