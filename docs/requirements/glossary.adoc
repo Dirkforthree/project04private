@@ -13,6 +13,15 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 | Begriff | Definition und Erläuterung | Synonyme
 //| Kommissionierung | Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags | (keine)
+| Agile Softwareentwicklung | Agile Methodik ist ein Ansatz in der Softwareentwicklung, der inkrementelle Lieferung, Teamzusammenarbeit, kontinuierliche Planung und kontinuierliches Lernen betont. | Flexible Softwareentwicklung, Adaptive Softwareenwticklung, Iterative Softwareentwicklung (Synonyme können unterschiedliche Aspekte und Methoden der agilen Softwareentwicklung betonen)
+| Backend | Das Backend bezieht sich auf die Serverseite einer Softwareanwendung, einschließlich der Datenbank, der Serverlogik und der Anwendungsintegration. | Rückseite (im Kontext der Softwareentwicklung) 
+| Framework | In der Softwareentwicklung ist ein Framework eine Plattform zur Entwicklung von Softwareanwendungen. Es bietet eine Grundlage, auf der Softwareentwickler Programme für eine bestimmte Plattform erstellen können. | Gerüst, Struktur, Rahmenvorgabe
+| Git | Git ist ein verteiltes Versionskontrollsystem zur Verfolgung von Änderungen im Quellcode während der Softwareentwicklung. | Github
+| xx | xx | xx
+| xx | xx | xx
+| xx | xx | xx
+| xx | xx | xx
+| xx | xx | xx
 | xx | xx | xx
 |===
 
@@ -22,6 +31,14 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 | Abkürzung | Bedeutung | Erläuterung
 //| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
+| API | Application Programming Interface | Eine Reihe von Regeln und Protokollen zum Erstellen und Interagieren mit Softwareanwendungen.
+| IDE | Integrierte Entwicklungsumgebung | Eine Software-Suite, die grundlegende Werkzeuge für Softwaretests und -schreiben zusammenfasst.
+| MVVM | Model-View-Viewmodel | MVVM Toolkit ist eine Sammlung von Werkzeugen und Frameworks, die Entwicklern Anleitung und Unterstützung beim Erstellen von Desktop- und mobilen Anwendungen unter Verwendung des Model-View-ViewModel (MVVM)-Musters bieten.
+| WPF | Windows Presentation Foundation | Ein grafisches Subsystem von Microsoft zur Darstellung von Benutzeroberflächen in Windows-basierten Anwendungen. WPF verwendet XAML (Extensible Application Markup Language), um ein deklaratives Modell für die Benutzeroberfläche bereitzustellen.
+| xx | xx | xx
+| xx | xx | xx
+| xx | xx | xx
+| xx | xx | xx
 | xx | xx | xx
 |===
 
@@ -36,58 +53,14 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
 | Login
 
-| xx
-| xx
-| xx
-| xx
-| xx
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
+| xx | xx | xx | xx | xx 
 |===
-
-
-
-
-= Glossar
-:sectnums:
-:toc: left
-:toclevels: 1
-
-Dieses Glossar bietet Definitionen für Begriffe und Konzepte, die in unserem Softwareentwicklungsprojekt verwendet werden.
-
-== A
-
-=== Agile Softwareentwicklung
-Agile Methodik ist ein Ansatz in der Softwareentwicklung, der inkrementelle Lieferung, Teamzusammenarbeit, kontinuierliche Planung und kontinuierliches Lernen betont.
-
-=== API
-API (Application Programming Interface) ist eine Reihe von Regeln und Protokollen zum Erstellen und Interagieren mit Softwareanwendungen.
-
-== B
-
-=== Backend
-Das Backend bezieht sich auf die Serverseite einer Softwareanwendung, einschließlich der Datenbank, der Serverlogik und der Anwendungsintegration.
-
-== F
-
-=== Framework
-In der Softwareentwicklung ist ein Framework eine Plattform zur Entwicklung von Softwareanwendungen. Es bietet eine Grundlage, auf der Softwareentwickler Programme für eine bestimmte Plattform erstellen können.
-
-== G
-
-=== Git
-Git ist ein verteiltes Versionskontrollsystem zur Verfolgung von Änderungen im Quellcode während der Softwareentwicklung.
-
-== I
-
-=== IDE
-IDE (Integrierte Entwicklungsumgebung) ist eine Software-Suite, die grundlegende Werkzeuge für Softwaretests und -schreiben zusammenfasst.
-
-== M
-
-=== MVVM Toolkit
-MVVM Toolkit ist eine Sammlung von Werkzeugen und Frameworks, die Entwicklern Anleitung und Unterstützung beim Erstellen von Desktop- und mobilen Anwendungen unter Verwendung des Model-View-ViewModel (MVVM)-Musters bieten.
-
-== W
-
-=== WPF
-WPF (Windows Presentation Foundation) ist ein grafisches Subsystem von Microsoft zur Darstellung von Benutzeroberflächen in Windows-basierten Anwendungen. WPF verwendet XAML (Extensible Application Markup Language), um ein deklaratives Modell für die Benutzeroberfläche bereitzustellen.
-
