@@ -4,24 +4,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Effektive_Praesentationen"
-        xmlns:extension="clr-namespace:Effektive_Praesentationen.Extension"
         xmlns:localVM="clr-namespace:Effektive_Praesentationen.ViewModel" d:DataContext="{d:DesignInstance Type=localVM:MainWindowViewModel}"
         xmlns:viewModel="clr-namespace:Effektive_Praesentationen.ViewModel" 
         xmlns:view="clr-namespace:Effektive_Praesentationen.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="{Binding WindowTitle}" Height="450" Width="800">
 
     <Grid>
-        <StackPanel Name="ImagePanel" >
-            <Button Background="Transparent" extension:DropFilesBehaviorExtension.IsEnabled="True">Drop Here</Button>
-            <TextBlock x:Name="defaultChapterPathText" Text="{Binding Chapters.DefaultChapter}"/>
-            <Button Content="Present" Command="{Binding NavigateToPresentationLoopCommand}"></Button>
-
-        </StackPanel>
+       
         <ContentControl Content="{Binding Navigation.CurrentViewModel}">
             <ContentControl.Resources>
-                <DataTemplate DataType="{x:Type viewModel:PresentationLoopViewModel}">
-                    <view:PresentationLoopView/>
+                <DataTemplate DataType="{x:Type viewModel:FileSelectionViewModel}">
+                    <view:FileSelectionView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type viewModel:InactiveLoopViewModel}">
+                    <view:InactiveLoopView/>
                 </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>

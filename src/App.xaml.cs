@@ -21,7 +21,8 @@ namespace Effektive_Praesentationen
                 DataContext = provider.GetRequiredService<MainWindowViewModel>()
             });
             services.AddSingleton<MainWindowViewModel>();
-            services.AddSingleton<PresentationLoopViewModel>();
+            services.AddSingleton<FileSelectionViewModel>();
+            services.AddSingleton<InactiveLoopViewModel>();
             services.AddSingleton<INavigationService,NavigationService>();
             services.AddSingleton<Func<Type,Core.ViewModel>>(serviceProvider => viewModelType => (Core.ViewModel) serviceProvider.GetRequiredService(viewModelType));
             _serviceProvider=services.BuildServiceProvider();

@@ -15,38 +15,22 @@ using Effektive_Praesentationen.Service;
 
 namespace Effektive_Praesentationen.ViewModel
 {
-    public partial class MainWindowViewModel : Core.ViewModel, IFilesDropped
+    public partial class MainWindowViewModel : Core.ViewModel
     {
-
-        [ObservableProperty]
-        private Model.Chapters chapters;
 
         [ObservableProperty]
         private INavigationService _navigation;
 
-       
+        [ObservableProperty]
+        private string _windowTitle="Effektive Praesentationen";
+
         public MainWindowViewModel(INavigationService navService)
         {
             Navigation = navService;
-            this.chapters = new Model.Chapters();
+            Navigation.NavigateTo<FileSelectionViewModel>();
         }
 
-        [RelayCommand]
-        public void NavigateToPresentationLoop()
-        {
-            Navigation.NavigateTo<PresentationLoopViewModel>();
-        }
+   
 
-        [RelayCommand]
-        public void ChaptersSetDefaultChapter(string path)
-        {
-            // TODO: Make sure path is correct
-            Chapters.DefaultChapter = path;
-        }
-
-        public void OnFilesDropped(string[] files)
-        {
-            ChaptersSetDefaultChapter(files[0]);
-        }
     }
 }

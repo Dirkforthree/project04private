@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Effektive_Praesentationen.View
 {
     /// <summary>
-    /// Interaktionslogik für PresentationLoopView.xaml
+    /// Interaktionslogik für InactiveLoopView.xaml
     /// </summary>
-    public partial class PresentationLoopView : UserControl
+    public partial class InactiveLoopView : UserControl
     {
-        public PresentationLoopView()
+        public InactiveLoopView()
         {
             InitializeComponent();
         }
