@@ -24,6 +24,11 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Zusatzinformationen | Informtationen, welche man in der Präsentation zusätzlich anschauen kann, um bestimmte Stellen von Präsentationen weiter zu erläutern | Ergänzung, zusätzliche Details, Extrainformationen
 | "Endslosschleife"-Funktion | Ist einer der zwei Möglichkeiten, Präsentationen abzuspielen. Hierbei wird eine Präsentation automatisch von neuen abgespielt, wenn diese endet | Dauerschleife, unendliche Schleife
 | "Kapitel"-Funktion | Ist die zweite Möglichkeit, Präsentationen vorzustellen. Die Präsentation wird in Kapiteln vorgestellt. | Segment, Abschnitt 
+| File Selection | Ein Fenster im System, welches die Auswahl von Medien ermöglicht | / 
+| Presentation Loop | Ein Fenster im System, indem man Präsentationen in Dauerschleife abspielen lässt | / 
+| Settings | Ein Fenster im System, indem man Einstellungen zur Präsentationen ermöglicht | / 
+| Chapter Selection | Ein Fenster im System, indem man zu gewissen Kapiteln von Präsentationen übergehen kann | / 
+| Chapter Loop | Ein Fenster im System, welches ein kleines Video in der "Kapitel"-Funktion in Dauerschleife abspielt | / 
 |===
 
 
