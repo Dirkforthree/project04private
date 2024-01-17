@@ -17,12 +17,13 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Backend | Das Backend bezieht sich auf die Serverseite einer Softwareanwendung, einschließlich der Datenbank, der Serverlogik und der Anwendungsintegration. | Rückseite (im Kontext der Softwareentwicklung) 
 | Framework | In der Softwareentwicklung ist ein Framework eine Plattform zur Entwicklung von Softwareanwendungen. Es bietet eine Grundlage, auf der Softwareentwickler Programme für eine bestimmte Plattform erstellen können. | Gerüst, Struktur, Rahmenvorgabe
 | Git | Git ist ein verteiltes Versionskontrollsystem zur Verfolgung von Änderungen im Quellcode während der Softwareentwicklung. | Github
-| xx | xx | xx
-| xx | xx | xx
-| xx | xx | xx
-| xx | xx | xx
-| xx | xx | xx
-| xx | xx | xx
+| .NET8 | Ein Hauptentwicklungsprogramm, welche eine Sammlung von Frameworks und Tools besitzt, die on Microsoft entwickelt wurde, um die Entwicklung und Ausführung von Softwareentwicklung zu erleichtern | .NET Core, .NET5/6/... welche ältere Versionen von .NET8 sind
+| "Edit"-Modus | Betriebszustand, welches dem Nutzer des Systems ermöglicht, Präsentationen zu erstellen/ zu bearbeiten. | /
+| "Spectate"-Modus | Betriebszustand, in dem der Nutzer (in erster Linie der Präsentator) ermöglicht, eine Präsentation vorzuführen | /
+| Medienintegration | Im Falle unseres Systems, die Einbindung von Medien mit gängigen Medienformate, wie Powerpoint, Videos, Word-Dokumenten, PDFs in das System | xx
+| Zusatzinformationen | Informtationen, welche man in der Präsentation zusätzlich anschauen kann, um bestimmte Stellen von Präsentationen weiter zu erläutern | Ergänzung, zusätzliche Details, Extrainformationen
+| "Endslosschleife"-Funktion | Ist einer der zwei Möglichkeiten, Präsentationen abzuspielen. Hierbei wird eine Präsentation automatisch von neuen abgespielt, wenn diese endet | Dauerschleife, unendliche Schleife
+| "Kapitel"-Funktion | Ist die zweite Möglichkeit, Präsentationen vorzustellen. Die Präsentation wird in Kapiteln vorgestellt. | Segment, Abschnitt 
 |===
 
 
