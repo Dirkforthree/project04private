@@ -4,46 +4,47 @@ Luca Jork lucathomas.jork@stud.htw-dresden.de
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
-
 == Einführung
 
-Das Ziel dieses Projekts ist die Entwicklung einer Software, die das Arbeiten mit PowerPoint-Präsentationen und Videos auf Firmenmessen revolutioniert und intelligentere Interaktionen ermöglicht. Der Bedarf für eine solche Software entstand aus der Erkenntnis, dass es derzeit keine Lösungen gibt, die speziell auf die Anforderungen von Präsentationen und Vorführungen in professionellen Messen und Meetings zugeschnitten sind.
+Das vorliegende Projekt verfolgt das ambitionierte Ziel, eine wegweisende Software zu entwickeln, die die Arbeitsweise im Umgang mit PowerPoint-Präsentationen und Videos auf Unternehmensmessen transformiert und intelligentere Interaktionen ermöglicht. Der Bedarf für eine solche Software wurde durch die Erkenntnis geweckt, dass derzeit keine Lösungen existieren, die speziell auf die Anforderungen von Präsentationen und Vorführungen im Rahmen professioneller Messen und Meetings zugeschnitten sind.
 
-Mit der Nutzung von .NET 8 und den neuesten technologischen Entwicklungen zielt unser Projekt darauf ab, eine intuitive und effiziente Lösung zu schaffen. Die Software wird speziell für Personen konzipiert, die Firmen auf Messen repräsentieren, sowie für den Einsatz in Meetings, wo eine tiefere Interaktion mit PowerPoint-Präsentationen gefordert ist.
+Durch den Einsatz von .NET 8 und den neuesten technologischen Fortschritten strebt unser Projekt danach, eine intuitive und äußerst effiziente Lösung zu kreieren. Die Software wird gezielt für Personen entwickelt, die Unternehmen auf Messen repräsentieren, sowie für den Einsatz in Meetings, in denen eine tiefgehende Interaktion mit PowerPoint-Präsentationen erforderlich ist.
 
-Das Endprodukt wird eine funktionsfähige und vorzeigbare Software sein, die den Alltag der Nutzer vereinfacht und die Präsentationserfahrung auf ein neues Niveau hebt.
-
+Das Endprodukt wird eine voll funktionsfähige und beeindruckende Software sein, die den Arbeitsalltag der Nutzer erheblich erleichtert und die Präsentationserfahrung auf ein neues Niveau hebt. Unsere Lösung wird nicht nur die Effizienz steigern, sondern auch durch ihre Benutzerfreundlichkeit und fortschrittlichen Funktionen einen Mehrwert bieten. 
 
 == Projektorganisation
-//Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
-|===
-|              | *Mail*                                             | *Rolle*                   |
-| *Valine Richter* | valine.richter@stud.htw-dresden.de                | Analyse/Test                   |
-| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de     | Implementierung           |
-| *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de               | Projektleiter             |
-| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de             | Archtiekt/Implementierung|
-| *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de             | Implementierung           |
-| *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de     | Analyse/Test                  |
-| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de                   | Analyse              |
-|===
+=== Teammitglieder 
+
+Das siebenköpfige Team ist durch eine reichhaltige Mischung aus verschiedenen Persönlichkeiten und Interessen geprägt, bestehend aus einem Wirtschaftsingenieur, zwei Informatikern und drei Wirtschaftsinformatiker:innen. Diese vielseitige Kombination bildet das solide Fundament für eine ausgezeichnete Zusammenarbeit. Bei jeder auftretenden Herausforderung oder Aufgabe steht jemand im Team bereit, der entweder bereits Erfahrungen im entsprechenden Fachgebiet gesammelt hat oder motiviert ist, sich intensiv mit dem jeweiligen Thema auseinanderzusetzen und die Verantwortung dafür zu übernehmen. Diese dynamische Interaktion trägt maßgeblich zum Erfolg und zur Effizienz des Teams bei.
+
+|====
+|*Name*         | *Mail*                                          |*Studiengang* |            |  *Rolle*|
+| *Valine Richter* | valine.richter@stud.htw-dresden.de            |Wirtschaftsinformatik |    | Analyse/Test|
+| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de  |Wirtschaftsinformatik |    | Implementierung|
+| *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de           |Wirtschaftsinformatik |    | Projektleiter|
+| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de        |Informatik |               | Archtiekt/Implementierung|
+| *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de        |Informatik |               | Implementierung|
+| *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de|Wirtschaftsinformatik|     | Analyse/Test|
+| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de               | Wirtschaftsingenieurwesen|     |Analyse       |
+|====
 
 
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 
-Unser Projekt folgt den Prinzipien der agilen Softwareentwicklung, wobei der Schwerpunkt auf kontinuierlicher Integration und enger Zusammenarbeit im Team liegt. Die spezifischen Praktiken und Bewertungsmethoden umfassen:
 
-* **Agile Softwareentwicklung:** Anpassungsfähige Planung, evolutionäre Entwicklung, frühzeitige Auslieferung und kontinuierliche Verbesserung mit dem Fokus auf Flexibilität und Kundennutzen.
+Unsere Projektentwicklung folgt den essenziellen Prinzipien der agilen Softwareentwicklung, wobei ein besonderer Fokus auf kontinuierlicher Integration und engem Teamzusammenhalt liegt. Diese agilen Praktiken und Bewertungsmethoden prägen unsere Vorgehensweise:
 
-* **Kontinuierliche Integration:** Regelmäßiges Zusammenführen von Arbeitskopien in einen gemeinsamen Hauptzweig, um frühzeitig Fehler zu erkennen und die Softwarequalität zu verbessern. Dies wird durch die Nutzung von GitHub Actions unterstützt.
+Im Bereich der agilen Softwareentwicklung legen wir Wert auf anpassungsfähige Planung, evolutionäre Entwicklung, frühzeitige Auslieferung und kontinuierliche Verbesserung. Dabei liegt unser Hauptaugenmerk auf Flexibilität und dem Schaffen von Kundennutzen.
 
-* **Nutzung von GitHub:** Verwendung von GitHub für die Verwaltung von Issues, Projektdokumentation, Versionskontrolle und als zentrale Plattform für die Zusammenarbeit.
+Die kontinuierliche Integration ist ein zentraler Bestandteil unseres Ansatzes. Durch regelmäßiges Zusammenführen von Arbeitskopien in einen gemeinsamen Hauptzweig erkennen wir frühzeitig Fehler und steigern die Qualität der Software kontinuierlich. Dies wird durch den Einsatz von GitHub Actions als unterstützendes Instrument ermöglicht.
 
-* **Fortschrittsverfolgung über Meilensteine:** Die Überwachung des Projektfortschritts erfolgt durch die Festlegung und Bewertung von Meilensteinen. Jeder Meilenstein repräsentiert ein wichtiges Ziel oder einen Abschnitt des Projekts und hilft, den Fortschritt klar und messbar zu machen.
+Die Nutzung von GitHub ist für uns nicht nur eine Plattform, sondern vielmehr das Herzstück unserer Projektorganisation. Hier verwalten wir Issues, halten unsere Projektdokumentation aktuell, führen Versionskontrolle durch und nutzen es als zentrale Plattform für eine effektive und kollaborative Zusammenarbeit.
 
-Diese Praktiken ermöglichen es dem Team, effizient und reaktionsschnell auf Änderungen zu reagieren und die Qualität des Endprodukts sicherzustellen.
+Die Fortschrittsverfolgung über Meilensteine ermöglicht uns die klare Definition und Bewertung von bedeutenden Zielen oder Abschnitten des Projekts. Dies trägt dazu bei, den Fortschritt transparent, klar und messbar zu gestalten.
 
+Diese durchdachten Praktiken befähigen unser Team dazu, effizient und flexibel auf Veränderungen zu reagieren. Gleichzeitig gewährleisten sie eine ständige Qualitätsverbesserung des Endprodukts. Letztlich tragen sie zu einer erfolgreichen Umsetzung unserer Projekttätigkeiten bei.
 
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
