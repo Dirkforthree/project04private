@@ -2,12 +2,11 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-
-== Use-Case: UC01 laden eines Mediums in das System (Powerpoint, Videos)
+== Use-Case: UC01 laden eines Mediums in das System und Abspielen des Mediums
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieser Use Case ermöglicht es dem Präsentator ein Medium, darunter PowerPoint-Präsentationen und Videos, in das System zu laden.
+Dieser Use Case ermöglicht es dem Präsentator ein Medium, darunter PowerPoint-Präsentationen und Videos, in das System zu laden und abzuspielen
 
 === Kurzbeschreibung der Akteure
 
@@ -24,10 +23,9 @@ Die Person, die verschiedene Medien (Powerpoint-Präsentationen, Videos) in das 
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn Präsentator das System öffnet
-
-. Das System zeigt einen Dialog zur Auswahl von einen Medium im "Edit"-Modus an
-. Präsentator wählt gewünschtes Medium aus (Powerpoint-Präsentationen, Videos) und bestätigt die Auswahl
-. Bei erfolgreicher Überprüfung wird das Medium in das System geladen und steht für die Präsentation zu Verfügung
+. Das System zeigt einen Dialog zur Auswahl von einen Medium
+. Präsentator wählt gewünschtes Medium (Videos) aus und bestätigt die Auswahl
+. Bei erfolgreicher Überprüfung wird das Medium in das System geladen und steht zum Abspielen zur Verfügung
 . Das System bestätigt die erfolgreiche Auswahl
 
 === Alternative Abläufe
@@ -45,35 +43,29 @@ Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fe
 
 ==== Öffnen des Systems
 
-. Nutzer öffnet auf seinem Computer das System
+. Nutzer öffnet auf seinem/ ihrem Computer das System
 . System fährt hoch
-. System zeigt Dialogfenster, welches "Edit"-Modus und "Spectate"-Modus vorgibt
+. System zeigt das Dialogfenster "File-Selection"
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== Präsentator lädt Video hoch
+==== Präsentator lädt Video im System und spielt das Video ab
 
-. im ersten Dialogfenster wählt der Präsentator zwischen den Auswahlen "Edit"-Modus und "Spectate"-Modus das erste aus
-. neues Dialogfenster erscheint
-. im neuen Dialogfenster wählt Präsentator die "Auswahl"-Funktion aus
-. Präsentator wählt entweder eine Powerpoint-Präsentation oder ein Video aus
-. System überprüft das Medium und lädt die Datei auf das System hoch
-. System bestätigt den erfolgreichen Upload
+. im ersten Dialogfenster wählt der Präsentator ein Medium aus
+. dieses Video steht zum Abspielen zur Verfügung
+. durch betätigen des "Abspiel"-Knopf, öffnet sich ein neues Fenster
+. im neuen Fenster wird das Video abgespielt
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== Medienverfügbarkeit
-
-. Die schon ausgewählten Medien sind im System verfügbar und können im Präsentationen eingebunden werden
-
 ==== Zustand für die eingebundenen Medien
-. Das System befindet sich im Zustand "Bereit für die Präsentation"
+
+. Das System befindet im Zustand, welches das ausgewählte Medium abspielen kann
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
 
 ==== gängiger Formate
 . System arbeitet mit gängigen Formaten, wie Powerpoint oder Videos

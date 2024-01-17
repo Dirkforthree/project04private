@@ -14,7 +14,7 @@ Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure in
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
 
-* *UC01*: Laden eines Mediums in das System (Präsentator)
+* *UC01*: Laden eines Mediums in das System und Abspielen des Mediums (Präsentator)
 * *UC02*: Präsentieren der Präsentation (Präsentator)
 * *UC03*: Medien unterteilen in Kapiteln (Präsentator)
 * *UC04*: Einblenden von Zusatzinformationen (Präsentator)
@@ -23,7 +23,7 @@ Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure in
 // ...
 
 .Use Case Diagramm
-[plantuml, "{diagramsdir}/syntax-example3", svg]
+[plantuml, "{diagramsdir}/use_case_diagram", svg]
 ....
 include::{plantumlsdir}/use_case_diagram.puml[]
 ....

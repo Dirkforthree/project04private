@@ -1,8 +1,6 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
-
-
 == Use-Case: UC02 Präsentieren der Präsentation
 
 === Kurzbeschreibung
@@ -16,7 +14,6 @@ Die Person, die die Präsentation erstellt und vorführt
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-
 - Die Präsentation ist erfolgreich erstellt und zugänglich für das System
 - Das System ist im "Spectate"-Modus zugänglich.
 
@@ -25,7 +22,6 @@ Die Person, die die Präsentation erstellt und vorführt
 
 . Der Use Case beginnt, wenn der Präsentator das System öffnet
 . Das System fragt im "Spectate"-Modus, welche Präsentation präsentiert werden soll, wobei der Präsentator eine vorhandene Präsentation auswählt
-
 . Ein weiterer Dialogfenster fragt, ob es im "Endlosschleife"-Funktion oder die "Kapitel"-Funktion aufgeführt werden soll
 . *"Endlosschleife"-Funktion wird ausgewählt*
 .. Die Präsentation wird ausgeführt
@@ -82,7 +78,6 @@ Wenn der Präsentator im Schritt 2 des Standardablauf eine fehlerhafte Präsenta
 - Die Präsentation wurde erfolgreich durchgeführt.
 - Das System befindet sich im Zustand vor dem Start der Präsentation.
 
-
 ==== Erfolgreiche Durchführung der Präsentation durch "Endlosschleife"-Funktion
 . Präsentation wird komplett abgespielt
 . Präsentation fängt vom neuen an
@@ -97,7 +92,6 @@ Wenn der Präsentator im Schritt 2 des Standardablauf eine fehlerhafte Präsenta
 - Die Software sollte barrierefrei sein und die Bedürfnisse von seh- oder hörbeeinträchtigten Personen berücksichtigen.
 - Die Präsentationssoftware muss offline funktionieren und keine Internetkosten auf Messen verursachen.
 - Die Anwendung sollte auf der .NET 8 Plattform entwickelt werden.
-
 
 ==== Intuitive Benutzeroberfläche
 . System soll eine intuitive Benutzeroberfläche für Präsentator und Zuhöher bieten
