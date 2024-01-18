@@ -10,7 +10,24 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <MediaElement x:Name="MediaPlayer" Source="{Binding FileUri}"/>
+            <MediaElement x:Name="MediaPlayer" Source="{Binding FileUri}" >
+                <MediaElement.Triggers>
+                    <EventTrigger RoutedEvent="MediaElement.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+
+                                    <!-- The MediaTimeline has a RepeatBehavior="Forever" which makes the media play
+                            over and over indefinitely.-->
+                                    <MediaTimeline Source="{Binding FileUri}"  Storyboard.TargetName="MediaPlayer"  
+                                          RepeatBehavior="Forever" />
+
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </MediaElement.Triggers>
+            </MediaElement>
         </StackPanel>
     </Grid>
 </UserControl>

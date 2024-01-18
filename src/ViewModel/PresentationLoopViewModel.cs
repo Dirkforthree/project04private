@@ -15,6 +15,8 @@ using Effektive_Praesentationen.Service;
 using System.Windows.Navigation;
 using System.Dynamic;
 using Effektive_Praesentationen.Interface;
+using System.Windows.Media;
+using System.Windows;
 
 namespace Effektive_Praesentationen.ViewModel
 {
