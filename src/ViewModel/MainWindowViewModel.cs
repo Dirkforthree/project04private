@@ -15,6 +15,7 @@ using Effektive_Praesentationen.Service;
 
 namespace Effektive_Praesentationen.ViewModel
 {
+
     public partial class MainWindowViewModel : Core.ViewModel
     {
 
@@ -29,8 +30,6 @@ namespace Effektive_Praesentationen.ViewModel
             Navigation = navService;
             Navigation.NavigateTo<FileSelectionViewModel>();
         }
-
-   
 
     }
 }

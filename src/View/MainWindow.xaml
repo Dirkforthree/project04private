@@ -11,6 +11,7 @@
         Title="{Binding WindowTitle}" Height="450" Width="800">
 
     <Grid>
+
        
         <ContentControl Content="{Binding Navigation.CurrentViewModel}">
             <ContentControl.Resources>
@@ -22,5 +23,6 @@
                 </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>
+
     </Grid>
 </Window>

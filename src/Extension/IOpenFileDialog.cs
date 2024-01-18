@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace Effektive_Praesentationen.Extension
+namespace Effektive_Präsentation.Extension
 {
     /// <summary>
-    /// IFilesDropped Interface for the windows drag and drop behavior
+    /// IOpenFileDialog Interface for the open file windows dialog
     /// </summary>
-    public interface IFilesDropped
+    internal interface IOpenFileDialog
     {
-        void OnFilesDropped(string[] files);
+        void OnFileSelected(string[] files);
     }
 }
