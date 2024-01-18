@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Effektive_Praesentationen.Interface
+namespace Effektive_Praesentationen.Extension
 {
     internal interface IFileNavigableViewModel
     {

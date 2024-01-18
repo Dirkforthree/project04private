@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Effektive_Praesentationen.Interface;
+using Effektive_Praesentationen.Extension;
 using Effektive_Praesentationen.Model;
 
 namespace Effektive_Praesentationen.View

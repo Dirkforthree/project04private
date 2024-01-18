@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Effektive_Praesentationen.Core;
-using Effektive_Praesentationen.Interface;
+using Effektive_Praesentationen.Extension;
 
 namespace Effektive_Praesentationen.Service
 {
