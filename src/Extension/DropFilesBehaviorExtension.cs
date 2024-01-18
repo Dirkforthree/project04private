@@ -1,7 +1,8 @@
-﻿using System.Diagnostics;
+﻿using Effektive_Praesentationen.Extension;
+using System.Diagnostics;
 using System.Windows;
 
-namespace Effektive_Präsentation.Extension
+namespace Effektive_Praesentationen.Extension
 {
     /// <summary>
     /// Drop files Behavior

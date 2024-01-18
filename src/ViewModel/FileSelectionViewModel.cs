@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Effektive_Praesentationen.ViewModel
 {
-    public partial class FileSelectionViewModel : Core.ViewModel, IFilesDropped
+    public partial class FileSelectionViewModel : Core.ViewModel, IFilesDropped, IOpenFileDialog
     {
         [ObservableProperty]
         private Model.Chapters _chapters;
@@ -42,6 +42,11 @@ namespace Effektive_Praesentationen.ViewModel
             ChaptersSetDefaultChapter(files[0]);
         }
 
-       
+        public void OnFileSelected(string[] files)
+        {
+            ChaptersSetDefaultChapter(files[0]);
+        }
+
+
     }
 }

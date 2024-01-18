@@ -11,7 +11,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <StackPanel Name="ImagePanel" VerticalAlignment="Center" HorizontalAlignment="Center" >
-            <Button Background="Transparent" extension:DropFilesBehaviorExtension.IsEnabled="True"  Height="200" Width="400">Drop Here</Button>
+            <Button Background="Transparent" extension:DropFilesBehaviorExtension.IsEnabled="True" extension:OpenFileDialogBehaviorExtension.IsEnabled="True" Height="200" Width="400">Drop Here</Button>
             <TextBlock x:Name="defaultChapterPathText" Text="{Binding Chapters.DefaultChapter}"/>
         </StackPanel>
         <Button Content="Present" Height="70" Width="120" VerticalAlignment="Bottom" HorizontalAlignment="Right"

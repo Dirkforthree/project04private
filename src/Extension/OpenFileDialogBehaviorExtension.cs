@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Windows;
 
-namespace Effektive_Präsentation.Extension
+namespace Effektive_Praesentationen.Extension
 {
     /// <summary>
     /// Open File Dialog Behavior
