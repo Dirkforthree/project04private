@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Effektive_Präsentation.Model
+namespace Effektive_Praesentationen.Model
 {
     public partial class Chapter : ObservableObject
     {

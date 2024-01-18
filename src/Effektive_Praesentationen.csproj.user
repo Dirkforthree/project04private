@@ -7,12 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="View\PresentationLoopView.xaml.cs">
+    <Compile Update="View\FileSelectionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InactiveLoopView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="View\PresentationLoopView.xaml">
+    <Page Update="View\FileSelectionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InactiveLoopView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

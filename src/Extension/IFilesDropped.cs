@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace Effektive_Präsentation.Extension
+namespace Effektive_Praesentationen.Extension
 {
     /// <summary>
     /// IFilesDropped Interface for the windows drag and drop behavior
