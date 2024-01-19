@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Effektive_Praesentationen.Extension;
+using Effektive_Praesentationen.Model;
 
 namespace Effektive_Praesentationen.View
 {
@@ -23,6 +25,16 @@ namespace Effektive_Praesentationen.View
         public InactiveLoopView()
         {
             InitializeComponent();
+        }
+
+        public bool AutoPlay()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Play()
+        {
+            this.MediaPlayer.Play();
         }
     }
 }

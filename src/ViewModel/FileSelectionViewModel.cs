@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Navigation;
 
 namespace Effektive_Praesentationen.ViewModel
 {
@@ -37,14 +38,35 @@ namespace Effektive_Praesentationen.ViewModel
             Chapters.DefaultChapter = path;
         }
 
+        [RelayCommand]
+        public void PathNavigateToInactiveLoop(string path)
+        {
+            Navigation.PathNavigateTo<InactiveLoopViewModel>(path);
+
+            if (Navigation.CurrentViewModel is InactiveLoopViewModel inactiveLoopViewModel)
+            {
+                inactiveLoopViewModel.FilePath = path;
+            }
+        }
+
+        [RelayCommand]
+        public void NavigateToInactiveLoopComposite(string path)
+        {
+            NavigateToInactiveLoop();
+            PathNavigateToInactiveLoop(path);
+        }
+
+
         public void OnFilesDropped(string[] files)
         {
             ChaptersSetDefaultChapter(files[0]);
+            PathNavigateToInactiveLoop(files[0]);
         }
 
         public void OnFileSelected(string[] files)
         {
             ChaptersSetDefaultChapter(files[0]);
+            PathNavigateToInactiveLoop(files[0]);
         }
 
 
