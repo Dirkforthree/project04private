@@ -59,9 +59,9 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
 | Login
 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
+| Medium | Ist eine Datei zur Nutzung von Präsentationen | / | Formate wie mp4, Power Point, PDF, Word | / 
+| Chapter (vorläufig) | Medium, welches als Präsentation in endlosschleife als auch in Kapiteln angezeigt werden kann | String | Verfügung über ein gültiges Medium | / 
+| Chapters (vorläufig) | xx | xx | xx | xx 
 | xx | xx | xx | xx | xx 
 | xx | xx | xx | xx | xx 
 | xx | xx | xx | xx | xx 
