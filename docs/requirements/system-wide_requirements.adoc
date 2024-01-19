@@ -1,5 +1,5 @@
 = System-Wide Requirements: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Luca Jork  lucathomas.jork@stud.htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -16,47 +16,85 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 
 == Systemweite funktionale Anforderungen
-//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+:sectnums!:
+=== ANF-01: Dateiload und -verwaltung
+Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Detein und deren Kapitelunterteilung dauerhaft gespeichert werden. Hierzu müssen sich die Pfade und Kapitelunterteilungen ändern lassen.
 
+=== ANF-02: Interaktive Präsentation
+Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw.
 
+=== ANF-03: Offline-Nutzung
+Die Anwendung sollte auch ohne Internetverbindung funktionieren, da Messen möglicherweise eine unzuverlässige Netzwerkverbindung haben können.
+
+:sectnums:
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
+Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usability, Reliability, Performance, Supportability - Funktion, Benutzbarkeit, Zuverlässigkeit, Leistungsfähigkeit, Wartbarkeit) können wir spezifische Qualitätsanforderungen für das Gesamtsystem Ihrer Messe-Anwendungssoftware definieren:
+
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+:sectnums!:
+==== ANF-04: Intuitive Benutzeroberfläche
+:sectnums!:
+Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die es den Benutzern ermöglicht, Präsentationen und Videos einfach zu laden, zu organisieren und zu präsentieren.
 
+:sectnums:
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
-=== Effizienz (Performance)
-// Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+:sectnums!:
+==== ANF-05: Stabilität
+Die Anwendung sollte stabil laufen und nicht anfällig für Abstürze oder unerwartetes Verhalten sein, insbesondere während Live-Präsentationen auf Messen.
 
+:sectnums:
+=== Effizienz (Performance)
+:sectnums!:
+// Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+==== ANF-06: Schnelle Ladezeiten
+Die Anwendung sollte schnell Präsentationen und Videos laden, um eine reibungslose Interaktion während der Präsentation sicherzustellen.
+
+:sectnums:
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+:sectnums!:
+==== ANF-07: Update- und Wartungsfähigkeit
+Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durchgeführt werden können, um etwaige Fehler oder Verbesserungen zu implementieren.
 
 
+:sectnums:
 == Zusätzliche Anforderungen
 
-=== Technische Einschränkungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+:sectnums!:
+=== ANF-08: Technische Einschränkungen
+Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den meisten gängigen Geräten und unter den üblichen Systemlasten reibungslos läuft.
 
-=== Interface Anforderungen
-// Describe both the user interface and interfaces with external systems.
+Verwendung von .NET 8 und C#: Alle Softwarekomponenten, Bibliotheken und Frameworks sollten mit .NET 8 kompatibel sein und in der Programmiersprache C# entwickelt werden.
 
-=== Geschäftsregeln
-// Besides technical requirements, also consider the particular business domain in which the system needs to fit.
+Plattformunterstützung: Die Anwndung soll zunächst nur mit dem Betriebssystem (Windows ) kompatibel sein.
 
-=== Organisatorische Randbedingungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
+=== ANF-09: Interface Anforderungen
+Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Plattformen zu gewährleisten.
 
-=== Rechtliche Anforderungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
+Externe Schnittstellen: Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
+
+=== ANF-10: Geschäftsregeln
+Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
+
+
+=== ANF-11: Organisatorische Randbedingungen
+Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
+
+=== ANF-12: Normen und Standards:
+Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
+
+=== ANF-13: Rechtliche Anforderungen
+Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
+
+Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
+
+
+=== ANF-14: Localisaiton 
+Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern
+
+:sectnums:
