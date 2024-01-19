@@ -22,13 +22,14 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | "Spectate"-Modus | Betriebszustand, in dem der Nutzer (in erster Linie der Präsentator) ermöglicht, eine Präsentation vorzuführen | /
 | Medienintegration | Im Falle unseres Systems, die Einbindung von Medien mit gängigen Medienformate, wie Powerpoint, Videos, Word-Dokumenten, PDFs in das System | xx
 | Zusatzinformationen | Informtationen, welche man in der Präsentation zusätzlich anschauen kann, um bestimmte Stellen von Präsentationen weiter zu erläutern | Ergänzung, zusätzliche Details, Extrainformationen
-| "Endslosschleife"-Funktion | Ist einer der zwei Möglichkeiten, Präsentationen abzuspielen. Hierbei wird eine Präsentation automatisch von neuen abgespielt, wenn diese endet | Dauerschleife, unendliche Schleife
+| "Endlosschleife"-Funktion | Ist einer der zwei Möglichkeiten, Präsentationen abzuspielen. Hierbei wird eine Präsentation automatisch von neuen abgespielt, wenn diese endet | Dauerschleife, unendliche Schleife
 | "Kapitel"-Funktion | Ist die zweite Möglichkeit, Präsentationen vorzustellen. Die Präsentation wird in Kapiteln vorgestellt. | Segment, Abschnitt 
 | File Selection | Ein Fenster im System, welches die Auswahl von Medien ermöglicht | / 
 | Presentation Loop | Ein Fenster im System, indem man Präsentationen in Dauerschleife abspielen lässt | / 
 | Settings | Ein Fenster im System, indem man Einstellungen zur Präsentationen ermöglicht | / 
 | Chapter Selection | Ein Fenster im System, indem man zu gewissen Kapiteln von Präsentationen übergehen kann | / 
 | Chapter Loop | Ein Fenster im System, welches ein kleines Video in der "Kapitel"-Funktion in Dauerschleife abspielt | / 
+| Medium | Ist eine Datei zur Nutzung von Präsentationen | Datei
 |===
 
 
@@ -52,16 +53,8 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase
-
-| Anmeldedaten
-| Zusammensetzung von Benutzername und Passwort.
-| String
-| Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
-| Login
-
-| Medium | Ist eine Datei zur Nutzung von Präsentationen | / | Formate wie mp4, Power Point, PDF, Word | / 
-| Chapter (vorläufig) | Medium, welches als Präsentation in endlosschleife als auch in Kapiteln angezeigt werden kann | String | Verfügung über ein gültiges Medium | / 
-| Chapters (vorläufig) | xx | xx | xx | xx 
+| Chapter | Ist ein Teil eines Medium mit Start und Endpunkt zur Präsentation | Pfad: String, Startpunkt: Timestamp, Endpunkt: Timestamp, Titel: String, Beschreibung: String | Pfad: muss ein "/" beinhalten und nach dem letzten "/" ein Punkt haben, valide Dateiendung eines Videos, Startpunkt: darf nicht kleiner als 0 sein, Start- und Endpunkt: darf nicht außerhalb des Gültigkeitsbereich sein (für Video: Videolänge, für Power Point: Seitenanzahl) | / 
+| xx | xx | xx | xx | xx 
 | xx | xx | xx | xx | xx 
 | xx | xx | xx | xx | xx 
 | xx | xx | xx | xx | xx 
