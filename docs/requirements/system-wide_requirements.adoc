@@ -31,7 +31,7 @@ Die Anwendung sollte auch ohne Internetverbindung funktionieren, wobei 100% der 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
-Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usability, Reliability, Performance, Supportability - Funktion, Benutzbarkeit, Zuverlässigkeit, Leistungsfähigkeit, Wartbarkeit) können wir spezifische Qualitätsanforderungen für das Gesamtsystem Ihrer Messe-Anwendungssoftware definieren:
+Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usability, Reliability, Performance, Supportability - Funktion, Benutzbarkeit, Zuverlässigkeit, Leistungsfähigkeit, Wartbarkeit) können wir spezifische Qualitätsanforderungen für das Gesamtsystem unsrer Messe-Anwendungssoftware definieren:
 
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
