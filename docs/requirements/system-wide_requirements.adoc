@@ -18,7 +18,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 == Systemweite funktionale Anforderungen
 :sectnums!:
 === ANF-01: Dateiload und -verwaltung
-Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4, AVI) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Dateien und deren Kapitelunterteilung dauerhaft gespeichert werden. Es sollten mindestens 2 Präsentationen gleichzeitig verwaltet werden können.
+Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos verschiedener Dateiformate (z. B. PPTX, MP4, AVI) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Dateien und deren Kapitelunterteilung dauerhaft gespeichert werden. Es sollten mindestens 2 Präsentationen gleichzeitig verwaltet werden können.
 
 === ANF-02: Interaktive Präsentation
 Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw., mit einer Reaktionszeit von maximal 2 Sekunden für Folienwechsel und 1 Sekunde für Start/Pause von Videos.
@@ -31,7 +31,7 @@ Die Anwendung sollte auch ohne Internetverbindung funktionieren, wobei 100% der 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
-Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usability, Reliability, Performance, Supportability - Funktion, Benutzbarkeit, Zuverlässigkeit, Leistungsfähigkeit, Wartbarkeit) können wir spezifische Qualitätsanforderungen für das Gesamtsystem unsrer Messe-Anwendungssoftware definieren:
+Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usability, Reliability, Performance, Supportability - Funktion, Benutzbarkeit, Zuverlässigkeit, Leistungsfähigkeit, Wartbarkeit) können wir spezifische Qualitätsanforderungen für das Gesamtsystem unserer Messe-Anwendungssoftware definieren:
 
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
@@ -61,8 +61,8 @@ Die Anwendung sollte Präsentationen und Videos innerhalb von maximal 5 Sekunden
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 :sectnums!:
-==== ANF-07: Update- und Wartungsfähigkeit
-Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durchgeführt werden können, um etwaige Fehler oder Verbesserungen zu implementieren.
+==== ANF-07: Updatekompatibilität
+Die Anwendung sollte so entwickelt sein, dass problemlos Updates durch Neuinstallation durchgeführt werden können, um etwaige Fehler zu beheben oder Verbesserungen zu implementieren.
 
 
 :sectnums:
@@ -70,19 +70,23 @@ Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durc
 
 :sectnums!:
 === ANF-08: Technische Einschränkungen
-Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den meisten gängigen Geräten und unter den üblichen Systemlasten reibungslos läuft.
+Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den vom Auftraggeber während Messen eingesetzten Geräten und unter den üblichen Systemlasten reibungslos läuft.
 
 Verwendung von .NET 8 und C#: Alle Softwarekomponenten, Bibliotheken und Frameworks sollten mit .NET 8 kompatibel sein und in der Programmiersprache C# entwickelt werden.
 
-Plattformunterstützung: Die Anwndung soll zunächst nur mit dem Betriebssystem (Windows ) kompatibel sein.
+Plattformunterstützung: Die Anwndung soll zunächst nur mit dem Betriebssystem (Windows) kompatibel sein.
 
 === ANF-09: Interface Anforderungen
-Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Plattformen zu gewährleisten.
+Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Geräten zu gewährleisten.
+
+Fokus auf Touch: Das Interface sollte so konzipiert sein, dass es von 90% der Testgruppe als "für Touchscreens ausgelegt" empfunden wird.
 
 Externe Schnittstellen: Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
 
 === ANF-10: Geschäftsregeln
 Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
+
+Markenschutz und Urheberrecht: Die Software darf nicht als Produkt des Auftraggebers aufgefasst werden.
 
 
 === ANF-11: Organisatorische Randbedingungen
@@ -97,7 +101,7 @@ Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, u
 Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
 
 
-=== ANF-14: Localisaiton 
-Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern
+=== ANF-14: Lokalisierung 
+Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern.
 
 :sectnums:
