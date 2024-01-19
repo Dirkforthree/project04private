@@ -13,9 +13,9 @@ actor Präsentator
 actor Zuschauer
 
 rectangle "Desktop Anwendung - E04_Effektive_Präsentation" {
-  usecase "UC01\n Hochladen verschiedener Medien" as uc01 
-  usecase "UC02\nInteragieren der Präsentation" as uc02
-  usecase "UC03\nErstellen \nvon Präsentationen" as uc03
+  usecase "UC01\n Laden eines Mediums in das System und Abspielen des Mediums" as uc01 
+  usecase "UC02\n Präsentieren der Präsentation" as uc02
+  usecase "UC03\n Medien unterteilen in Kapiteln" as uc03
   usecase "UC04\n Einblenden \von Zusatzinformationen" as uc04
 
 }

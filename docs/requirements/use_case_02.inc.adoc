@@ -1,12 +1,11 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
-
-== Use-Case: UC02 Interagieren der Präsentation
+== Use-Case: UC02 Präsentieren der Präsentation
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieser Use Case beschreibt die Interaktion mit der Präsentationssoftware, sowohl vom Präsentator aus. Es umfasst das Hochladen, Abspielen und Interagieren mit verschiedenen Medien während einer Präsentation.
+Dieser Use Case beschreibt die Interaktion mit der Präsentationssoftware vom Präsentator aus. Es umfasst das Abspielen und Interagieren einer Präsentation.
 
 === Kurzbeschreibung der Akteure
 ==== Präsentator
@@ -15,7 +14,7 @@ Die Person, die die Präsentation erstellt und vorführt
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-- Die Präsentation ist erfolgreich erstellt und hochgeladen.
+- Die Präsentation ist erfolgreich erstellt und zugänglich für das System
 - Das System ist im "Spectate"-Modus zugänglich.
 
 === Standardablauf (Basic Flow)
@@ -23,11 +22,11 @@ Die Person, die die Präsentation erstellt und vorführt
 
 . Der Use Case beginnt, wenn der Präsentator das System öffnet
 . Das System fragt im "Spectate"-Modus, welche Präsentation präsentiert werden soll, wobei der Präsentator eine vorhandene Präsentation auswählt
-. Ein weiterer Dialogfesnter fragt, ob es im "Endlosschleife"-Funktion oder die "Kapitel"-Funktion aufgeführt werden soll
+. Ein weiterer Dialogfenster fragt, ob es im "Endlosschleife"-Funktion oder die "Kapitel"-Funktion aufgeführt werden soll
 . *"Endlosschleife"-Funktion wird ausgewählt*
 .. Die Präsentation wird ausgeführt
-.. Der Präsentator kann nach Bedarf die Präsentation anhalten, Zusatzinformationen einblenden oder zu bestimmtel Kapitel wechseln
-.. Die Präsentation wird bis zum Schluss ausgeführt oder de Präsentator schließt die Präsentation
+.. Der Präsentator kann nach Bedarf die Präsentation anhalten, Zusatzinformationen einblenden oder zu bestimmte Kapitel wechseln
+.. Die Präsentation wird bis zum Schluss ausgeführt und wiederholt sich endlos bis der Präsentator die Präsentation schließt
 .. Der Use Case ist abgeschlossen.
 . *"Kapitel"-Funktion wird ausgewählt*
 .. Die Präsentation wird ausgeführt, startet im Hauptbildschrim der Präsentation mit den untergegliederten Kapitel
@@ -45,8 +44,9 @@ Wenn der Präsentator im Schritt 2 des Standardablauf keine vorhandene Präsenta
 
 ==== Präsentation ist fehlerhaft
 Wenn der Präsentator im Schritt 2 des Standardablauf eine fehlerhafte Präsentation auswählt, dann
-. zeigt das System in einem neuen Dialogfenster ein Fehlermeldung an
-. Der Use Cas wird im Schritt 2 fortgesetzt.
+
+. zeigt das System in einem neuen Dialogfenster eine Fehlermeldung an
+. Der Use Case wird im Schritt 2 fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -59,10 +59,16 @@ Wenn der Präsentator im Schritt 2 des Standardablauf eine fehlerhafte Präsenta
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Zusatzinformationen einblenden
+. Präsentator spielt eine Präsentation ab
+. Präsentator ruft nach Wunsch Zusatzinformationen auf
+. nach Einblendung der Zusatzinformationen schließt der Präsentator die Zusatzinformationen
+. Präsentation wird wie gewohnt weiter abgespielt
+
+==== Pausieren der Präsentation
+. Zuhörer stellt dem Präsentator eine Frage
+. Präsentator pausiert die Präsentation
+. nach Klärung der Frage wird die Präsentation wie gewohnt weiter abgespielt
 
 - *Szenario 1:* Der Präsentator zeigt ein Video und fügt währenddessen spontan Zusatzinformationen hinzu.
 - *Szenario 2:* Ein Zuhörer stellt eine Frage, der Präsentator pausiert die Präsentation, gibt eine Antwort und setzt die Präsentation fort.
@@ -72,8 +78,13 @@ Wenn der Präsentator im Schritt 2 des Standardablauf eine fehlerhafte Präsenta
 - Die Präsentation wurde erfolgreich durchgeführt.
 - Das System befindet sich im Zustand vor dem Start der Präsentation.
 
+==== Erfolgreiche Durchführung der Präsentation durch "Endlosschleife"-Funktion
+. Präsentation wird komplett abgespielt
+. Präsentation fängt vom neuen an
 
-==== <Nachbedingung 1>
+==== Erfolgreiche Durchführung der Präsentation durch "Kapitel"-Funktion
+. ausgewähltes Kapitel wird komplett abgespielt
+. Präsentation landet im Hauptbildschirm der Präsentation
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
@@ -82,6 +93,5 @@ Wenn der Präsentator im Schritt 2 des Standardablauf eine fehlerhafte Präsenta
 - Die Präsentationssoftware muss offline funktionieren und keine Internetkosten auf Messen verursachen.
 - Die Anwendung sollte auf der .NET 8 Plattform entwickelt werden.
 
-
-==== <Besondere Anforderung 1>
-
+==== Intuitive Benutzeroberfläche
+. System soll eine intuitive Benutzeroberfläche für Präsentator und Zuhöher bieten
