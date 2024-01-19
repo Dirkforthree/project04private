@@ -23,7 +23,7 @@ namespace Effektive_Praesentationen.ViewModel
         private INavigationService _navigation;
 
         [ObservableProperty]
-        private string _windowTitle="Effektive Praesentationen";
+        private string _windowTitle="FileSelection";
 
         public MainWindowViewModel(INavigationService navService)
         {

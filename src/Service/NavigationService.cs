@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Effektive_Praesentationen.Core;
 using Effektive_Praesentationen.Extension;
+using Effektive_Praesentationen.ViewModel;
 
 namespace Effektive_Praesentationen.Service
 {
@@ -32,19 +33,25 @@ namespace Effektive_Praesentationen.Service
         public void NavigateTo<TViewModel>() where TViewModel : Core.ViewModel
         {
             Core.ViewModel viewModel = _viewModelFactory.Invoke(typeof(TViewModel));
+            if (CurrentViewModel is not null)
+            {
+                MainWindowViewModel mainViewModel = (MainWindowViewModel)_viewModelFactory.Invoke(typeof(MainWindowViewModel));
+                mainViewModel.WindowTitle = viewModel.viewName;
+            }
             CurrentViewModel = viewModel;
         }
 
         public void PathNavigateTo<TViewModel>(string filePath) where TViewModel : Core.ViewModel
         {
             Core.ViewModel viewModel = _viewModelFactory.Invoke(typeof(TViewModel));
-
             if (viewModel is IFileNavigableViewModel fileNavigableViewModel)
             {
                 fileNavigableViewModel.SetFilePath(filePath);
             }
 
             CurrentViewModel = viewModel;
+            MainWindowViewModel mainViewModel = (MainWindowViewModel)_viewModelFactory.Invoke(typeof(MainWindowViewModel));
+            mainViewModel.WindowTitle = viewModel.viewName;
         }
     }
 }

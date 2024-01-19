@@ -37,6 +37,7 @@ namespace Effektive_Praesentationen.ViewModel
         {
             Chapters = new Model.Chapters();
             Navigation = navService;
+            viewName = "FileSelection";
         }
 
         [RelayCommand(CanExecute = nameof(FileValid))]

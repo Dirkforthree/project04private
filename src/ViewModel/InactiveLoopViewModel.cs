@@ -71,6 +71,7 @@ namespace Effektive_Praesentationen.ViewModel
         public InactiveLoopViewModel(INavigationService navService)
         {
             Navigation = navService;
+            viewName = "InactiveLoop";
         }
     }
 }

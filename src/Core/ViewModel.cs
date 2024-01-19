@@ -9,5 +9,6 @@ namespace Effektive_Praesentationen.Core
 {
     public class ViewModel : ObservableRecipient
     {
+        public string? viewName { get; set; }
     }
 }

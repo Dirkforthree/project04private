@@ -11,18 +11,6 @@
         Title="{Binding WindowTitle}" Height="450" Width="800">
 
     <Grid>
-
-       
-        <ContentControl Content="{Binding Navigation.CurrentViewModel}">
-            <ContentControl.Resources>
-                <DataTemplate DataType="{x:Type viewModel:FileSelectionViewModel}">
-                    <view:FileSelectionView/>
-                </DataTemplate>
-                <DataTemplate DataType="{x:Type viewModel:InactiveLoopViewModel}">
-                    <view:InactiveLoopView/>
-                </DataTemplate>
-            </ContentControl.Resources>
-        </ContentControl>
-
+        <Frame NavigationUIVisibility="Hidden" Content="{Binding Navigation.CurrentViewModel}"/>
     </Grid>
 </Window>
