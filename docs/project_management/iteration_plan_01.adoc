@@ -12,10 +12,9 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Beginn der Iteration | KW 45
-| Ende der Iteration | KW 47
+| Beginn der Iteration | KW 45 - 07.11.2023
+| Ende der Iteration | KW 47 - 21.11.2023
 |===
-
 
 == Wesentliche Ziele
 
@@ -26,13 +25,10 @@ include::../_includes/default-attributes.inc.adoc[]
 * Kontaktaufnahme mit Auftraggeber und Coach
 * Terminvereinbarungen
 
-
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-
 siehe  *https://github.com/orgs/seproject04/projects/1/views/4[ Überblick  - Iteration 1]*
-
 
 == Bewertungskriterien
 
@@ -54,17 +50,17 @@ siehe  *https://github.com/orgs/seproject04/projects/1/views/4[ Überblick  - It
 
 *Beurteilung im Vergleich zu den Zielen*
 
-Die Github Organisation, dass Project sowie die repositorys wurden aufgesetzt. 
+Die Github Organisation, dass Projekt sowie die Repositories wurden aufgesetzt. 
 
-Für kommende Meetings mit dem Team sowie mit das erste Treffen mit dem Auftraggeber wurde terminlich festgehalten.
+Für kommende Meetings mit dem Team sowie das erste Treffen mit dem Auftraggeber wurde zeitlich festgehalten.
 
-Das Team kommuniziert vorwiegend über WhattsApp, für online Meetings gibt es einen Discord Server. Mitschriften werden via Pentapad gestaltet. 
+Das Team kommuniziert vorwiegend über WhattsApp, für online Meetings gibt es einen Discord Server. Mitschriften werden via Pentapad festgehalten. 
 
-Die Rollenverteilung wurde durchgeführt, ebenso wurden für due jeweiligen rollen Hauptverantwortliche festgelegt. 
+Die Rollenverteilung wurde durchgeführt, ebenso wurde für die jeweiligen Rollen ein/e Hauptverantwortliche/r festgelegt. 
 
 *Geplante vs. erledigte Aufgaben*
 
-Alle Aufgaben wurden erledgit. Das Github bedarf noch mehr liebe vom Team. Termine wurden alle eingehalten sowie die Meetings mit dem Auftraggeber und dem Team durchgeführt. 
+Alle Aufgaben wurden erledigt. Das Github bedarf noch einer tiefgründigeren Auseinandersetzung vom Team. Termine wurden alle eingehalten sowie die Meetings mit dem Auftraggeber und dem Team durchgeführt. 
 
 *Beurteilung im Vergleich zu den Bewertungskriterien*
 
