@@ -17,7 +17,11 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 == Systemweite funktionale Anforderungen
 :sectnums!:
-=== ANF-01: Dateiload und -verwaltung
+
+=== NFA-01: Licensing
+Das System benötigt keine Lizensierung und soll eine freie Software sein. Diesbezüglich müssen die Nutzer der Software bestimmte Vereinbarungen zustimmen.
+
+=== NFA-02: Dateiload und -verwaltung
 Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos verschiedener Dateiformate (z. B. PPTX, MP4, AVI) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Dateien und deren Kapitelunterteilung dauerhaft gespeichert werden. Es sollten mindestens 2 Präsentationen gleichzeitig verwaltet werden können.
 
 === ANF-02: Interaktive Präsentation
@@ -26,9 +30,6 @@ Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu s
 
 === ANF-03: Offline-Nutzung
 Die Anwendung sollte auch ohne Internetverbindung funktionieren, wobei 100% der Präsentationsfunktionen offline verfügbar sein müssen.
-
-NFA01: Licensing. Das System benötigt keine Lizensierung und soll eine freie Software sein. Diesbezüglich müssen die Nutzer der Software bestimmte Vereinbarungen zustimmen.
-
 
 :sectnums:
 == Qualitätsanforderungen für das Gesamtsystem
@@ -39,9 +40,12 @@ Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usabil
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 :sectnums!:
-==== ANF-04: Intuitive Benutzeroberfläche
+==== NFU-01: Ease of learning 
 :sectnums!:
-Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die durch Usability-Tests mit mindestens 30 Benutzern bestätigt wird, wobei 90% der Tester die Benutzeroberfläche als "intuitiv" oder "leicht zu verwenden" bewerten sollten.
+Das System sollte so aufgebaut werden, sodass die Anwendung von den Stakeholdern in kürzester Zeit verstandenn werden kann.
+
+==== NFU-02: Task Efficiency 
+Die Stakeholder sollten die funktionalität schnell durchschauen und das System in maximal 5 Mausklicks 
 
 
 :sectnums:
