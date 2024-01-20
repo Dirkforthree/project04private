@@ -1,0 +1,61 @@
+= Iteration Plan 05: {project-name}
+Jork Luca lucathomas.jork@stud.htw-dresden.de 
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Meilensteine
+
+[%header, cols="3,1"]
+|===
+| Prototyp fertigstellen für Präsentation  | 23.1 + 26.1
+
+| Beginn der Iteration | KW 1 - 5.1.24
+| Ende der Iteration | KW 3 - 16.1.24
+|===
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Prototyp fertigstellen
+* Dokumente fertigstellen und in main branch pullen 
+* regelmäßiges Meeting mit dem Auftraggeber durchführen 
+* Zwischenpräsentation abhalten
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+siehe  *https://github.com/users/Dirkforthree/projects/7/views/3[ Überblick  - Iteration 5]*
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+* Prototyp ist fertig 
+* docs fehlerfrei 
+* Aufgaben erledigt
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | gesamte Iteration
+| Assessment Datum | 15.1.2024
+| Teilnehmer | das gesamte Team
+| Projektstatus	| im Soll
+|===
+
+*Beurteilung im Vergleich zu den Zielen*
+
+- Prototyp bedarf mehr Zeit als im vorhinein angedacht aufgrund komplexität 
+- Auftraggeber meeting erfolgreich durchgeführt 
+- Dokumente fertiggestellt
+- Präsentation begonnen
+
+*Geplante vs. erledigte Aufgaben*
+
+- Dokumente ordnen und zusammenführen zieht sich länger als gedacht aufgrund Rechtschreibung, Ordnung, etc. 
+
+*Beurteilung im Vergleich zu den Bewertungskriterien*
+
+- Die Bewertungskriterien wurden erfüllt. 
+- Auftraggebermeeting findet alle zwei Wochen statt.
