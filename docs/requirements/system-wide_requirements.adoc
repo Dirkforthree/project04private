@@ -27,6 +27,9 @@ Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu s
 === ANF-03: Offline-Nutzung
 Die Anwendung sollte auch ohne Internetverbindung funktionieren, wobei 100% der Präsentationsfunktionen offline verfügbar sein müssen.
 
+NFA01: Licensing. Das System benötigt keine Lizensierung und soll eine freie Software sein. Diesbezüglich müssen die Nutzer der Software bestimmte Vereinbarungen zustimmen.
+
+
 :sectnums:
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
