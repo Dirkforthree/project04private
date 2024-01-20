@@ -14,7 +14,6 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema
 
 NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
 
-
 == Systemweite funktionale Anforderungen
 :sectnums!:
 
@@ -33,6 +32,7 @@ Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usabil
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 :sectnums!:
+
 === NFU-01: Ease of learning 
 :sectnums!:
 Das System sollte so aufgebaut werden, sodass die Anwendung von den Stakeholdern in kürzester Zeit verstandenn werden kann.
@@ -48,7 +48,6 @@ Die Elemente des Systems sind ohne weitere Rechereche verstädnlich für den Nut
 
 === NFU-05: Subjective satisfaction
 Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, welche mindestens 90% der Tester aus einer Testgruppe von min. 10 Testern als "intuitiv" oder "leicht zu verwenden" bewerten sollten. 
-
 
 :sectnums:
 === Zuverlässigkeit (Reliability)
@@ -76,6 +75,7 @@ Diese führen zu einem Datenverlust oder machen wesentliche Funktionen des Syste
 === Effizienz (Performance)
 :sectnums!:
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+
 === NFP-01: Response times
 Die Anwendung sollte Präsentationen und Videos innerhalb von maximal 5 Sekunden laden.
 
@@ -99,10 +99,12 @@ Das System sollte so konzipiert sein, dass es bei gleichzeitigem Upload von bis 
 === NFP-03: Start-up
 Das System sollte binnen 5 Sekunden einsatzfähig sein.
 
+
 :sectnums:
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 :sectnums!:
+
 === NFS-01: Adaptability
 Die Anwendung sollte so entwickelt sein, sodass sie sich an verschieden Geräten mit diversen Bildschirmgrößen problemlos abspielen lässt. 
 
@@ -139,7 +141,6 @@ Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforde
 
 Markenschutz und Urheberrecht: Die Software darf nicht als Produkt des Auftraggebers aufgefasst werden.
 
-
 === NFS-04: Organisatorische Randbedingungen
 Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
 
@@ -147,10 +148,10 @@ Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien f
 Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
 
 === NFS-06: Rechtliche Anforderungen
+
 Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
 
 Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
-
 
 === NFS-07: Lokalisierung 
 Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern.

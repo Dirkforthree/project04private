@@ -1,0 +1,87 @@
+= Iteration Plan 02: {project-name}
+Jork Luca lucathomas.jork@stud.htw-dresden.de 
+{localdatetime}
+
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+Am Ende der Iteration soll der Meilenstein „Lifecycle Objectives Milestone“ erreicht werden.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein | Datum
+
+| Beginn der Iteration | KW 47 - 21.11.2023
+| Ende der Iteration | KW 49 - 05.12.2023
+|===
+
+== Wesentliche Ziele
+
+Beispiele:
+
+* Termin mit Auftraggeber durchführen
+* Ersten Entwurf der Vision Verfassen
+* Erste Use Cases aufstellen
+* Anforderungen verfeinern
+* Entwicklungsumgebung aufsetzen 
+* Mit WPF vertraut machen
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt:
+
+siehe *https://github.com/orgs/seproject04/projects/1/views/4[ überblick  - Iteration 2]*
+
+== Probleme (optional)
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+
+| Vision.adoc | in Arbeit | Umfang größer als zunächst eingeschätzt
+| in GitHub Organisation lässt sich die main branch nicht schützen | in Arbeit | GitHub Organisation aufgrund der privaten einstellung nur bedingt konfigurirerbar 
+| Aufgabenverteilung nur auf eine Person beschränkt | in Arbeit | In GitHub Organisation lässt sich ein Issue maximal auf eine Person zuweisen
+|===
+
+== Bewertungskriterien
+* Termine werden wahrgenommen
+* Ziele wurden zeitgemäß erreicht
+
+== Assessment
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Iteration 2
+
+| Assessment Datum | 5.12.2023
+| Teilnehmer | Das ganze Team
+| Projektstatus	| im Soll
+|===
+
+*Beurteilung im Vergleich zu den Zielen*
+
+Das Visionsdokument wurde bearbeitet. 
+
+Erstes Use case Diagramm ist entstanden.  
+
+Die Stakeholder wurden identifiziert.
+
+Die ersten Use Cases wurden aufgestellt und besprochen.
+
+*Geplante vs. erledigte Aufgaben*
+
+Es wurden alle nötigen Aufgaben erledigt. Die schriftliche Dokumentation wurde überarbeitet zwecks "way of work". Vorher festgelegte Termine mit dem Auftraggeber sowie die Teammeetings wurden eingehalten und haben dem Projekt bei der Weiterentwicklung geholfen. 
+
+*Beurteilung im Vergleich zu den Bewertungskriterien*
+
+Die Bewertungskriterien wurden erfüllt. 
+
+Auftraggebermeeting findet alle zwei Wochen statt.
+
+Die Planung der kommenden Iteration findet in Absprache mit dem Auftraggeber statt. 
+

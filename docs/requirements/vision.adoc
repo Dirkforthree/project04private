@@ -25,16 +25,18 @@ Siehe <<#glossary, Glossar>>.
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
-Das Projekt ist im Kontext der "ZEISS Digital Innovation GmbH" angesiedelt, wo das Problem besteht, effektive Präsentationen für komplexe Projekte und Ideen zu erstellen. Der aktuelle Ansatz mit herkömmlichen PowerPoint-Präsentationen in Endlosschleifen erschwert es, tiefgehende Informationen zu vermitteln und beeinträchtigt das Verständnis der Zuhörer. Die Verbesserung zielt darauf ab, eine innovative Präsentationssoftware zu entwickeln, die verschiedene Medienquellen nahtlos integriert (Videos, PowerPoint, PDFs), um ein flexibleres und ansprechenderes Präsentationserlebnis zu ermöglichen. Aus betriebswirtschaftlicher Perspektive strebt das Projekt an, die Effizienz und Qualität der Präsentationen zu steigern, was zu einem verbesserten Image und einer stärkeren Wettbewerbsposition führen kann.
+
+Das Projekt ist im Kontext der "ZEISS Digital Innovation GmbH" angesiedelt, wo das Problem besteht, effektive Präsentationen für komplexe Projekte und Ideen zu erstellen. Der aktuelle Ansatz mit herkömmlichen PowerPoint-Präsentationen erschwert es, tiefgehende Informationen zu vermitteln und beeinträchtigt das Verständnis der Zuhörer. Die Verbesserung zielt darauf ab, eine innovative Präsentationssoftware zu entwickeln, die verschiedene Medienquellen nahtlos integriert (Videos, PowerPoint, PDFs), um ein flexibleres und ansprechenderes Präsentationserlebnis zu ermöglichen. Aus betriebswirtschaftlicher Perspektive strebt das Projekt an, die Effizienz und Qualität der Präsentationen zu steigern, was zu einem verbesserten Image und einer stärkeren Wettbewerbsposition führen kann.
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
 
 [cols="1,3"]
 |===
-| Das Problem | Das aktuelle Präsentationsverfahren in der "ZEISS Digital Innovation GmbH" führt dazu, dass Mitarbeiter im Marketing und in der Public Relations bei der Vorführung von Projekten oder Ideen Schwierigkeiten haben, in die Tiefe eines Themas zu gehen. Die herkömmlichen PowerPoint-Präsentationen laufen in einer Endlosschleife, was es erschwert, relevante Informationen gezielt zu präsentieren. Dies beeinträchtigt die Erfahrung sowohl des Präsentators als auch des Zuhörers, da wichtige Inhalte übersehen oder unzureichend behandelt werden.
+
+| Das Problem | Das aktuelle Präsentationsverfahren in der "ZEISS Digital Innovation GmbH" führt dazu, dass Mitarbeiter im Marketing und in der Public Relations bei der Vorführung von Projekten oder Ideen Schwierigkeiten haben, in die Tiefe eines Themas zu gehen. Die herkömmlichen PowerPoint-Präsentationen erschwert es, relevante Informationen gezielt zu präsentieren. Dies beeinträchtigt die Erfahrung sowohl des Präsentators als auch des Zuhörers, da wichtige Inhalte übersehen oder unzureichend behandelt werden.
 | betrifft | Die Stakeholder, die von diesem Problem betroffen sind, umfassen insbesondere Mitarbeiter im Marketing und in der Public Relations der "ZEISS Digital Innovation GmbH". Dies schließt auch den genannten Stakeholder, Martin Freiberger, ein, der als Vertreter der Organisation den Bedarf an einer effektiven Präsentationslösung artikuliert.
-| die Auswirkung davon ist | Die aktuelle Präsentationsmethode führt zu einer Beeinträchtigung des Präsentationserlebnisses, da die Präsentatoren Schwierigkeiten haben, tiefgehende Informationen zu vermitteln. Die Unterbrechung von PowerPoint-Präsentationen in einer Endlosschleife beeinflusst die Qualität der Kommunikation und das Verständnis der Zuhörer negativ.
+| die Auswirkung davon ist | Die aktuelle Präsentationsmethode führt zu einer Beeinträchtigung des Präsentationserlebnisses, da die Präsentatoren Schwierigkeiten haben, tiefgehende Informationen zu vermitteln. Die Unterbrechung von PowerPoint-Präsentationen beeinflusst die Qualität der Kommunikation und das Verständnis der Zuhörer negativ.
 | eine erfolgreiche Lösung wäre | Eine erfolgreiche Lösung, wie die entwickelte Software für effektive Präsentationen, würde mehrere Vorteile bieten. Erstens ermöglicht sie eine flexible Medienintegration, einschließlich Videos, PowerPoint-Präsentationen, PDFs und Word-Dokumenten. Zweitens bietet sie eine Medienwiedergabe in einer Endlosschleife, die jedoch jederzeit unterbrochen werden kann. Drittens ermöglicht die Software das nahtlose Anzeigen von Zusatzinformationen aus PDFs oder Word/Excel-Dokumenten, ohne die Präsentationssoftware zu verlassen. Diese Lösung würde zu einem reibungslosen und ansprechenden Präsentationserlebnis führen, wodurch die Effektivität und Effizienz der Präsentationen erheblich verbessert werden.
 |===
 
@@ -85,28 +87,16 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| *Martin Freiberger*
-//[Benennung des Stakeholder-Typs.]
-| Martin Freiberger ist Mitarbeiter in der "ZEISS Digital Innovation GmbH", die als externer Stakeholder die Interessen und Bedürfnisse des Unternehmens in Bezug auf die Entwicklung der Präsentationssoftware repräsentiert. Als Project Owner könnte er eine entscheidende Rolle bei strategischen Entscheidungen und der Ausrichtung des Projekts spielen.
-//[Kurze Beschreibung des Stakeholders.]
-| *Sicherstellung der Unternehmensziele:* Martin Freiberger dürfte ein besonderes Interesse daran haben, dass die entwickelte Software die übergeordneten Ziele und strategischen Ausrichtungen der "ZEISS Digital Innovation GmbH" unterstützt.
-*Überwachung des Projektfortschritts:* Der Stakeholder könnte daran interessiert sein, den Fortschritt des Projekts zu überwachen, um sicherzustellen, dass Zeitpläne eingehalten werden und das Produkt rechtzeitig zur Verfügung steht.
 
-|Bianca Müller
-|Domain Stakeholder
-|Als Domain Stakeholder in Community Relations vertritt Bianca die Interessen der Community Relations und bringt Fachwissen in die Entwicklung des Systems ein.
+| Auftraggeber | Das *Projekt Team der ZDI* von "ZEISS Digital Innovation GmbH", welches Martin Freiberger als Projektleiter, Bianca Müller als Domain Stakeholder im Bereich Community Relations, Franziska Petrovsky als Domain Stakeholder im Bereich Marketing und Manufacturing Solutions, Matthias Müller als Domain Stakeholder im Bereich Marketing Manager, Manufacturing Solutions und Hendrik Lösch als Technical Stakeholder als Management Consultant and Architect hat. | Sicherstellung der Unternehmensziele, Überwachung des Projektfortschritts, Fachwissenübergabe in Bereichen: Community Relations, Marketing and Manufacturing Solutions, Management Consulting and Architecture
 
-|Franziska Petrovsky
-|Domain Stakeholder
-|Als Domain Stakeholder im Marketing und Manufacturing Solutions bringt Franziska fachliche Perspektiven aus Marketing und Produktionslösungen ein.
+| Student | Im Studententeam werden die Rollen: Analyst, Architekt, Entwickler, Projekt Manager, Tester auf die Mitglieder je nach Erfahrungsbereich verteilt |   *Analyst*: Der Analyst vertritt die Anliegen der Kunden und Endbenutzer, indem sie Rückmeldungen von Beteiligten sammelt, um das zu lösende Problem zu verstehen, und indem sie Anforderungen erfasst und Prioritäten setzt. +
+*Architekt*: Der Architekt ist verantwortlich für die Definition der Softwarearchitektur, zu der auch die wesentlichen technischen Entscheidungen gehören, die das Gesamtdesign und die Umsetzung des Systems einschränken. +
+  *Entwickler*: Der Entwickler ist verantwortlich für die Entwicklung eines Teils des Systems, einschließlich der Gestaltung, um es in die Architektur zu integrieren, möglicherweise der Prototypenerstellung der Benutzeroberfläche, und dann der Umsetzung, der Unit-Tests und der Integration der Komponenten, die Teil der Lösung sind. +
+  *Projekt Manager*: Der Projektmanager leitet die Planung des Projekts, koordiniert die Interaktionen mit den Stakeholdern und sorgt dafür, dass das Projektteam auf die Erfüllung der Projektziele fokussiert bleibt. +
+  *Tester*: Der Tester ist verantwortlich für die Kernaktivitäten des Testaufwands. Diese Aktivitäten umfassen die Identifizierung, Definition, Implementierung und Durchführung der erforderlichen Tests, sowie das Protokollieren der Ergebnisse des Tests und die Analyse der Ergebnisse.
 
-|Matthias Müller
-|Domain Stakeholder
-|Als Domain Stakeholder und Marketing Manager in Manufacturing Solutions trägt Matthias zu Verbindung von Marketing- und Fertigungsperspektiven bei.
 
-|Hendrik Lösch
-|Domain Stakeholder
-|Als Technical Stakeholder in Management Consulting and Architecture bringt Hendrik technische Exertise und Architekturwissen in das Projekt ein.
 //[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 |===
 
@@ -161,9 +151,10 @@ Diese Angaben bieten einen Überblick über die Arbeitsumgebung des Nutzers und 
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Medienintegration | hoch | Integration von Powerpoint, 4K-Videos, Word-Dokument, PDFs | xx
-| "Edit"-Modus | hoch | Zusatzinformationen erstellen und bearbeiten, Kapitel erstellen | xx 
-| "Spectate"-Modus | mittel | Endschleifmodues/ Kapitelmodus, Zusatzinformationen betrachten, Kapitel wecheseln, Präsentation anhalten/ starten | xx 
+| Medienintegration | hoch | Integration von Powerpoint, 4K-Videos, Word-Dokument, PDFs | in Planung
+| "Edit"-Modus | hoch | Zusatzinformationen erstellen und bearbeiten, Kapitel erstellen | in Planung
+| "Spectate"-Modus | mittel | Endschleifmodues/ Kapitelmodus, Zusatzinformationen betrachten, Kapitel wecheseln, Präsentation anhalten/ starten | in Planung
+
 |===
 
 == Zusätzliche Produktanforderungen
@@ -180,22 +171,22 @@ Hinweise:
 |===
 | Anforderung | Priorität | Geplantes Release
 | *Wesentliche Standards, Hardware oder andere Plattformanforderungen:* |  | 
-| aktuell gängigste .NET Version als Hauptentwicklungsplattform | xx | xx
-| unterstützt gängige Medienformate (wie Powerpoint, 4K Videos, Word, PDF) | xx | xx
-| einfache Installierbarkeit | xx | xx
-| keine Lizensierung | xx | xx 
+| aktuell gängigste .NET Version als Hauptentwicklungsplattform | mittel | in Planung
+| unterstützt gängige Medienformate (wie Powerpoint, 4K Videos, Word, PDF) | hoch | in Planung
+| einfache Installierbarkeit | mittel | in Planung
+| keine Lizensierung | mittel | in Planung
 | *Leistungsanforderungen:* |  |  
-| schnelle und effiziente Ladezeit | xx | xx 
-| schnelle Reaktionszeit auf Benutzerinteraktion | xx | xx 
-| auf unterschiedlichen Hardwarekonfigurationen skalierbar sein | xx | xx 
+| schnelle und effiziente Ladezeit | mittel | in Planung 
+| schnelle Reaktionszeit auf Benutzerinteraktion | mittel | in Planung 
+| auf unterschiedlichen Hardwarekonfigurationen skalierbar sein | hoch | in Planung 
 | *Umgebungsanforderungen:* |  |  
-| Offline Nutzung | xx | xx 
+| Offline Nutzung | niedrig | in Planung 
 | *Qualitätsanforderung:* |  | 
-| hohe Leistung für eine reibungslose Präsentationserlebnis | xx | xx 
-| sollte robust und bei Fehlern stabil sein | xx | xx 
-| Benutzeroberfläche sollte benutzerfreundlich und intuitiv sein | xx | xx 
+| hohe Leistung für eine reibungslose Präsentationserlebnis | mittel | in Planung 
+| sollte robust und bei Fehlern stabil sein | mittel | in Planung 
+| Benutzeroberfläche sollte benutzerfreundlich und intuitiv sein | hoch | in Planung 
 | *Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten:* |  |  
-| Nutzung von aktuell gängigste .NET Version als Hauptentwicklungslatform | xx | xx 
-| Desktop-Umgebung und keine spezielle Hardware erforderlich | xx | xx 
+| Desktop-Umgebung und keine spezielle Hardware erforderlich | mittel | in Planung 
+
 
 |===
