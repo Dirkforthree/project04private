@@ -1,12 +1,12 @@
 = Projektplan: {project-name}
-Luca Jork lucathomas.jork@stud.htw-dresden.de
+Luca Jork lucathomas.jork@stud.htw-dresden.de, Valine Richter valine.richter@stud.htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Einführung
 
-Das vorliegende Projekt verfolgt das ambitionierte Ziel, eine wegweisende Software zu entwickeln, die die Arbeitsweise im Umgang mit PowerPoint-Präsentationen und Videos auf Unternehmensmessen transformiert und intelligentere Interaktionen ermöglicht. Der Bedarf für eine solche Software wurde durch die Erkenntnis geweckt, dass derzeit keine Lösungen existieren, die speziell auf die Anforderungen von Präsentationen und Vorführungen im Rahmen professioneller Messen und Meetings zugeschnitten sind.
+Das vorliegende Projekt verfolgt das Ziel, eine wegweisende Software zu entwickeln, die die Arbeitsweise im Umgang mit PowerPoint-Präsentationen und Videos auf Unternehmensmessen transformiert und intelligentere Interaktionen ermöglicht. Der Bedarf für eine solche Software wurde durch die Erkenntnis geweckt, dass derzeit keine Lösungen existieren, die speziell auf die Anforderungen von Präsentationen und Vorführungen im Rahmen professioneller Messen und Meetings zugeschnitten sind.
 
 Durch den Einsatz von .NET 8 und den neuesten technologischen Fortschritten strebt unser Projekt danach, eine intuitive und äußerst effiziente Lösung zu kreieren. Die Software wird gezielt für Personen entwickelt, die Unternehmen auf Messen repräsentieren, sowie für den Einsatz in Meetings, in denen eine tiefgehende Interaktion mit PowerPoint-Präsentationen erforderlich ist.
 
@@ -15,26 +15,25 @@ Das Endprodukt wird eine voll funktionsfähige und beeindruckende Software sein,
 == Projektorganisation
 === Teammitglieder 
 
-Das siebenköpfige Team ist durch eine reichhaltige Mischung aus verschiedenen Persönlichkeiten und Interessen geprägt, bestehend aus einem Wirtschaftsingenieur, zwei Informatikern und vier Wirtschaftsinformatiker:innen. Diese vielseitige Kombination bildet das solide Fundament für eine ausgezeichnete Zusammenarbeit. Bei jeder auftretenden Herausforderung oder Aufgabe steht jemand im Team bereit, der entweder bereits Erfahrungen im entsprechenden Fachgebiet gesammelt hat oder motiviert ist, sich intensiv mit dem jeweiligen Thema auseinanderzusetzen und die Verantwortung dafür zu übernehmen. Diese dynamische Interaktion trägt maßgeblich zum Erfolg und zur Effizienz des Teams bei.
+Das siebenköpfige Team ist durch eine reichhaltige Mischung aus verschiedenen Persönlichkeiten und Interessen geprägt, bestehend aus einem Wirtschaftsingenieur, zwei Informatikern und drei Wirtschaftsinformatiker:innen. Diese vielseitige Kombination bildet das solide Fundament für eine ausgezeichnete Zusammenarbeit. Bei jeder auftretenden Herausforderung oder Aufgabe steht jemand im Team bereit, der entweder bereits Erfahrungen im entsprechenden Fachgebiet gesammelt hat oder motiviert ist, sich intensiv mit dem jeweiligen Thema auseinanderzusetzen und die Verantwortung dafür zu übernehmen. Diese dynamische Interaktion trägt maßgeblich zum Erfolg und zur Effizienz des Teams bei.
 
 |====
-|*Name*               | *Mail*                                       |*Studiengang* |            |  *Rolle* |
-| *Valine Richter*    | valine.richter@stud.htw-dresden.de           |Wirtschaftsinformatik |    | Analyse/Test |
-| *Merte Korpowski*   | mertelaurentia.korpowski@stud.htw-dresden.de |Wirtschaftsinformatik |    | Implementierung |
-| *Luca Jork*         | lucathomas.jork@stud.htw-dresden.de          |Wirtschaftsinformatik |    | Projektleiter |
-| *Maxim Zimmermann*  | maxim.zimmermann@stud.htw-dresden.de         |Informatik |               | Architekt/Implementierung |
-| *Florian Hausmann*  | florian.hausmann@stud.htw-dresden.de         |Informatik |               | Implementierung |
-| *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de  |Wirtschaftsinformatik |    | Analyse/Test |
-| *Quoc Tinh La*      | quoctinh.la@stud.htw-dresden.de              | Wirtschaftsingenieurwesen ||Analyse |
+|*Name*         | *Mail*                                          |*Studiengang* |            |  *Rolle*|
+| *Valine Richter* | valine.richter@stud.htw-dresden.de            |Wirtschaftsinformatik |    | Analyse/Test|
+| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de  |Wirtschaftsinformatik |    | Implementierung|
+| *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de           |Wirtschaftsinformatik |    | Projektleiter|
+| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de        |Informatik |               | Archtiekt/Implementierung|
+| *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de        |Informatik |               | Implementierung|
+| *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de|Wirtschaftsinformatik|     | Analyse/Test|
+| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de               | Wirtschaftsingenieurwesen|     |Analyse       |
 |====
 
 
 
 == Praktiken und Bewertung
-//Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+//Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration)
 
-
-Unsere Projektentwicklung folgt den essenziellen Prinzipien der agilen Softwareentwicklung, wobei ein besonderer Fokus auf kontinuierlicher Integration und engem Teamzusammenhalt liegt. Diese agilen Praktiken und Bewertungsmethoden prägen unsere Vorgehensweise:
+Unsere Projektentwicklung folgt den essenziellen Prinzipien der agilen Softwareentwicklung, wobei ein besonderer Fokus auf kontinuierlicher Integration und enger Teamzusammenhalt liegt. Diese agilen Praktiken und Bewertungsmethoden prägen unsere Vorgehensweise:
 
 Im Bereich der agilen Softwareentwicklung legen wir Wert auf anpassungsfähige Planung, evolutionäre Entwicklung, frühzeitige Auslieferung und kontinuierliche Verbesserung. Dabei liegt unser Hauptaugenmerk auf Flexibilität und dem Schaffen von Kundennutzen.
 
@@ -50,7 +49,7 @@ Diese durchdachten Praktiken befähigen unser Team dazu, effizient und flexibel 
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
 
 [%header, cols="1,3a,2,1"]
-|===
+|======
 | Iteration
 | Primary objectives +
 (risks and use case scenarios)
@@ -59,18 +58,50 @@ Diese durchdachten Praktiken befähigen unser Team dazu, effizient und flexibel 
 
 | I1
 |
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
-| 06.11.2023/19.11.2023
-| 15
+* Einrichtung der gemeinsamen Kommunikationsplatform 
+* Zuweisung Hauptverantwortilichen für ROllen 
+* Erstellung GitHub Respository und Projects 
+* Kontaktaufnahme mit Auftraggeber Coach 
+* Terminvereinbarungen 
+| KW 45 - KW 47 
+| kurzfristige Ziele 
 
 | I2
 |
-* Mitigate Risk 2
+* durchführung Termin mit Auftraggeber 
+* ersten Entwurf einer Vision verfassen 
+* erste Use Cases aufstellen
+* mit WPF vertraut machen 
 * Develop Use Case 1, Scenario 2
-| 20.11.2023/3.12.2023
-| 16
-|===
+| KW 47 - KW 49 
+| kurzfristige Ziele / langfristige Ziele 
+
+| I3
+|
+* GitHub neu einrichten 
+* Vision.adoc finalisieren 
+* Use Case models ausarbeiten 
+| KW 49 - KW 51 
+| kurzfristige Ziele / langfristige Ziele
+
+| I4
+|
+* docs finalisieren 
+* MVVM toolkit erlernen 
+* Auftraggeber Meeting 
+| KW 51 - KW 1
+| kurzfristige Ziele / langfristige 
+
+| I5
+|
+* Protoryp fertigstellen 
+* dokumente fertig und in main branch pullen  
+* Auftraggeber Meeting 
+| KW 1 - KW 3
+| kurzfristige Ziele / langfristige 
+
+
+|======
 
 
 
@@ -86,4 +117,9 @@ Es wird empfohlen, einen detaillierten Rollback-Plan zu entwickeln, um bei event
 
 
 == Erkenntnisse (Lessons learned)
-//List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+* die iterative Arbeitsweise, hat viel Sinn ergeben 
+* Aufgaben gut aufteilen und jeden Teammitglied klar machen was er zu machen hat 
+* die Aufgaben in Issues festhalten und jeden einzelnes Teammitglied der Aufgabe zuweisen, brachte eine bessere Übersicht 
+* Github ist sehr hilfreich, da man alle einzelnen Aufgaben und Fortschritte auf einer Platform hat 
+* Kommunikation äußerst wichtig, nach dem regulären Meeting hatten wir noch immer ein Daily am Freitag wo in einer kurzen Runde die wesentlichsten Fragen geklärt wurden
+
