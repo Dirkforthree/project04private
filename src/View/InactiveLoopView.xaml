@@ -16,7 +16,21 @@
             <Button Content="Cancel" Height="70" Command="{Binding NavigateToFileSelectionCommand}"/>
         </StackPanel>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">
-            <MediaElement x:Name="MediaPlayer" Source="{Binding FileUri}" >
+            <MediaElement x:Name="MediaPlayer" Source="{Binding FileUri}" Stretch="Uniform">
+                <MediaElement.Style>
+                    <Style TargetType="MediaElement">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding VideoOrientationPortrait}" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5" />
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <RotateTransform Angle="90" />
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </MediaElement.Style>
                 <MediaElement.Triggers>
                     <EventTrigger RoutedEvent="MediaElement.Loaded">
                         <EventTrigger.Actions>

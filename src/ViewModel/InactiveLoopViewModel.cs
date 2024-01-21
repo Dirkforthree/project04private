@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Dynamic;
 using System.Windows.Media;
 using System.Windows;
+using MetadataExtractor;
 
 namespace Effektive_Praesentationen.ViewModel
 {
@@ -54,6 +55,7 @@ namespace Effektive_Praesentationen.ViewModel
             try
             {
                 FileUri = new Uri(FilePath, UriKind.RelativeOrAbsolute);
+                CheckVideoOrientation();
             }
             catch (UriFormatException)
             {
@@ -73,5 +75,57 @@ namespace Effektive_Praesentationen.ViewModel
             Navigation = navService;
             viewName = "InactiveLoop";
         }
+
+
+        private bool _videoOrientationPortrait;
+
+        public bool VideoOrientationPortrait
+        {
+            get { return _videoOrientationPortrait; }
+           
+            private set { SetProperty(ref _videoOrientationPortrait, value); }
+   
+        }
+
+        private void CheckVideoOrientation()
+        {
+            try
+            {
+                if (FileUri != null)
+                {
+                    var directories = ImageMetadataReader.ReadMetadata(FileUri.LocalPath);
+
+                    foreach (var directory in directories)
+                    {
+                        foreach (var tag in directory.Tags)
+                        {
+                            if (tag.Name == "Rotation")
+                            {
+                                int rotation = int.Parse(tag.Description);
+                                if (rotation == -90 || rotation == -270)
+                                {
+                                    // Das Video ist im Hochformat.
+                                    VideoOrientationPortrait = true;
+                                }
+                                else
+                                {
+                                    // Das Video ist im Querformat.
+                                    VideoOrientationPortrait = false;
+                                }
+
+
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Fehlerbehandlung, falls das Auslesen der Metadaten fehlschlägt.
+                Debug.WriteLine($"Fehler beim Auslesen der Metadaten: {ex.Message}");
+            }
+        }
+
     }
 }
