@@ -60,7 +60,7 @@ namespace Effektive_Praesentationen.ViewModel
                     return false;
                 }
                 string fileExtension = Path.GetExtension(Chapters.DefaultChapter);
-                if (!(fileExtension == ".mp4" || fileExtension == ".mkv"))
+                if (!(fileExtension == ".mp4" || fileExtension == ".mkv" || fileExtension == ".mov"))
                 {
                     return false;
                 }
