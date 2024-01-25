@@ -18,7 +18,7 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 
 //Formulieren Sie eine Reihe von Zielen, die die Architektur in ihrer Struktur und ihrem Verhalten erfüllen muss. Identifizieren Sie kritische Fragen, die von der Architektur adressiert werden müssen, z.B. besondere Hardware-Abhängigkeiten, die vom Rest des Systems isoliert werden sollten oder Sicherstellung der Funktionsfähigkeit unter besonderen Bedingungen (z.B. Offline-Nutzung).
 
-Bei dem System handelt es sich um eine Desktopanwendung, welche danach strebt, ein optimales Nutzererlebnis bei der Wiedergabe von Medien in Endlosschleife zu bieten und gleichzeitig erweiterte Funktionen zur Verfügung zu stellen, um das Medien in kleinere Teile einzuteilen und dann Zusatzinformationen zu den verschiedenen Teilen der Medien abzurufen und zu speichern. Dabei ist eine Offline-Nutzung von hoher Bedeutung, da dass System besonders auf Messe-Veranstaltungen zum Einsatz kommen soll, bei denen ein Internet-Zugang nicht gewährt werden kann. 
+Bei dem System handelt es sich um eine Desktopanwendung, welche danach strebt, ein optimales Nutzererlebnis bei der Wiedergabe von Medien zu bieten und gleichzeitig erweiterte Funktionen zur Verfügung zu stellen, um das Medien in kleinere Teile einzuteilen und dann Zusatzinformationen zu den verschiedenen Teilen der Medien abzurufen und zu speichern. Dabei ist eine Offline-Nutzung von hoher Bedeutung, da dass System besonders auf Messe-Veranstaltungen zum Einsatz kommen soll, bei denen ein Internet-Zugang nicht gewährt werden kann. 
 Neben der reinen Funktionalität wird besonders auf eine hohe Nutzerfreundlichkeit geachtet, sodass auch Personen ohne technisches Vorwissen die Software intuitiv nutzen können. 
 Zudem liegt der Fokus auf einer stark modularisierten Anwendung, sodass das System einfach zu erweitern ist und mehrere Medienformate problemlos unterstützt werden können, ohne dass ein großer Aufwand durch Verändern der Software notwendig ist.  
 
@@ -30,38 +30,23 @@ Annahmen:
 
 * Das genutzte Betriebssystem ist Windows
 
-Abhängigkeiten:
-
-* Unerfahrenes Team
-
-
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
-
-* Mobile Anwendung
-* Persistente Übertragbare Datenspeicherung erforderlich
+// * Persistente Übertragbare Datenspeicherung erforderlich
 
 
 === Organisatorische Randbedingungen
 Normen und Standards: Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
 
 
-* ANF-01: Dateiload und -verwaltung:
+* NFA-02: Dateiload und -verwaltung:
 
 Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4) zu laden und zu verwalten.
-
-* ANF-02: Interaktive Präsentation: 
-
-Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw.
-
-* ANF-03:Offline-Nutzung: Die Anwendung sollte auch ohne Internetverbindung funktionieren, da Messen möglicherweise eine unzuverlässige Netzwerkverbindung haben können.
+// TODO: ANF raussuchen
+// * ANF-03: Offline-Nutzung: Die Anwendung sollte auch ohne Internetverbindung funktionieren, da Messen möglicherweise eine unzuverlässige Netzwerkverbindung haben können.
 
 === Interface Anforderungen
-Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Plattformen zu gewährleisten.
-
-Externe Schnittstellen: 
-
-Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
+**NFS-01** Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Plattformen zu gewährleisten.
 
 === Geschäftsregeln
 Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
@@ -75,26 +60,26 @@ Verwendung von .NET 8 und C#: Alle Softwarekomponenten, Bibliotheken und Framewo
 
 Plattformunterstützung: Die Anwendung soll zunächst nur mit dem Betriebssystem (Windows ) kompatibel sein.
 
+**NFS-03** Portabilität: Die Anwendung soll auf Portablen Datenspeichern und ohne installation nutzbar sein.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
-* ANF-05: Stabilität: 
+* NFS-03: Stabilität: 
 
 Die Anwendung sollte stabil laufen und nicht anfällig für Abstürze oder unerwartetes Verhalten sein, insbesondere während Live-Präsentationen auf Messen.
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
-* ANF-06: Schnelle Ladezeiten: 
+* NFP-01: Schnelle Ladezeiten: 
 
 Die Anwendung sollte schnell Präsentationen und Videos laden, um eine reibungslose Interaktion während der Präsentation sicherzustellen.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 * ANF-07: Update- und Wartungsfähigkeit: 
+// TODO
 
 Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durchgeführt werden können, um etwaige Fehler oder Verbesserungen zu implementieren.
-
-
 
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
@@ -108,15 +93,13 @@ Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durc
 * Standalone Applictaion
     Vom Kunden vorgegeben
 
-// TODO: Link Anforderungen
-* Relationales Datenbankmanagementsystem SQLite
-    ** Anforderung ANF-01 am effektivsten umsetzbar als Relationale Datenbank
-    ** Anforderung ANF-03 ebenfalls mit SQLite umsetzbar
-    ** Ebenfalls erfüllt es die folgenden Anforderungen: ANF-05 ANF-06 ANF-07
+// * Relationales Datenbankmanagementsystem SQLite
+//     ** Anforderung ANF-01 am effektivsten umsetzbar als Relationale Datenbank
+//     ** Anforderung ANF-03 ebenfalls mit SQLite umsetzbar
+//     ** Ebenfalls erfüllt es die folgenden Anforderungen: ANF-05 ANF-06 ANF-07
 
-// TODO: Bibliothek raussuchen
-* .Net... für Kommunikation mit Datenbank
-    ** Ist in .NET enthalten, wodurch keine Komponenten von Drittanbietern benötigt wird (Weniger Abhängigkeiten)
+// * .Net für Kommunikation mit Datenbank
+//     ** Ist in .NET enthalten, wodurch keine Komponenten von Drittanbietern benötigt wird (Weniger Abhängigkeiten)
 
 
 == Architekturmechanismen
@@ -130,13 +113,12 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 . Datenbankmanagementsystem und Persistenz
     * Speichern der Pfade für Dokumente, Videodatein,... und deren Kapitelunterteilung
     * Zur Persistenten Datenspeicherung
-    * Übertragbar (ANF-01)
-    * Anforderung ANF-X1 muss erfüllt sein
+    // * Anforderung ANF-X1 muss erfüllt sein
 
 . Communication
     * Kommunikation zwischen Anwendung und Datenbank
-    * Anforderung ANF-X1 muss erfüllt sein
-// TODO
+// * Anforderung ANF-X1 muss erfüllt sein
+
 //  - Planned: Powerpoint-Viewer
 // . Error Management
 // . Lokalisierung
@@ -152,47 +134,48 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
     * Pfade, Kapitel und deren Beschreibungen
 . Chapter
     * Sektion aus einer Separaten Datei z.B. ausgewählte Folien aus einer PowerPoint, Zeitbereiche eines Videos, die entweder wiederholt oder einmalig abgespielt werden können
-    * ein Kapitel beinhaltet eine Beschreibung
-. Presentation
+    * ein Kapitel beinhaltet einen Titel und eine Beschreibung
+. Inaktive Medium
     * Permantes Abspielen einer Präsentation/Video oder eines Kapitels
+. Project Data
+    * Zusammenführen aller Daten, die genutzt werden
 
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
-// TODO: Link hinterlegen
 * Architektur-Pattern: MVVM
 
 == Architektursichten (Views)
 //[Describe the architectural views that you will use to describe the software architecture. This illustrates the different perspectives that you will make available to review and to document architectural decisions.]
 
-Folgende Sichten werden empfohlen:
-
-Funktionale Ansicht:
-    Zweck: Beschreibt die Funktionalitäten des Systems und ihre Organisation.
-    Komponenten: Identifiziert die wichtigsten funktionalen Komponenten und deren Interaktionen.
-    Diagramme: Anwendungsfälle, Aktivitätsdiagramme oder Flussdiagramme zur Veranschaulichung funktionaler Aspekte.
-
 // TODO: Umformulieren, Diagram einfügen
-Modulare Ansicht:
-    Zweck: Konzentriert sich auf die Organisation des Systems in Module oder Komponenten.
-    Komponenten: Module, Klassen oder Pakete.
-    Diagramme: Moduldiagramme, Klassendiagramme oder Paketdiagramme.
-
 Informationsansicht:
     Zweck: Veranschaulicht, wie Daten im System verarbeitet, gespeichert und darauf zugegriffen werden.
     Komponenten: Datenentitäten, Datenbanken und Datenflüsse.
-    Diagramme: Entity-Relationship-Diagramme, Datenflussdiagramme oder Datenmodelle.
-
-// Schnittstellenansicht:
-//     Zweck: Beschreibt die Schnittstellen zwischen Systemkomponenten oder externen Systemen.
-//     Komponenten: APIs, Kommunikationsprotokolle und Interaktionspunkte.
-//     Diagramme: Schnittstellendiagramme, API-Spezifikationen oder Kommunikationssequenzdiagramme.
+    Diagramme: Entity-Relationship-Diagramme, Datenflussdiagramme, Domänenmodel oder Datenmodelle.
 
 === Logische Sicht
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 // TODO: Insert Draw.io
+==== C4 Model
+. Level 1
 
-=== Physische Sicht (Betriebssicht)
-//Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
+image::Level1.png[]
+. Level 2
+
+image::Level2.png[]
+. Level 3
+
+image::Level3.png[]
+. Domänenmodel
+
+image::Domaenenmodel.png[]
+
+// // === Physische Sicht (Betriebssicht)
+// //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
+. Use Case 01
+    * Verschiedene Medientypen
+    * Auswählen eines Mediums
+    * Abspielen von Videos
