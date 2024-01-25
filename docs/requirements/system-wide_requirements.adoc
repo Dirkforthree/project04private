@@ -1,5 +1,5 @@
 = System-Wide Requirements: {project-name}
-Luca Jork  lucathomas.jork@stud.htw-dresden.de
+Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -16,59 +16,47 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 
 == Systemweite funktionale Anforderungen
-Dateiload und -verwaltung:
- Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos von verschiedenen Dateiformaten (z. B. PPTX, MP4) zu laden und zu verwalten.
+//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
-Interaktive Präsentation: Die Anwendung sollte es ermöglichen, Präsentationen und Videos interaktiv zu steuern, z. B. durch Navigation zwischen verschiedenen Folien, Abspielen/Pausieren von Videos usw.
-
-Offline-Nutzung: Die Anwendung sollte auch ohne Internetverbindung funktionieren, da Messen möglicherweise eine unzuverlässige Netzwerkverbindung haben können.
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
-Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usability, Reliability, Performance, Supportability - Funktion, Benutzbarkeit, Zuverlässigkeit, Leistungsfähigkeit, Wartbarkeit) können wir spezifische Qualitätsanforderungen für das Gesamtsystem Ihrer Messe-Anwendungssoftware definieren:
-
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
-Intuitive Benutzeroberfläche: Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, die es den Benutzern ermöglicht, Präsentationen und Videos einfach zu laden, zu organisieren und zu präsentieren.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
-Stabilität: Die Anwendung sollte stabil laufen und nicht anfällig für Abstürze oder unerwartetes Verhalten sein, insbesondere während Live-Präsentationen auf Messen.
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
-Schnelle Ladezeiten: Die Anwendung sollte schnell Präsentationen und Videos laden, um eine reibungslose Interaktion während der Präsentation sicherzustellen.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
-Update- und Wartungsfähigkeit: Die Anwendung sollte so entwickelt sein, dass Updates und Wartungen einfach durchgeführt werden können, um etwaige Fehler oder Verbesserungen zu implementieren.
 
 
 == Zusätzliche Anforderungen
 
 === Technische Einschränkungen
-Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den meisten gängigen Geräten und unter den üblichen Systemlasten reibungslos läuft.
-
-Verwendung von .NET 8 und C#: Alle Softwarekomponenten, Bibliotheken und Frameworks sollten mit .NET 8 kompatibel sein und in der Programmiersprache C# entwickelt werden.
-
-Plattformunterstützung: Die Anwndung soll zunächst nur mit dem Betriebssystem (Windows ) kompatibel sein.
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+* Ressourcenbegrenzungen
+* zu nutzende Komponenten / Bibliotheken / Frameworks
+* Vorgaben für die Programmiersprache
+* zu unterstützende Plattformen / Betriebssysteme
+* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
 
 === Interface Anforderungen
-Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Plattformen zu gewährleisten.
-
-Externe Schnittstellen: Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
+// Describe both the user interface and interfaces with external systems.
 
 === Geschäftsregeln
-Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
-
+// Besides technical requirements, also consider the particular business domain in which the system needs to fit.
 
 === Organisatorische Randbedingungen
-Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
-
-Normen und Standards: Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+* Anforderungen an Betrieb, Management und Wartung der Anwendung
+* zu beachtende Standards, Normen und Regeln
 
 === Rechtliche Anforderungen
-Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
-
-Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+* Lizensierung der Anwendung
+* Datenschutz
