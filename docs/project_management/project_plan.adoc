@@ -22,7 +22,7 @@ Das siebenköpfige Team ist durch eine reichhaltige Mischung aus verschiedenen P
 | *Valine Richter* | valine.richter@stud.htw-dresden.de            |Wirtschaftsinformatik |    | Analyse/Test|
 | *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de  |Wirtschaftsinformatik |    | Implementierung|
 | *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de           |Wirtschaftsinformatik |    | Projektleiter|
-| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de        |Informatik |               | Archtiekt/Implementierung|
+| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de        |Informatik |               | Architekt/Implementierung|
 | *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de        |Informatik |               | Implementierung|
 | *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de|Wirtschaftsinformatik|     | Analyse/Test|
 | *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de               | Wirtschaftsingenieurwesen|     |Analyse       |
@@ -59,7 +59,7 @@ Diese durchdachten Praktiken befähigen unser Team dazu, effizient und flexibel 
 | I1
 |
 * Einrichtung der gemeinsamen Kommunikationsplatform 
-* Zuweisung Hauptverantwortilichen für ROllen 
+* Zuweisung Hauptverantwortilichen für Rollen 
 * Erstellung GitHub Respository und Projects 
 * Kontaktaufnahme mit Auftraggeber Coach 
 * Terminvereinbarungen 
