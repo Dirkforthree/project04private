@@ -1,7 +1,7 @@
 // --- 1. Projektthema -------------------------
 = SE I - Belegabgabe: {project-name}
 // --- 2. Teammitglieder -----------------------
-Luca Jork <lucathomas.jork@stud.htw-dresden.de>;  Valine Richter <valine.richter@stud.htw-dresden.de>;  Merte Korpowski <mertelaurentia.korpowski@stud.htw-dresden.de>; Maxim Zimmermann <maxim.zimmermann@stud.htw-dresden.de>; Florian Hausmann <florian.hausmann@stud.htw-dresden.de>; Philipp Krickhuhn <philipppascal.krickhuhn@stud.htw-dresden.de>; Quoc Tinh La <quoctinh.la@stud.htw-dresden.de> 
+Luca Jork ;  Valine Richter ;  Merte Korpowski ; Maxim Zimmermann ; Florian Hausmann ; Philipp Krickhuhn ; Quoc Tinh La 
 // --- 3. Abgabedatum --------------------------
 26. Januar 2024
 // ---------------------------------------------

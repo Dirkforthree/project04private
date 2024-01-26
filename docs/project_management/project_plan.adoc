@@ -18,14 +18,14 @@ Das Endprodukt wird eine voll funktionsfähige und beeindruckende Software sein,
 Das siebenköpfige Team ist durch eine reichhaltige Mischung aus verschiedenen Persönlichkeiten und Interessen geprägt, bestehend aus einem Wirtschaftsingenieur, zwei Informatikern und drei Wirtschaftsinformatiker:innen. Diese vielseitige Kombination bildet das solide Fundament für eine ausgezeichnete Zusammenarbeit. Bei jeder auftretenden Herausforderung oder Aufgabe steht jemand im Team bereit, der entweder bereits Erfahrungen im entsprechenden Fachgebiet gesammelt hat oder motiviert ist, sich intensiv mit dem jeweiligen Thema auseinanderzusetzen und die Verantwortung dafür zu übernehmen. Diese dynamische Interaktion trägt maßgeblich zum Erfolg und zur Effizienz des Teams bei.
 
 |====
-|*Name*         | *Mail*                                          |*Studiengang* |            |  *Rolle*|
-| *Valine Richter* | valine.richter@stud.htw-dresden.de            |Wirtschaftsinformatik |    | Analyse/Test|
-| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de  |Wirtschaftsinformatik |    | Implementierung|
-| *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de           |Wirtschaftsinformatik |    | Projektleiter|
-| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de        |Informatik |               | Architekt/Implementierung|
-| *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de        |Informatik |               | Implementierung|
-| *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de|Wirtschaftsinformatik|     | Analyse/Test|
-| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de               | Wirtschaftsingenieurwesen|     |Analyse       |
+|*Name*         | *Mail*                                          |*Studiengang* |             *Rolle*
+| *Valine Richter* | valine.richter@stud.htw-dresden.de            |Wirtschaftsinformatik   | Analyse/Test
+| *Merte Korpowski*| mertelaurentia.korpowski@stud.htw-dresden.de  |Wirtschaftsinformatik    | Implementierung
+| *Luca  Jork*     | lucathomas.jork@stud.htw-dresden.de           |Wirtschaftsinformatik    | Projektleiter
+| *Maxim Zimmermann* | maxim.zimmermann@stud.htw-dresden.de        |Informatik          | Architekt/Implementierung
+| *Florian Hausmann* | florian.hausmann@stud.htw-dresden.de        |Informatik        | Implementierung
+| *Philipp Krickhuhn* | philipppascal.krickhuhn@stud.htw-dresden.de|Wirtschaftsinformatik  | Analyse/Test
+| *Quoc Tinh La*   | quoctinh.la@stud.htw-dresden.de               | Wirtschaftsingenieurwesen   |Analyse       
 |====
 
 
