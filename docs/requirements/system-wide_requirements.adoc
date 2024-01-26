@@ -1,5 +1,5 @@
 = System-Wide Requirements: {project-name}
-Luca Jork  lucathomas.jork@stud.htw-dresden.de
+Luca Jork  <lucathomas.jork@stud.htw-dresden.de>; Quoc Tinh La <quoctinh.la@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -22,6 +22,7 @@ Das System benötigt keine Lizensierung und soll eine freie Software sein. Diesb
 
 === NFA-02: Dateiload und -verwaltung
 Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos verschiedener Dateiformate (z. B. PPTX, MP4, AVI) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Dateien und deren Kapitelunterteilung dauerhaft gespeichert werden. Es sollten mindestens 2 Präsentationen gleichzeitig verwaltet werden können.
+Die Anwendung soll Portabel sein, sowie Lokal, Offline auf jedem der Messecomputer eigenständig funktionieren
 
 :sectnums:
 == Qualitätsanforderungen für das Gesamtsystem
@@ -81,79 +82,122 @@ Die Anwendung sollte Präsentationen und Videos innerhalb von maximal 5 Sekunden
 
 === NFP-02: Throughput
 
-Das System muss den Upload und die Verarbeitung von hochauflösenden Multimedia-Inhalten unterstützen.
+* Die Anwendung muss in der Lage sein, einen hohen Durchsatz an Daten zu verarbeiten, um ein flüssiges Abspielen und Interagieren mit Multimedia-Inhalten zu gewährleisten.
 
-4K-Videodateien: 
-Für 10-minütige 4K-Videos, mit einer angenommenen Dateigröße von 5 GB, wird ein Durchsatz von mindestens 100 Megabyte pro Sekunde (MB/s) benötigt, um den Upload innerhalb von 10 Minuten zu ermöglichen.
-Dies entspricht einer Durchsatzrate von etwa 800 Megabit pro Sekunde (Mbps), vorausgesetzt, die Netzwerkinfrastruktur unterstützt diese Geschwindigkeit.
+[discrete]
+=== 4K-Videodateien
+* Die Anwendung soll 4K-Videodateien mit einer Dateigröße von bis zu 5 GB ohne Leistungseinbußen effizient verarbeiten können.
+* Eine Verarbeitungsgeschwindigkeit von mindestens 100 Megabyte pro Sekunde (MB/s) wird benötigt, um ein nahtloses Abspielen zu ermöglichen.
 
-PPP-Dateien: 
-Angesichts der Tatsache, dass PowerPoint-Präsentationen (PPP) selten mehr als 100 Megabyte überschreiten, wird ein Durchsatz von 10 MB/s als ausreichend angesehen, um eine PPP-Datei in weniger als 10 Sekunden zu verarbeiten.
+[discrete]
+=== PPP-Dateien
+* Für PowerPoint-Präsentationen (PPP) wird ein schnelles Laden und reibungsloses Navigieren benötigt.
+* Eine Verarbeitungsgeschwindigkeit von mindestens 10 MB/s ist ausreichend für PPP-Dateien.
 
-MOV-Dateien: 
-Da MOV-Dateiformate ähnlich wie 4K-Videos sein können, sollten sie auch mit einem Durchsatz von 100 MB/s unterstützt werden, um eine effiziente Verarbeitung zu gewährleisten.
+[discrete]
+=== MOV-Dateien
+* MOV-Dateien benötigen ebenfalls eine hohe Verarbeitungsgeschwindigkeit für flüssiges Abspielen.
+* Eine Verarbeitungsgeschwindigkeit von mindestens 100 MB/s wird für MOV-Dateien empfohlen.
 
-Das System sollte so konzipiert sein, dass es bei gleichzeitigem Upload von bis zu 5 4K-Videos (oder einer entsprechenden Anzahl von PPP- oder MOV-Dateien) die oben genannten Durchsatzraten ohne Leistungsabfall aufrechterhalten kann.
-* Zusätzlich zu den Durchsatzraten sollte das System eine Skalierungsfunktion aufweisen, um bei erhöhtem Verkehrsaufkommen die Bandbreite dynamisch zu erhöhen.
+[discrete]
+== Zusätzliche Anforderungen
+* Die Anwendung muss mehrere hochauflösende Video- und PPP-Dateien gleichzeitig verarbeiten können.
+* Die Systemhardware (CPU, GPU, RAM) muss leistungsfähig genug sein, um diese Verarbeitungsgeschwindigkeiten zu unterstützen.
 
 === NFP-03: Start-up
 Das System sollte binnen 5 Sekunden einsatzfähig sein.
 
-
 :sectnums:
 === Wartbarkeit (Supportability)
+:sectnums!:
+<<<<<<< HEAD
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+Die Wartbarkeit ist ein entscheidender Aspekt der Softwareentwicklung, der die Effizienz und Effektivität der langfristigen Pflege und Aktualisierung einer Anwendung beeinflusst. Dieses Dokument legt die Anforderungen und Richtlinien für die Wartbarkeit unserer Anwendung fest.
+
+=== NFS-01: Einfachheit der Wartung
+* Die Anwendung muss so strukturiert sein, dass Wartungsarbeiten mit minimalem Aufwand durchgeführt werden können.
+* Klare und gut dokumentierte Code-Strukturen werden erwartet, um die Wartung zu vereinfachen.
+
+=== NFS-02: Modularität
+* Die Anwendung sollte modular aufgebaut sein, sodass einzelne Komponenten unabhängig gewartet, aktualisiert oder ersetzt werden können.
+
+=== NFS-03: Dokumentation
+* Umfassende Dokumentation muss für die gesamte Anwendung bereitgestellt werden, einschließlich Code-Kommentaren, Entwicklerhandbüchern und Benutzerdokumentation.
+
+=== NFS-04: Automatisierte Tests
+* Ein umfassendes Set von automatisierten Tests soll implementiert werden, um die Funktionalität bei Änderungen sicherzustellen.
+
+=== NFS-05: Notfall-Updates
+* Im Falle kritischer Fehler sollen Notfall-Updates so schnell wie möglich bereitgestellt werden.
+
+:sectnums:
+=== Durchführungszeiten
 :sectnums!:
 
+=== NFT-01: Kleinere Änderungen
+* Kleinere Änderungen, wie Textaktualisierungen oder kleinere Bugfixes, sollen innerhalb von 24 Stunden durchgeführt werden können.
+
+=== NFT-02: Größere Updates
+* Größere Updates oder neue Feature-Implementierungen sollen innerhalb eines vordefinierten Zeitrahmens durchgeführt werden, der im Entwicklungsplan festgelegt ist.
+
+*Schlussfolgerung*
+Die Einhaltung dieser Wartbarkeitsanforderungen ist entscheidend für den langfristigen Erfolg und die Zuverlässigkeit unserer Anwendung. Durch die Implementierung dieser Richtlinien stellen wir sicher, dass die Anwendung effizient gewartet und aktualisiert werden kann, um den sich ändernden Bedürfnissen unserer Benutzer gerecht zu werden.
+
+=== NFT-03: Adaptability
+
 === NFS-01: Adaptability
+
 Die Anwendung sollte so entwickelt sein, sodass sie sich an verschieden Geräten mit diversen Bildschirmgrößen problemlos abspielen lässt. 
 
-=== NFS-02: Compatibility
+=== NFT-04: Compatibility
 Das System sollte problemlos Präsentationen von älteren Veraionen der Präsentationssoftware klarkommen. 
 
-=== NFS-03: Configurability 
+=== NFT-05: Configurability 
 Es soll eine intuitive Benutzeroberfläche zur Verfügung stehen, die es Endbenutzern ermöglicht, Einstellungen ohne technische Vorkenntnisse anzupassen.
 Die Benutzeroberfläche muss Zugriff auf umfangreiche Konfigurationsoptionen bieten, wie z.B. Anpassung von Benutzereinstellungen.
 
-=== NFS-04: installation 
+=== NFT-06: installation 
 Das System läuft ausschliesslich auf einem Windows Gerät. 
 
 :sectnums:
 == Supplementary information
 :sectnums!:
 
-=== NFS-01: Technische Einschränkungen
+=== NFI-01: Technische Einschränkungen
 Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den vom Auftraggeber während Messen eingesetzten Geräten und unter den üblichen Systemlasten reibungslos läuft.
 
 Verwenung von .NET 8 und C#: Alle Softwarekomponenten, Bibliotheken und Frameworks sollten mit .NET 8 kompatibel sein und in der Programmiersprache C# entwickelt werden.
 
 Plattformunterstützung: Die Anwndung soll zunächst nur mit dem Betriebssystem (Windows) kompatibel sein.
 
-=== NFS-02: Interface Anforderungen
+=== NFI-02: Interface Anforderungen
 Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Geräten zu gewährleisten.
 
 Fokus auf Touch: Das Interface sollte so konzipiert sein, dass es von 90% der Testgruppe als "für Touchscreens ausgelegt" empfunden wird.
 
 Externe Schnittstellen: Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
 
-=== NFS-03: Geschäftsregeln
+=== NFI-03: Geschäftsregeln
 Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
 
 Markenschutz und Urheberrecht: Die Software darf nicht als Produkt des Auftraggebers aufgefasst werden.
 
-=== NFS-04: Organisatorische Randbedingungen
+=== NFI-04: Organisatorische Randbedingungen
+
 Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
 
-=== NFS-05: Normen und Standards:
+=== NFI-05: Normen und Standards:
+
 Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
 
-=== NFS-06: Rechtliche Anforderungen
+=== NFI-06: Rechtliche Anforderungen
 
 Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
 
 Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
 
-=== NFS-07: Lokalisierung 
+=== NFI-07: Lokalisierung 
+
 Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern.
 
 :sectnums:
