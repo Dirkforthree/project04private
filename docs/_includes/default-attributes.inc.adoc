@@ -1,5 +1,5 @@
 // Meta
-:project-name: E04_Effektive_Praaesentationen
+:project-name: E04_Effektive_Praesentationen
 :project-system-name: portable Software
 // Settings:
 :toc:
