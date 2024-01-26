@@ -1,5 +1,5 @@
 = Projektplan: {project-name}
-Luca Jork lucathomas.jork@stud.htw-dresden.de, Valine Richter valine.richter@stud.htw-dresden.de
+Luca Jork <lucathomas.jork@stud.htw-dresden.de>, Valine Richter <valine.richter@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
