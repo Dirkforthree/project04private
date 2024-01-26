@@ -1,14 +1,71 @@
 = Test Cases: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Luca Jork lucathomas.jork@stud.htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
+== Testfall: TC01_Test_Laden_und_Abspielen_eines_Mediums
 
-== Allgemeine Informationen
+=== Ziel
+Überprüfung der Funktionalität des Systems beim Laden und Abspielen verschiedener Medien (PowerPoint-Präsentationen und Videos) durch den Präsentator.
 
-== Test Cases
+=== Beschreibung
+Dieser Testfall soll sicherstellen, dass das System in der Lage ist, verschiedene Medientypen korrekt zu laden und abzuspielen. Insbesondere wird geprüft, ob das System Dateiformate korrekt erkennt und ob die Wiedergabe von Medien fehlerfrei funktioniert.
 
-=== Test Case 01
+=== Vorbedingungen
+1. Das System ist installiert und betriebsbereit.
+2. Der Präsentator hat Zugriff auf das System.
+3. Es stehen Medien in unterstützten Formaten zur Verfügung.
 
-=== Test Case 02
+=== Test-Schritte
+. Öffnen des Systems durch den Präsentator
+. Auswahl eines Mediums durch den Präsentator
+. Laden des ausgewählten Mediums in das System
+. Abspielen des geladenen Mediums
+. Überprüfen der Medienwiedergabe auf Fehler
+
+=== Erwartete Ergebnisse
+. Das System öffnet sich ohne Fehler.
+. Der Präsentator kann ein Medium auswählen.
+. Das Medium wird erfolgreich in das System geladen.
+. Das Medium wird fehlerfrei abgespielt.
+. Keine Fehler oder Unterbrechungen während der Wiedergabe.
+
+=== Postbedingungen
+. Das System bleibt stabil und bereit für weitere Aktionen.
+. Alle geladenen Medien werden ordnungsgemäß geschlossen und/oder aus dem Speicher entfernt.
+
+
+== Testfall: TC02_Test_Präsentieren_der_Präsentation
+
+=== Ziel
+Überprüfung der Funktionalität des Systems beim Präsentieren einer Präsentation, einschließlich der Nutzung der "Endlosschleife"- und "Kapitel"-Funktionen sowie der Interaktion während der Präsentation.
+
+=== Beschreibung
+Dieser Testfall soll sicherstellen, dass das System in der Lage ist, die Funktionen des Präsentierens einer Präsentation ordnungsgemäß zu unterstützen, einschließlich des Wechsels zwischen verschiedenen Präsentationsmodi und der Interaktion während der Präsentation.
+
+=== Vorbedingungen
+1. Das System ist installiert und betriebsbereit.
+2. Der Präsentator hat Zugriff auf das System und eine erstellte Präsentation.
+3. Die Präsentation ist im System gespeichert und zugänglich.
+
+=== Test-Schritte
+. Öffnen des Systems durch den Präsentator im "Spectate"-Modus.
+. Auswahl einer vorhandenen Präsentation durch den Präsentator.
+. Auswahl der Präsentationsmodi: "Endlosschleife" oder "Kapitel".
+. Durchführen der Präsentation im gewählten Modus.
+. Testen der Interaktionsmöglichkeiten wie Anhalten, Zusatzinformationen einblenden und Kapitel wechseln.
+. Beenden der Präsentation und Rückkehr zum Hauptbildschirm.
+
+=== Erwartete Ergebnisse
+. Das System öffnet sich ohne Fehler im "Spectate"-Modus.
+. Der Präsentator kann eine vorhandene Präsentation auswählen.
+. Die Auswahl zwischen "Endlosschleife" und "Kapitel"-Modus funktioniert einwandfrei.
+. Die Präsentation läuft im gewählten Modus ohne Probleme ab.
+. Interaktionsmöglichkeiten funktionieren wie erwartet.
+. Die Präsentation endet korrekt und das System kehrt zum Hauptbildschirm zurück.
+
+=== Postbedingungen
+. Das System bleibt stabil und bereit für weitere Aktionen.
+. Alle genutzten Ressourcen und Daten der Präsentation werden ordnungsgemäß geschlossen und/oder aus dem Speicher entfernt.
+

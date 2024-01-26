@@ -2,59 +2,78 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 <use-case name>
+== Use-Case: UC01 laden eines Mediums in das System und Abspielen des Mediums
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
+Dieser Use Case ermöglicht es dem Präsentator ein Medium, darunter PowerPoint-Präsentationen und Videos, in das System zu laden und abzuspielen
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+==== Präsentator
+
+Die Person, die verschiedene Medien (Powerpoint-Präsentationen, Videos) in das System lädt
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+. Benutzer hat Medien in gerechte Formate zur Verfügung
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn Präsentator das System öffnet
+. Das System zeigt einen Dialog zur Auswahl von einen Medium
+. Präsentator wählt gewünschtes Medium (Videos) aus und bestätigt die Auswahl
+. Bei erfolgreicher Überprüfung wird das Medium in das System geladen und steht zum Abspielen zur Verfügung
+. Das System bestätigt die erfolgreiche Auswahl
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Fehlerhafte Datei/ nicht unterstützendes Format
+
+Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fehlerhafte/ nicht unterstützende Formate auswählen möchte, dann
+
+. Dialogfeld von "fehlerhafte Datei" oder "unterstützt das Format nicht" wird angezeigt
+. Der Use Case wird im Schritt "Präsentator wählt gewünschte Medien aus" fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+==== Öffnen des Systems
+
+. Nutzer öffnet auf seinem/ ihrem Computer das System
+. System fährt hoch
+. System zeigt das Dialogfenster "File-Selection"
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Präsentator lädt Video im System und spielt das Video ab
+
+. im ersten Dialogfenster wählt der Präsentator ein Medium aus
+. dieses Video steht zum Abspielen zur Verfügung
+. durch betätigen des "Abspiel"-Knopf, öffnet sich ein neues Fenster
+. im neuen Fenster wird das Video abgespielt
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+==== Zustand für die eingebundenen Medien
+
+. Das System befindet im Zustand, welches das ausgewählte Medium abspielen kann
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== <Besondere Anforderung 1>
+==== gängiger Formate
+. System arbeitet mit gängigen Formaten, wie Powerpoint oder Videos
+
+==== Intuitive Benutzeroberfläche
+. System soll eine intuitive Benutzeroberfläche für Präsentator und Zuhöher bieten
+
+==== Sicherheit und Effizienz
+. System soll beim laden der Medien sicher und effizient arbeiten
+
+

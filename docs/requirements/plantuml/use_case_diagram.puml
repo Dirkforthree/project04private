@@ -1,0 +1,28 @@
+@startuml use_case_diagram
+left to right direction
+
+' skin parameters for usecase with special stereotype
+skinparam usecase<<unspezifiziert>> {
+  BackgroundColor #eee
+  BorderColor #gray
+  StereotypeFontColor #gray
+  StereotypeFontSize 10
+}
+
+actor Präsentator
+actor Zuschauer
+
+rectangle "Desktop Anwendung - E04_Effektive_Präsentation" {
+  usecase "UC01\n Laden eines Mediums in das System und Abspielen des Mediums" as uc01 
+  usecase "UC02\n Präsentieren der Präsentation" as uc02
+  usecase "UC03\n Medien unterteilen in Kapiteln" as uc03
+  usecase "UC04\n Einblenden \von Zusatzinformationen" as uc04
+
+}
+
+Präsentator -- uc01
+Präsentator -- uc02
+Präsentator -- uc03
+uc02 .down.> uc04 : include
+
+@enduml

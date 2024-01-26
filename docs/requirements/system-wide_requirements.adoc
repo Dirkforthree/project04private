@@ -1,5 +1,5 @@
 = System-Wide Requirements: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Luca Jork  <lucathomas.jork@stud.htw-dresden.de>; Quoc Tinh La <quoctinh.la@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -14,49 +14,190 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema
 
 NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
 
-
 == Systemweite funktionale Anforderungen
-//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+:sectnums!:
 
+=== NFA-01: Licensing
+Das System benötigt keine Lizensierung und soll eine freie Software sein. Diesbezüglich müssen die Nutzer der Software bestimmte Vereinbarungen zustimmen.
 
+=== NFA-02: Dateiload und -verwaltung
+Die Anwendung sollte die Möglichkeit bieten, Präsentationen und Videos verschiedener Dateiformate (z. B. PPTX, MP4, AVI) zu laden und zu verwalten. Dabei sollen Pfade zu den geladenen Dateien und deren Kapitelunterteilung dauerhaft gespeichert werden. Es sollten mindestens 2 Präsentationen gleichzeitig verwaltet werden können.
+Die Anwendung soll Portabel sein, sowie Lokal, Offline auf jedem der Messecomputer eigenständig funktionieren
+
+:sectnums:
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
+Unter Berücksichtigung des FURPS+ Klassifikationsschemas (Functionality, Usability, Reliability, Performance, Supportability - Funktion, Benutzbarkeit, Zuverlässigkeit, Leistungsfähigkeit, Wartbarkeit) können wir spezifische Qualitätsanforderungen für das Gesamtsystem unserer Messe-Anwendungssoftware definieren:
+
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+:sectnums!:
 
+=== NFU-01: Ease of learning 
+:sectnums!:
+Das System sollte so aufgebaut werden, sodass die Anwendung von den Stakeholdern in kürzester Zeit verstandenn werden kann.
+
+=== NFU-02: Task Efficiency 
+Die Stakeholder sollten die funktionalität schnell durchschauen und das System in maximal 5 Mausklicks zum laufen bringen.
+
+=== NFU-03: Ease of remembering 
+Die Benutzeroberfläche des Systems sollte so einfach strukturiert sein, sodass sich die Stakeholder die Funktionweise der Anwendung nach der ersten Benutzung merken können.
+
+=== NFU-04: Understandability
+Die Elemente des Systems sind ohne weitere Rechereche verstädnlich für den Nutzer, sodass er die ANnwendung beim ersten mal problemlos bedienen kann. 
+
+=== NFU-05: Subjective satisfaction
+Die Anwendung sollte eine benutzerfreundliche Oberfläche haben, welche mindestens 90% der Tester aus einer Testgruppe von min. 10 Testern als "intuitiv" oder "leicht zu verwenden" bewerten sollten. 
+
+:sectnums:
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
+:sectnums!:
+
+=== NFR-01: Availability 
+Die Anwendung sollte eine Verfügbarkeitsrate von 99,9% aufweisen und in Usability-Tests nicht mehr als einmal pro 100 Stunden Nutzung abstürzen.
+
+=== NFR-02: Recoverability
+Das System muss so konzipiert sein, dass es nach einem Ausfall in weniger als 10 Sekunden wieder in den Betriebszustand zurückkehren kann. 
+
+=== NFR-03: Frequency and severity of failures
+Geringfügige Mängel (Minor Defects): 
+Diese stellen geringe Unannehmlichkeiten dar, die den normalen Betrieb nicht unterbrechen oder die Datenintegrität nicht beeinträchtigen. Beispiele können kosmetische Probleme in der Benutzeroberfläche oder geringfügige Abweichungen von den Anforderungsspezifikationen sein, die ohne Umgehungslösung behoben werden können.
+
+Erhebliche Mängel (Significant Defects):
+Diese beeinträchtigen die Benutzererfahrung oder die Leistung, sind jedoch nicht kritisch für die grundlegenden Systemfunktionen. Ein Beispiel wäre eine Verzögerung bei der Datenverarbeitung, die über den akzeptablen Grenzen liegt, aber nicht zu Datenverlust führt.
+
+Kritische Mängel (Critical Defects):
+Diese führen zu einem Datenverlust oder machen wesentliche Funktionen des Systems unbenutzbar. Ein kritischer Mangel kann beispielsweise ein Ausfall sein, der zu einem vollständigen Systemstillstand führt oder bei dem die Datenwiederherstellung nicht möglich ist. Dies sollte in jedem Fall vermieden werden. 
+
+:sectnums:
 === Effizienz (Performance)
+:sectnums!:
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
-=== Wartbarkeit (Supportability)
-// Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+=== NFP-01: Response times
+Die Anwendung sollte Präsentationen und Videos innerhalb von maximal 5 Sekunden laden.
 
+=== NFP-02: Throughput
 
+* Die Anwendung muss in der Lage sein, einen hohen Durchsatz an Daten zu verarbeiten, um ein flüssiges Abspielen und Interagieren mit Multimedia-Inhalten zu gewährleisten.
+
+[discrete]
+=== 4K-Videodateien
+* Die Anwendung soll 4K-Videodateien mit einer Dateigröße von bis zu 5 GB ohne Leistungseinbußen effizient verarbeiten können.
+* Eine Verarbeitungsgeschwindigkeit von mindestens 100 Megabyte pro Sekunde (MB/s) wird benötigt, um ein nahtloses Abspielen zu ermöglichen.
+
+[discrete]
+=== PPP-Dateien
+* Für PowerPoint-Präsentationen (PPP) wird ein schnelles Laden und reibungsloses Navigieren benötigt.
+* Eine Verarbeitungsgeschwindigkeit von mindestens 10 MB/s ist ausreichend für PPP-Dateien.
+
+[discrete]
+=== MOV-Dateien
+* MOV-Dateien benötigen ebenfalls eine hohe Verarbeitungsgeschwindigkeit für flüssiges Abspielen.
+* Eine Verarbeitungsgeschwindigkeit von mindestens 100 MB/s wird für MOV-Dateien empfohlen.
+
+[discrete]
 == Zusätzliche Anforderungen
+* Die Anwendung muss mehrere hochauflösende Video- und PPP-Dateien gleichzeitig verarbeiten können.
+* Die Systemhardware (CPU, GPU, RAM) muss leistungsfähig genug sein, um diese Verarbeitungsgeschwindigkeiten zu unterstützen.
 
-=== Technische Einschränkungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+=== NFP-03: Start-up
+Das System sollte binnen 5 Sekunden einsatzfähig sein.
 
-=== Interface Anforderungen
-// Describe both the user interface and interfaces with external systems.
+:sectnums:
+=== Wartbarkeit (Supportability)
+:sectnums!:
+<<<<<<< HEAD
+// Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+Die Wartbarkeit ist ein entscheidender Aspekt der Softwareentwicklung, der die Effizienz und Effektivität der langfristigen Pflege und Aktualisierung einer Anwendung beeinflusst. Dieses Dokument legt die Anforderungen und Richtlinien für die Wartbarkeit unserer Anwendung fest.
 
-=== Geschäftsregeln
-// Besides technical requirements, also consider the particular business domain in which the system needs to fit.
+=== NFS-01: Einfachheit der Wartung
+* Die Anwendung muss so strukturiert sein, dass Wartungsarbeiten mit minimalem Aufwand durchgeführt werden können.
+* Klare und gut dokumentierte Code-Strukturen werden erwartet, um die Wartung zu vereinfachen.
 
-=== Organisatorische Randbedingungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
+=== NFS-02: Modularität
+* Die Anwendung sollte modular aufgebaut sein, sodass einzelne Komponenten unabhängig gewartet, aktualisiert oder ersetzt werden können.
 
-=== Rechtliche Anforderungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
+=== NFS-03: Dokumentation
+* Umfassende Dokumentation muss für die gesamte Anwendung bereitgestellt werden, einschließlich Code-Kommentaren, Entwicklerhandbüchern und Benutzerdokumentation.
+
+=== NFS-04: Automatisierte Tests
+* Ein umfassendes Set von automatisierten Tests soll implementiert werden, um die Funktionalität bei Änderungen sicherzustellen.
+
+=== NFS-05: Notfall-Updates
+* Im Falle kritischer Fehler sollen Notfall-Updates so schnell wie möglich bereitgestellt werden.
+
+:sectnums:
+=== Durchführungszeiten
+:sectnums!:
+
+=== NFT-01: Kleinere Änderungen
+* Kleinere Änderungen, wie Textaktualisierungen oder kleinere Bugfixes, sollen innerhalb von 24 Stunden durchgeführt werden können.
+
+=== NFT-02: Größere Updates
+* Größere Updates oder neue Feature-Implementierungen sollen innerhalb eines vordefinierten Zeitrahmens durchgeführt werden, der im Entwicklungsplan festgelegt ist.
+
+*Schlussfolgerung*
+Die Einhaltung dieser Wartbarkeitsanforderungen ist entscheidend für den langfristigen Erfolg und die Zuverlässigkeit unserer Anwendung. Durch die Implementierung dieser Richtlinien stellen wir sicher, dass die Anwendung effizient gewartet und aktualisiert werden kann, um den sich ändernden Bedürfnissen unserer Benutzer gerecht zu werden.
+
+=== NFT-03: Adaptability
+
+=== NFS-01: Adaptability
+
+Die Anwendung sollte so entwickelt sein, sodass sie sich an verschieden Geräten mit diversen Bildschirmgrößen problemlos abspielen lässt. 
+
+=== NFT-04: Compatibility
+Das System sollte problemlos Präsentationen von älteren Veraionen der Präsentationssoftware klarkommen. 
+
+=== NFT-05: Configurability 
+Es soll eine intuitive Benutzeroberfläche zur Verfügung stehen, die es Endbenutzern ermöglicht, Einstellungen ohne technische Vorkenntnisse anzupassen.
+Die Benutzeroberfläche muss Zugriff auf umfangreiche Konfigurationsoptionen bieten, wie z.B. Anpassung von Benutzereinstellungen.
+
+=== NFT-06: installation 
+Das System läuft ausschliesslich auf einem Windows Gerät. 
+
+:sectnums:
+== Supplementary information
+:sectnums!:
+
+=== NFI-01: Technische Einschränkungen
+Ressourcenbegrenzungen: Die Anwendung sollte effizient mit den Ressourcen umgehen und so entwickelt werden, dass sie auf den vom Auftraggeber während Messen eingesetzten Geräten und unter den üblichen Systemlasten reibungslos läuft.
+
+Verwenung von .NET 8 und C#: Alle Softwarekomponenten, Bibliotheken und Frameworks sollten mit .NET 8 kompatibel sein und in der Programmiersprache C# entwickelt werden.
+
+Plattformunterstützung: Die Anwndung soll zunächst nur mit dem Betriebssystem (Windows) kompatibel sein.
+
+=== NFI-02: Interface Anforderungen
+Benutzeroberfläche: Die Benutzeroberfläche sollte mit .NET-Framework-Elementen entwickelt werden, um eine konsistente und native Benutzererfahrung auf den unterstützten Geräten zu gewährleisten.
+
+Fokus auf Touch: Das Interface sollte so konzipiert sein, dass es von 90% der Testgruppe als "für Touchscreens ausgelegt" empfunden wird.
+
+Externe Schnittstellen: Die Anwendung sollte Schnittstellen bereitstellen, um Medien von verschiedenen externen Quellen wie USB-Geräten, lokalen Festplatten oder Cloud-Speicherdiensten zu laden.
+
+=== NFI-03: Geschäftsregeln
+Messebezogene Anforderungen: Die Software sollte an die Bedürfnisse und Anforderungen von Messeveranstaltungen angepasst sein, einschließlich hoher Portabilität, einfacher Bedienung und Robustheit in verschiedenen Umgebungsbedingungen.
+
+Markenschutz und Urheberrecht: Die Software darf nicht als Produkt des Auftraggebers aufgefasst werden.
+
+=== NFI-04: Organisatorische Randbedingungen
+
+Anforderungen an Betrieb, Management und Wartung: Es sollten klare Richtlinien für den Betrieb der Anwendung während der Messe festgelegt werden, einschließlich des Supports für Benutzer, Aktualisierungen oder möglicher Fehlerbehebungen.
+
+=== NFI-05: Normen und Standards:
+
+Die Software sollte alle relevanten Normen und Standards einhalten, insbesondere diejenigen, die für Messeveranstaltungen oder den Umgang mit Medieninhalten gelten.
+
+=== NFI-06: Rechtliche Anforderungen
+
+Lizenzierung der Anwendung: Die Anwendung sollte entsprechend lizenziert sein, um den Anforderungen der Messestand-Nutzung und der Rechtevergabe zu entsprechen.
+
+Datenschutz: Alle Datenschutzbestimmungen und Vorschriften sollten eingehalten werden, insbesondere wenn personenbezogene Daten während der Nutzung gespeichert oder verarbeitet werden.
+
+=== NFI-07: Lokalisierung 
+
+Die Anwendung muss mehrsprachig sein und sowohl auf Deutsch als auch auf Englisch verfügbar sein, um eine breitere internationale Benutzerbasis auf Messen anzusprechen und die Zugänglichkeit für Teilnehmer aus verschiedenen Ländern und Sprachgruppen zu verbessern.
+
+:sectnums:
