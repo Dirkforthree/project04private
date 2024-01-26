@@ -18,17 +18,17 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Backend | Das Backend bezieht sich auf die Serverseite einer Softwareanwendung, einschließlich der Datenbank, der Serverlogik und der Anwendungsintegration. | Rückseite (im Kontext der Softwareentwicklung) 
 | Framework | In der Softwareentwicklung ist ein Framework eine Plattform zur Entwicklung von Softwareanwendungen. Es bietet eine Grundlage, auf der Softwareentwickler Programme für eine bestimmte Plattform erstellen können. | Gerüst, Struktur, Rahmenvorgabe
 | Git | Git ist ein verteiltes Versionskontrollsystem zur Verfolgung von Änderungen im Quellcode während der Softwareentwicklung. | Github
-| .NET8 | Ein Hauptentwicklungsprogramm, welche eine Sammlung von Frameworks und Tools besitzt, die on Microsoft entwickelt wurde, um die Entwicklung und Ausführung von Softwareentwicklung zu erleichtern | .NET Core, .NET5/6/... welche ältere Versionen von .NET8 sind
-| "Edit"-Modus | Betriebszustand, welches dem Nutzer des Systems ermöglicht, Präsentationen zu erstellen/ zu bearbeiten. | /
+| .NET8 | Ein Hauptentwicklungsprogramm, welche eine Sammlung von Frameworks und Tools besitzt, die von Microsoft entwickelt wurde, um die Entwicklung und Ausführung von Softwareentwicklung zu erleichtern | .NET Core, .NET5/6/... welche ältere Versionen von .NET8 sind
+| "Edit"-Modus | Betriebszustand, welches dem Nutzer des Systems ermöglicht, Präsentationen zu erstellen oder zu bearbeiten. | /
 | "Spectate"-Modus | Betriebszustand, in dem der Nutzer (in erster Linie der Präsentator) ermöglicht, eine Präsentation vorzuführen | /
-| Medienintegration | Im Falle unseres Systems, die Einbindung von Medien mit gängigen Medienformate, wie Powerpoint, Videos, Word-Dokumenten, PDFs in das System | xx
-| Zusatzinformationen | Informtationen, welche man in der Präsentation zusätzlich anschauen kann, um bestimmte Stellen von Präsentationen weiter zu erläutern | Ergänzung, zusätzliche Details, Extrainformationen
-| "Endlosschleife"-Funktion | Ist einer der zwei Möglichkeiten, Präsentationen abzuspielen. Hierbei wird eine Präsentation automatisch von neuen abgespielt, wenn diese endet | Dauerschleife, unendliche Schleife
+| Medienintegration | Im Falle unseres Systems, die Einbindung von Medien mit gängigen Medienformaten, wie Powerpoint, Videos, Word-Dokumenten, PDFs in das System | /
+| Zusatzinformationen | Informationen, welche man in der Präsentation zusätzlich aufrufen kann, um bestimmte Stellen innerhalb der Präsentation näher zu erläutern | Ergänzung, zusätzliche Details, Extrainformationen
+| "Endlosschleife"-Funktion | Ist eine der zwei Möglichkeiten, Präsentationen abzuspielen. Hierbei wird eine Präsentation automatisch von neuen abgespielt, wenn diese endet | Dauerschleife, unendliche Schleife
 | "Kapitel"-Funktion | Ist die zweite Möglichkeit, Präsentationen vorzustellen. Die Präsentation wird in Kapiteln vorgestellt. | Segment, Abschnitt 
 | File Selection | Ein Fenster im System, welches die Auswahl von Medien ermöglicht | / 
-| Presentation Loop | Ein Fenster im System, indem man Präsentationen in Dauerschleife abspielen lässt | / 
-| Settings | Ein Fenster im System, indem man Einstellungen zur Präsentationen ermöglicht | / 
-| Chapter Selection | Ein Fenster im System, indem man zu gewissen Kapiteln von Präsentationen übergehen kann | / 
+| Presentation Loop | Ein Fenster im System, in dem man Präsentationen in Dauerschleife abspielen lässt | / 
+| Settings | Ein Fenster im System, in dem man Einstellungen zur Präsentationen ermöglicht | / 
+| Chapter Selection | Ein Fenster im System, in dem man zu gewissen Kapiteln von Präsentationen übergehen kann | / 
 | Chapter Loop | Ein Fenster im System, welches ein kleines Video in der "Kapitel"-Funktion in Dauerschleife abspielt | / 
 | Medium | Ist eine Datei zur Nutzung von Präsentationen | Datei
 |===
@@ -43,11 +43,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | IDE | Integrierte Entwicklungsumgebung | Eine Software-Suite, die grundlegende Werkzeuge für Softwaretests und -schreiben zusammenfasst.
 | MVVM | Model-View-Viewmodel | MVVM Toolkit ist eine Sammlung von Werkzeugen und Frameworks, die Entwicklern Anleitung und Unterstützung beim Erstellen von Desktop- und mobilen Anwendungen unter Verwendung des Model-View-ViewModel (MVVM)-Musters bieten.
 | WPF | Windows Presentation Foundation | Ein grafisches Subsystem von Microsoft zur Darstellung von Benutzeroberflächen in Windows-basierten Anwendungen. WPF verwendet XAML (Extensible Application Markup Language), um ein deklaratives Modell für die Benutzeroberfläche bereitzustellen.
-| xx | xx | xx
-| xx | xx | xx
-| xx | xx | xx
-| xx | xx | xx
-| xx | xx | xx
+
 |===
 
 == Verzeichnis der Datenstrukturen
@@ -55,12 +51,5 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 | Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase
 | Chapter | Ist ein Teil eines Medium mit Start und Endpunkt zur Präsentation | Pfad: String, Startpunkt: Timestamp, Endpunkt: Timestamp, Titel: String, Beschreibung: String | Pfad: muss ein "/" beinhalten und nach dem letzten "/" ein Punkt haben, valide Dateiendung eines Videos, Startpunkt: darf nicht kleiner als 0 sein, Start- und Endpunkt: darf nicht außerhalb des Gültigkeitsbereich sein (für Video: Videolänge, für Power Point: Seitenanzahl) | / 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
-| xx | xx | xx | xx | xx 
+
 |===
