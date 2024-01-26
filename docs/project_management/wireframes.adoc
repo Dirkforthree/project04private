@@ -1,0 +1,10 @@
+= Wireframes: {project-name}
+Luca Jork lucathomas.jork@stud.htw-dresden.de
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+
+image::wireframe1.jpg[]
+image::wireframe3.jpg[]
+image::wireframe2.jpg[]
+
