@@ -1,22 +1,31 @@
 = Use-Case Model: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Quoc Tinh La <quoctinh.la@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Allgemeine Informationen
-// ...
 
+Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure innerhalb der "ZEISS Digital Innovation GmbH". Präsentatoren sollen effektive Präsentationen erstellen, steuern und gegebenenfalls auf Fragen von Zuhörern aktiv auf Inhalte zugreifen können.  Diese Akteure spiegeln sich in verschiedenen Use Cases wider, die von der Erstellung bis zur Vorführung von Präsentationen reichen.
+// ...
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: ...
-* *UC02*: ...
 
+* *UC01*: Laden eines Mediums in das System und Abspielen des Mediums (Präsentator)
+* *UC02*: Präsentieren der Präsentation (Präsentator)
+* *UC03*: Medien unterteilen in Kapiteln (Präsentator)
+* *UC04*: Einblenden von Zusatzinformationen (Präsentator)
 
 == Use Case Diagramm
 // ...
+
+.Use Case Diagramm
+[plantuml, "{diagramsdir}/use_case_diagram", svg]
+....
+include::{plantumlsdir}/use_case_diagram.puml[]
+....
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.

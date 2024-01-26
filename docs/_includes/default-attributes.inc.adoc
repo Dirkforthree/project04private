@@ -1,6 +1,6 @@
 // Meta
-:project-name: <Projektthema (T00)>
-:project-system-name: <Projektname-System>
+:project-name: E04_Effektive_Präsentationen
+:project-system-name: portable Software
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
