@@ -1,5 +1,5 @@
 = System-Wide Requirements: {project-name}
-Luca Jork  lucathomas.jork@stud.htw-dresden.de
+Luca Jork  <lucathomas.jork@stud.htw-dresden.de>; Quoc Tinh La <quoctinh.la@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
