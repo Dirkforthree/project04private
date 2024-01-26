@@ -19,13 +19,10 @@ Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure in
 * *UC04*: Einblenden von Zusatzinformationen (Präsentator)
 
 == Use Case Diagramm
-// ...
 
-.Use Case Diagramm
-[plantuml, "{diagramsdir}/use_case_diagram", svg]
-....
-include::{plantumlsdir}/use_case_diagram.puml[]
-....
+//use case digagramm 
+
+image::usecasediagramm.png[]
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
