@@ -1,6 +1,8 @@
 = Risikoliste: {project-name}
-Luca Jork Lucathomas.jork@stud.htw-dresden.de
+
+Luca Jork lucathomas.jork@stud.htw-dresden.de;
 {localdatetime}
+
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
@@ -33,11 +35,10 @@ Die Risiken sind in folgender Tabelle: <<table_risks>> dargestellt. Das Datum de
 [%header, format="csv", separator=";", cols="^1,^2,3,4,3,^1,^1,^1,3,4"]
 
 // vision.adoc
-image::risklist.jpg[]
+
+image::risk.list .jpg[]
 
  
-
-
 // PDF-Export: Seite zurück zum Hochformat
 [.portrait]
 <<<
