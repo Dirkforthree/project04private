@@ -3,3 +3,11 @@
 # General
 .DS_Store
 *~
+.vscode/
+src/obj/
+src/bin/
+src/.vs/
+.vs/
+obj/
+bin/
+.config/dotnet-tools.json
