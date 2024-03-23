@@ -1,0 +1,151 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
+
+
+== Use-Case: UC03 geladene Medien auf fremeden System abspielen 
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Der Benutzer hat bereits eine ausführbare EXE-Datei mit den geladenen Medien auf seinem USB-Stick gespeichert und möchte diese Medien nun auf einem fremden System abspielen. Die EXE-Datei enthält alle notwendigen Medien und Player, sodass der Benutzer die Medien auf jedem beliebigen Computer genießen kann, ohne zusätzliche Software installieren zu müssen. Der Benutzer führt die EXE-Datei auf dem fremden System aus, indem er den USB-Stick anschließt und die Datei startet.
+
+
+=== Kurzbeschreibung der Akteure
+
+==== Präsentator
+Benutzer: Die Person, die die geladenen Medien auf einem fremden System abspielen möchte.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+- Der Benutzer hat bereits eine ausführbare EXE-Datei mit den geladenen Medien auf seinem USB-Stick gespeichert.
+- Ein fremdes System ist verfügbar, auf dem der Benutzer die Medien abspielen möchte.
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+- Der Benutzer hat bereits eine ausführbare EXE-Datei mit den geladenen Medien auf seinem USB-Stick gespeichert.
+Der Benutzer schließt den USB-Stick mit der EXE-Datei an das fremde System an.
+Der Benutzer navigiert auf dem fremden System zu dem Speicherort, an dem die EXE-Datei auf dem USB-Stick gespeichert ist.
+Der Benutzer führt die EXE-Datei aus, indem er sie doppelklickt oder über einen anderen Ausführungsweg startet.
+Die EXE-Datei wird auf dem fremden System gestartet, und die Medien werden in einem integrierten Player oder einer Anwendung abgespielt.
+Die Medien werden erfolgreich auf dem fremden System abgespielt, und der Benutzer kann sie genießen.
+
+==== Ergebnis:
+- Die geladenen Medien werden erfolgreich auf dem fremden System abgespielt, indem die ausführbare EXE-Datei ausgeführt wurde.
+Der Benutzer kann die geladenen Medien auf jedem beliebigen Computer genießen, ohne zusätzliche Software installieren zu müssen.
+Der Benutzer ist mit dem Ergebnis zufrieden und kann die Medien problemlos abspielen.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== Alternativer Ablauf 1: USB-Stick nicht erkannt
+Akteure: Benutzer
+
+==== Vorbedingungen: 
+Der Benutzer hat bereits eine ausführbare EXE-Datei mit den geladenen Medien auf seinem USB-Stick gespeichert.
+
+===== Hauptfluss:
+Der Benutzer schließt den USB-Stick mit der EXE-Datei an das fremde System an.
+Das fremde System erkennt den USB-Stick nicht oder meldet Probleme beim Zugriff auf die Dateien.
+Der Benutzer überprüft den USB-Stick und stellt sicher, dass er ordnungsgemäß angeschlossen ist.
+Der Benutzer versucht, den USB-Stick erneut anzuschließen oder auf einem anderen USB-Port des fremden Systems anzuschließen.
+Falls das Problem weiterhin besteht, informiert der Benutzer den Systemadministrator oder versucht, den USB-Stick auf einem anderen System zu verwenden.
+
+===== Ergebnis:
+Der USB-Stick wird nicht erkannt oder es treten Probleme beim Zugriff auf die Dateien auf, was den Benutzer daran hindert, die Medien auf dem fremden System abzuspielen.
+
+==== Alternativer Ablauf 2: Fehler beim Starten der EXE-Datei
+Akteure: Benutzer
+
+===== Vorbedingungen:
+Der Benutzer hat bereits eine ausführbare EXE-Datei mit den geladenen Medien auf seinem USB-Stick gespeichert.
+
+===== Hauptfluss:
+Der Benutzer schließt den USB-Stick mit der EXE-Datei an das fremde System an.
+Der Benutzer navigiert auf dem fremden System zu dem Speicherort, an dem die EXE-Datei auf dem USB-Stick gespeichert ist.
+Beim Versuch, die EXE-Datei auszuführen, tritt ein Fehler auf, z.B. eine Fehlermeldung wegen fehlender Berechtigungen oder Inkompatibilität.
+Der Benutzer überprüft die Berechtigungen und stellt sicher, dass er die erforderlichen Rechte hat, um die EXE-Datei auszuführen.
+Der Benutzer versucht, die EXE-Datei erneut auszuführen, oder kontaktiert den Systemadministrator, um das Problem zu lösen.
+
+===== Ergebnis:
+Die EXE-Datei kann nicht erfolgreich gestartet werden, was den Benutzer daran hindert, die Medien auf dem fremden System abzuspielen. Es sind weitere Maßnahmen erforderlich, um das Problem zu beheben.
+
+==== Alternativer Ablauf 3: Fehler beim Abspielen der Medien
+Akteure: Benutzer
+
+===== Vorbedingungen: 
+Der Benutzer hat bereits eine ausführbare EXE-Datei mit den geladenen Medien auf seinem USB-Stick gespeichert und die EXE-Datei erfolgreich gestartet.
+
+===== Hauptfluss:
+Die EXE-Datei wird auf dem fremden System gestartet, und die Medien beginnen abzuspielen.
+Während des Abspielens der Medien treten Probleme auf, z.B. ein Fehler beim Laden einer bestimmten Mediendatei oder Probleme mit der Wiedergabequalität.
+Der Benutzer überprüft die Medien und stellt sicher, dass sie korrekt geladen und auf dem USB-Stick gespeichert sind.
+Der Benutzer versucht, die Medien erneut abzuspielen, oder verwendet eine alternative Software oder Player, um das Problem zu umgehen.
+Falls das Problem weiterhin besteht, könnte es notwendig sein, die Mediendateien erneut zu laden oder das Problem genauer zu untersuchen.
+
+===== Ergebnis:
+Es treten Fehler oder Probleme beim Abspielen der Medien auf, was den Benutzer daran hindert, die Medien auf dem fremden System ordnungsgemäß zu genießen. Weitere Schritte sind erforderlich, um das Problem zu lösen und die Medien erfolgreich abzuspielen.
+
+
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+.Szenario 1: Happy Path
+
+Akteur: Benutzer
+Durchlauf:
+Der Benutzer schließt den USB-Stick mit der EXE-Datei an das fremde System an.
+Er navigiert zum Speicherort der EXE-Datei und führt sie aus.
+Die Medien werden erfolgreich auf dem fremden System abgespielt.
+
+.Szenario 2: Fehlende EXE-Datei auf dem USB-Stick
+Akteur: Benutzer
+Durchlauf:
+Der Benutzer schließt den USB-Stick an das fremde System an.
+Er navigiert zum Speicherort, aber die EXE-Datei ist nicht vorhanden.
+Die Medien können nicht abgespielt werden, da die ausführbare Datei fehlt.
+
+.Szenario 3: Fehler beim Starten der EXE-Datei
+Akteur: Benutzer
+Durchlauf:
+Der Benutzer schließt den USB-Stick an das fremde System an.
+Er navigiert zum Speicherort und führt die EXE-Datei aus.
+Es tritt ein Fehler auf, der das Starten der EXE-Datei verhindert.
+Die Medien können nicht abgespielt werden, da die EXE-Datei nicht ordnungsgemäß gestartet werden konnte.
+
+.Szenario 4: Inkompatible Plattform oder fehlende Abhängigkeiten
+Akteur: Benutzer
+Durchlauf:
+Der Benutzer schließt den USB-Stick an das fremde System an.
+Er versucht, die EXE-Datei auszuführen, aber es kommt zu einer Fehlermeldung aufgrund einer inkompatiblen Plattform oder fehlenden Abhängigkeiten.
+Die Medien können nicht abgespielt werden, da das fremde System nicht über die erforderlichen Voraussetzungen verfügt.
+
+.Szenario 5: Fehler beim Abspielen der Medien
+Akteur: Benutzer
+Durchlauf:
+Der Benutzer schließt den USB-Stick an das fremde System an.
+Er führt die EXE-Datei aus und die Medien werden gestartet.
+Es treten Fehler oder Probleme beim Abspielen der Medien auf, z.B. aufgrund beschädigter Dateien oder fehlerhafter Konfiguration.
+Die Medien können nicht ordnungsgemäß abgespielt werden, und der Benutzer kann sie nicht genießen.
+Diese Szenarios bieten verschiedene Instanzen des Use Case und zeigen potenzielle Herausforderungen oder Probleme auf, die während des Ablaufs auftreten können. Sie dienen dazu, potenzielle Fehlerquellen zu identifizieren und Maßnahmen zu ergreifen, um die Benutzererfahrung zu verbessern.
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+Selbstständigkeit: Die EXE-Datei sollte alle erforderlichen Codec-Pakete und Player enthalten, um die Medien unabhängig auf dem fremden Windows-System abzuspielen, ohne dass der Benutzer zusätzliche Software installieren muss.
+
+Robustheit und Stabilität: Die erstellte EXE-Datei sollte stabil und fehlerfrei sein, um eine zuverlässige Wiedergabe der Medien auf verschiedenen Windows-Systemen zu gewährleisten, ohne dass es zu Abstürzen oder Fehlfunktionen kommt.
+
+Benutzerfreundlichkeit: Die Benutzeroberfläche der Anwendung sollte intuitiv gestaltet sein und dem Benutzer eine einfache Navigation und Bedienung ermöglichen, um die Medien schnell und problemlos auf dem fremden Windows-System abspielen zu können.
+
+Dokumentation: Es sollte eine klare und umfassende Anleitung bereitgestellt werden, die dem Benutzer erklärt, wie die EXE-Datei auf dem fremden Windows-System ausgeführt und die Medien abgespielt werden können, einschließlich spezifischer Anweisungen für verschiedene Windows-Versionen.
+
+Performanz: Die Wiedergabe der Medien sollte flüssig und ohne Verzögerungen erfolgen, um eine optimale Benutzererfahrung zu gewährleisten, unabhängig von der Leistungsfähigkeit des fremden Windows-Systems.
+
+Kompatibilität mit verschiedenen Medienformaten: Die EXE-Datei sollte eine breite Palette von Medienformaten unterstützen, um sicherzustellen, dass verschiedene Arten von Medien auf dem fremden Windows-System abgespielt werden können, unabhängig von ihrem Format oder ihrer Codierung.

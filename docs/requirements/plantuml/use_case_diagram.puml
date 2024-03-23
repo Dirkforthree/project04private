@@ -10,12 +10,12 @@ skinparam usecase<<unspezifiziert>> {
 }
 
 actor Präsentator
-actor Zuschauer
+
 
 rectangle "Desktop Anwendung - E04_Effektive_Präsentation" {
-  usecase "UC01\n Laden eines Mediums in das System und Abspielen des Mediums" as uc01 
-  usecase "UC02\n Präsentieren der Präsentation" as uc02
-  usecase "UC03\n Medien unterteilen in Kapiteln" as uc03
+  usecase "UC01\n Laden mehrerer Medien in das System " as uc01 
+  usecase "UC02\n Speichern der Medien als Package auf einem mobilen Speicher " as uc02
+  usecase "UC03\n geladene Medien auf fremeden System abspielen " as uc03
   usecase "UC04\n Einblenden \von Zusatzinformationen" as uc04
 
 }
@@ -23,6 +23,6 @@ rectangle "Desktop Anwendung - E04_Effektive_Präsentation" {
 Präsentator -- uc01
 Präsentator -- uc02
 Präsentator -- uc03
-uc02 .down.> uc04 : include
+uc03 .down.> uc04 : include
 
 @enduml

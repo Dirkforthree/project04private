@@ -2,11 +2,11 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 laden eines Mediums in das System und Abspielen des Mediums
+== Use-Case: UC01 laden mehrerer Medien in das System 
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieser Use Case ermöglicht es dem Präsentator ein Medium, darunter PowerPoint-Präsentationen und Videos, in das System zu laden und abzuspielen
+Dieser Use Case ermöglicht es dem Präsentator ein oder mehrere Medien, darunter PowerPoint-Präsentationen und Videos, in das System zu laden 
 
 === Kurzbeschreibung der Akteure
 
@@ -22,10 +22,10 @@ Die Person, die verschiedene Medien (Powerpoint-Präsentationen, Videos) in das 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Präsentator das System öffnet
-. Das System zeigt einen Dialog zur Auswahl von einen Medium
+. Der Use Case beginnt, wenn Anwender das System öffnet
+. Das System zeigt einen Dialog zur Auswahl von einem oder mehreren Medien
 . Präsentator wählt gewünschtes Medium (Videos) aus und bestätigt die Auswahl
-. Bei erfolgreicher Überprüfung wird das Medium in das System geladen und steht zum Abspielen zur Verfügung
+. Bei erfolgreicher Überprüfung wird das Medium in das System geladen 
 . Das System bestätigt die erfolgreiche Auswahl
 
 === Alternative Abläufe
@@ -50,12 +50,9 @@ Wenn Präsentator im Schritt "erfolgreicher Überprüfung" des Standardablauf fe
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== Präsentator lädt Video im System und spielt das Video ab
+==== Präsentator lädt Medien ins System 
 
 . im ersten Dialogfenster wählt der Präsentator ein Medium aus
-. dieses Video steht zum Abspielen zur Verfügung
-. durch betätigen des "Abspiel"-Knopf, öffnet sich ein neues Fenster
-. im neuen Fenster wird das Video abgespielt
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.

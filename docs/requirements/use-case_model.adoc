@@ -14,7 +14,7 @@ Das zu entwickelnde Präsentationssystem richtet sich an verschiedene Akteure in
 // Liste aller identifizierten Use Cases (priorisiert)
 
 * *UC01*: Laden eines Mediums in das System und Abspielen des Mediums (Präsentator)
-* *UC02*: Präsentieren der Präsentation (Präsentator)
+* *UC02*: Speichern der Medien als Package auf einem mobilen Speicher (Präsentator)
 * *UC03*: Medien unterteilen in Kapiteln (Präsentator)
 * *UC04*: Einblenden von Zusatzinformationen (Präsentator)
 
@@ -42,11 +42,11 @@ include::use_case_01.inc.adoc[]
 <<<
 include::use_case_02.inc.adoc[]
 
-//<<<
-//include::use_case_03.inc.adoc[]
+<<<
+include::use_case_03.inc.adoc[]
 
-//<<<
-//include::use_case_04.inc.adoc[]
+<<<
+include::use_case_04.inc.adoc[]
 
 //<<<
 //include::use_case_05.inc.adoc[]
