@@ -28,9 +28,9 @@ siehe  *https://github.com/users/Dirkforthree/projects/7/views/3[ Überblick  - 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
-* dokumentation an neue Anforderungen angepasst 
-* code an neue Anforderungen angepasst
-* erste Code implementierung von unit tests
+* Dokumentation an neue Anforderungen angepasst 
+* Code an neue Anforderungen angepasst
+* Erste Code implementierung von unit tests
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
